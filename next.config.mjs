@@ -8,6 +8,7 @@
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
+  basePath: '/virufy6.github.io',
   output: 'export',
   reactStrictMode: true,
   // i18n: {
