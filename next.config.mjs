@@ -8,27 +8,25 @@
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  basePath: '/virufy6.github.io',
-  output: 'export',
   reactStrictMode: true,
-  // i18n: {
-  //   locales: ['en', 'es', 'pt', 'jp'],
-  //   defaultLocale: 'en',
-  // },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/api/:path*', // automatically handles all locales
-  //       destination:
-  //         'https://scidroidgames-gmailcom-cms.payloadcms.app/api/:path*', // automatically passes the locale on
-  //     },
-  //     {
-  //       source: '/media/:path*', // automatically handles all locales
-  //       destination:
-  //         'https://scidroidgames-gmailcom-cms.payloadcms.app/media/:path*', // automatically passes the locale on
-  //     },
-  //   ]
-  // },
+  i18n: {
+    locales: ['en', 'es', 'pt', 'jp'],
+    defaultLocale: 'en',
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*', // automatically handles all locales
+        destination:
+          'https://scidroidgames-gmailcom-cms.payloadcms.app/api/:path*', // automatically passes the locale on
+      },
+      {
+        source: '/media/:path*', // automatically handles all locales
+        destination:
+          'https://scidroidgames-gmailcom-cms.payloadcms.app/media/:path*', // automatically passes the locale on
+      },
+    ]
+  },
 }
 
 export default nextConfig
