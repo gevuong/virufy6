@@ -1,12 +1,12 @@
 //BUTTON THEMES
 export const ButtonType = {
-    primary: "bg-[#3074DC] border-solid border-2 border-[#3074DC] text-base text-white font-bold rounded hover:bg-[#265db0] hover:border-[#265db0]",
+    primary: "bg-gradient-to-b from-green-500 to-blue-500 border-none border-2 border-[#3074DC] text-base text-white font-medium rounded-full hover:bg-[#265db0] hover:border-[#265db0]",
     secondary: "bg-[#ffffff] border-solid border-2 border-[#3074DC] text-base text-[#3074DC] font-bold rounded hover:bg-[#D7E4F8]"
 };
 
 export const ButtonSize = {
     small: "h-[52px] w-[86px]" ,
-    medium: "h-[52px] w-[250px]",
+    medium: "h-[65px] w-[260px]",
     large: "h-[52px] w-[345px]",
 };
 

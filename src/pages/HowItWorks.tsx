@@ -1,6 +1,7 @@
 //Organismo
 import Section1 from '~/components/organisms/section-1/Section1'
 import Section8 from '~/components/organisms/section-8/Section8'
+import Image from 'next/image';
 
 import howItWorks1 from '~/assets/static/images/howItWorks/1.jpg'
 import howItWorksStep1 from '~/assets/static/images/howItWorks/step1.jpg'
@@ -18,7 +19,11 @@ export default function HowItWorks() {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        <div className="flex max-w-[1440px] flex-col items-center justify-center ">
+        
+      <Image src={howItWorks1} alt='background' className="absolute top-0 left-0 w-full h-full object-cover z-0 "/> 
+      
+        <div className="flex flex-col items-center justify-center text-white z-10">{/* max-w-[1440px] */}
+        
           <Section1
             //TitleText
             TitleSize="h1"
@@ -27,11 +32,13 @@ export default function HowItWorks() {
             TextLabel={sectionShareCougt?.textLabel}
             ContainerTitleProps
             ContainerTextProps="items-start h-[100%] mr-4"
+
             //Image
             border="none"
-            route={howItWorks1}
+            route={''}
             alt="imagen de algo"
-            sizeImg
+            sizeImg=".w-full"
+
             //Buttons
             buttons={buttons}
             ImageStyleProps={''}
@@ -40,30 +47,38 @@ export default function HowItWorks() {
             learnMoreButtonLabel={buttons?.[1]}
           />
 
-          {/* 			<p className="tex		t-gray-300">Section - 8</p> */}
-          <Section8
-            TitleLabel={sectiontCovidTestExplanation?.title}
-            TitleSize="h1"
-            ContainerTitleProps="text-center ml-[5vw] mr-[5vw]"
-            //Image
-            sizeImg="pr90"
-            border="none"
-            route1={howItWorksStep1}
-            route2={howItWorksStep2}
-            route3={howItWorksStep3}
-            alt="Section 7"
-            //TitleText
-            TitleSize1="h3"
-            TitleLabel1={sectiontCovidTestExplanation?.titleLabelRecording}
-            TitleLabel2={sectiontCovidTestExplanation?.titleLabelProcessing}
-            TitleLabel3={sectiontCovidTestExplanation?.titleLabelResults}
-            TextSize="normal"
-            TextLabel1={sectiontCovidTestExplanation?.textLabelRecording}
-            TextLabel2={sectiontCovidTestExplanation?.textLabelProcessing}
-            TextLabel3={sectiontCovidTestExplanation?.textLabelResults}
-            ContainerTextProps=""
-            buttonLabel={sectiontCovidTestExplanation.button}
-          />
+          			{/* <p className="tex		t-gray-300">Section - 8</p> */}
+
+          <div className='w-full mt-52 z-10'>
+
+          <Image src={howItWorksStep3} alt='background' className="absolute left-0 w-full h-full object-cover z-0 sm:h-fill"/>
+
+            <Section8
+              TitleLabel={sectiontCovidTestExplanation?.title}
+              TitleSize="h2"
+              ContainerTitleProps="text-left ml-[5vw] mr-[5vw] z-10"
+              
+              //Image
+              sizeImg="pr30"
+              border="none"
+              route1={""}
+              route2={''}
+              route3={''}
+              alt=""
+              
+              //TitleText
+              TitleSize1="h1"
+              TitleLabel1={sectiontCovidTestExplanation?.titleLabelRecording}
+              TitleLabel2={sectiontCovidTestExplanation?.titleLabelProcessing}
+              TitleLabel3={sectiontCovidTestExplanation?.titleLabelResults}
+              TextSize="large"
+              TextLabel1={sectiontCovidTestExplanation?.textLabelRecording}
+              TextLabel2={sectiontCovidTestExplanation?.textLabelProcessing}
+              TextLabel3={sectiontCovidTestExplanation?.textLabelResults}
+              ContainerTextProps=""
+              buttonLabel={sectiontCovidTestExplanation.button}
+            />
+          </div>
         </div>
       </div>
     </>
