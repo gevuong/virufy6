@@ -27,7 +27,7 @@ export const AboutUs = {
       'We commit to creating intuitive technology that delivers rapid detection, stopping virus spread and saving lives.',
     Innovation: 'Innovation',
     textInnovation:
-      'We aim to ensure rapid detection of dieseases with just one tap on a mobile device.',
+      'We aim to ensure rapid detection of diseases with just one tap on a mobile device.',
   },
   sectionOurCommitmentPrivacy: {
     title: 'Commitment to Privacy',
