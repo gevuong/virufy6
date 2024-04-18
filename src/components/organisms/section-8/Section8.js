@@ -37,14 +37,12 @@ export default function Section8({
         TextClassProps={""}
       />
       
-      <div className="flex-col xl:flex-row mb-4 text-center xl:items-start items-center w-[100%] justify-center mt-[80px] z-10">
+      <div className="flex-col xl:flex-row mb-4 text-center xl:items-start items-center w-[100] justify-center mt-[80px] z-10">
 
-        {/* sm:ml-2 md:ml-40 lg:ml-40 xl:ml-40  */}
-        <div className="bg-blue-500 bg-opacity-50 flex flex-row text-left items-center w-[420px]
+        <div className="bg-blue-500 bg-opacity-50 flex flex-row text-left items-center
         xs:w-[100] sm:w-[500px] md:w-[500px] lg:w-[900px] xl:w-[1000px] 
         xs:h-[100px] sm:h-[220px] md:h-[220px] lg:h-[200px] xl:h-[200px]
-        m-auto
-        mt-0 rounded-3xl">
+        m-auto mt-0 rounded-3xl">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
@@ -64,12 +62,10 @@ export default function Section8({
           />
         </div>
 
-        {/* sm:ml-2 md:ml-40 lg:ml-40 xl:ml-40  */}
         <div className="bg-blue-500 bg-opacity-50 rounded-3xl flex flex-row text-left items-center w-[420px] 
         sm:w-[510px] md:w-[510px] lg:w-[900px] xl:w-[1000px] 
         sm:h-[250px] md:h-[250px] lg:h-[200px] xl:h-[200px] 
-        m-auto
-        mt-3">
+        m-auto mt-3">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}

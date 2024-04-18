@@ -4,8 +4,6 @@ import Section8 from '~/components/organisms/section-8/Section8'
 import Image from 'next/image';
 
 import howItWorks1 from '~/assets/static/images/howItWorks/1.jpg'
-import howItWorksStep1 from '~/assets/static/images/howItWorks/step1.jpg'
-import howItWorksStep2 from '~/assets/static/images/howItWorks/step2.jpg'
 import howItWorksStep3 from '~/assets/static/images/howItWorks/step3.jpg'
 import { useI18n } from '~/i18n'
 
@@ -22,7 +20,7 @@ export default function HowItWorks() {
         
       <Image src={howItWorks1} alt='background' className="absolute top-0 left-0 w-full h-full object-cover z-0 "/> 
       
-        <div className="flex flex-col items-center justify-center text-white z-10">{/* max-w-[1440px] */}
+        <div className="flex flex-col items-center justify-center text-white z-10">
         
           <Section1
             //TitleText
@@ -47,7 +45,7 @@ export default function HowItWorks() {
             learnMoreButtonLabel={buttons?.[1]}
           />
 
-          			{/* <p className="tex		t-gray-300">Section - 8</p> */}
+          {/* <p className="tex		t-gray-300">Section - 8</p> */}
 
           <div className='w-full mt-52 z-10'>
 
