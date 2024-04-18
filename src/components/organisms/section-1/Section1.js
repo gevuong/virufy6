@@ -67,7 +67,7 @@ export default function Section1({
           <div
             className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
           >
-            <Button size="medium" type="primary" path="https://virufy.org/study/welcome" label={shareButtonLabel} /> 
+            <Button size="medium" type="primary" path="https://virufy.org/paper" label={shareButtonLabel} /> 
             {/* <Button size="medium" type="secondary" path="/ourTechnology" label={learnMoreButtonLabel} /> */}
 
           </div> : null
