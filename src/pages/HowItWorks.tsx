@@ -36,7 +36,7 @@ export default function HowItWorks() {
             //Image
             border="none"
             route={''}
-            alt="imagen de algo"
+            alt=""
             sizeImg=".w-full"
 
             //Buttons
@@ -51,7 +51,8 @@ export default function HowItWorks() {
 
           <div className='w-full mt-52 z-10'>
 
-          <Image src={howItWorksStep3} alt='background' className="absolute left-0 w-full h-full object-cover z-0 sm:h-fill"/>
+          <Image src={howItWorksStep3} alt='background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
+          xs:h-100 sm:h-[900px] md:h-[880px] lg:h-[100] xl:h-[830px]"/>
 
             <Section8
               TitleLabel={sectiontCovidTestExplanation?.title}
