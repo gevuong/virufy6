@@ -55,7 +55,7 @@ export default function Section8({
             TitleLabel={TitleLabel1}
             TextSize={TextSize}
             TextLabel={TextLabel1}
-            ContainerTitleProps={"mt-[32px] bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text"}
+            ContainerTitleProps={"mt-[32px] bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text font-bold"}
             ContainerTextProps={`${ContainerTextProps}`}
             TitleClassProps={""}
             TextClassProps={"text-white p-20"}            
@@ -78,7 +78,7 @@ export default function Section8({
             TitleLabel={TitleLabel2}
             TextSize={TextSize}
             TextLabel={TextLabel2}
-            ContainerTitleProps={"mt-[32px] bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text ml-2"}
+            ContainerTitleProps={"mt-[32px] bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text ml-2 font-bold"}
             ContainerTextProps={`${ContainerTextProps}`}
             TitleClassProps={""}
             TextClassProps={"text-white p-20"}
