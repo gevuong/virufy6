@@ -29,7 +29,7 @@ export default function HowItWorks() {
             TextSize="normal"
             TextLabel={sectionShareCougt?.textLabel}
             ContainerTitleProps
-            ContainerTextProps="items-start h-[100%] mr-4"
+            ContainerTextProps="items-start h-[100%] mr-4 max-w-5xl"
 
             //Image
             border="none"
@@ -45,17 +45,16 @@ export default function HowItWorks() {
             learnMoreButtonLabel={buttons?.[1]}
           />
 
-          {/* <p className="tex		t-gray-300">Section - 8</p> */}
+          <div className='w-full mt-60 z-10'>
 
-          <div className='w-full mt-52 z-10'>
-
+          {/* Background img 2  */}
           <Image src={howItWorksStep3} alt='background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
-          xs:h-100 sm:h-[900px] md:h-[880px] lg:h-[100] xl:h-[830px]"/>
+          xs:h-100 sm:h-[950px] md:h-[940px] lg:h-[100] xl:h-[890px]"/>
 
             <Section8
               TitleLabel={sectiontCovidTestExplanation?.title}
               TitleSize="h2"
-              ContainerTitleProps="text-left ml-[5vw] mr-[5vw] z-10"
+              ContainerTitleProps="text-left mr-[5vw] z-10"
               
               //Image
               sizeImg="pr30"
@@ -66,11 +65,11 @@ export default function HowItWorks() {
               alt=""
               
               //TitleText
-              TitleSize1="h1"
+              TitleSize1="h10"
               TitleLabel1={sectiontCovidTestExplanation?.titleLabelRecording}
               TitleLabel2={sectiontCovidTestExplanation?.titleLabelProcessing}
               TitleLabel3={sectiontCovidTestExplanation?.titleLabelResults}
-              TextSize="large"
+              TextSize="small"
               TextLabel1={sectiontCovidTestExplanation?.textLabelRecording}
               TextLabel2={sectiontCovidTestExplanation?.textLabelProcessing}
               TextLabel3={sectiontCovidTestExplanation?.textLabelResults}

@@ -39,10 +39,12 @@ export default function Section8({
       
       <div className="flex-col xl:flex-row mb-4 text-center xl:items-start items-center w-[100] justify-center mt-[80px] z-10">
 
+        {/* 01 card */}
         <div className="bg-blue-500 bg-opacity-50 flex flex-row text-left items-center
         xs:w-[100] sm:w-[500px] md:w-[500px] lg:w-[900px] xl:w-[1000px] 
         xs:h-[100px] sm:h-[220px] md:h-[220px] lg:h-[200px] xl:h-[200px]
         m-auto mt-0 rounded-3xl">
+          
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
@@ -55,17 +57,19 @@ export default function Section8({
             TitleLabel={TitleLabel1}
             TextSize={TextSize}
             TextLabel={TextLabel1}
-            ContainerTitleProps={"mt-[32px] bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text font-bold"}
+            ContainerTitleProps={"mt-auto mb-auto bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text font-bold opacity-80"}
             ContainerTextProps={`${ContainerTextProps}`}
             TitleClassProps={""}
             TextClassProps={"text-white p-20"}            
           />
         </div>
 
+        {/* 02 card */}
         <div className="bg-blue-500 bg-opacity-50 rounded-3xl flex flex-row text-left items-center w-[420px] 
         sm:w-[510px] md:w-[510px] lg:w-[900px] xl:w-[1000px] 
         sm:h-[250px] md:h-[250px] lg:h-[200px] xl:h-[200px] 
-        m-auto mt-3">
+        m-auto mt-20">
+
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
@@ -78,7 +82,7 @@ export default function Section8({
             TitleLabel={TitleLabel2}
             TextSize={TextSize}
             TextLabel={TextLabel2}
-            ContainerTitleProps={"mt-[32px] bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text ml-2 font-bold"}
+            ContainerTitleProps={"mt-auto mb-auto bg-gradient-to-b from-green-500 to-blue-500 text-transparent bg-clip-text ml-2 font-bold opacity-80"}
             ContainerTextProps={`${ContainerTextProps}`}
             TitleClassProps={""}
             TextClassProps={"text-white p-20"}
