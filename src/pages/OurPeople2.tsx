@@ -37,7 +37,7 @@ export default function OurPeople2() {
             />
           </div>
 
-          <div className="ml-[5vw] mt-[80px] flex flex-wrap flex-row items-start
+          <div className="ml-[5vw] mt-[100px] flex flex-wrap flex-row items-start
         sm:flex-col sm:items-center
         md:flex-row md:items-end
         lg:flex-row lg:items-end

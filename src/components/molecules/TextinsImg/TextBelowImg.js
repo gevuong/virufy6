@@ -12,7 +12,7 @@ export default function TextBelowImg({
     <div className="over overflow-hidden relative flex justify-center">
       <div className="">
         <ImageAtomLocal
-          ImageStyleProps="w-[100vw]"
+          ImageStyleProps="w-[140vw]"
           imagesize={sizeImg}
           border={borderImg}
           src={src}
