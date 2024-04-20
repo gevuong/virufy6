@@ -22,13 +22,13 @@ export default function Section1({
 }) {
   return (
     <div className="
-      w-[100vw]
+      w-full
+      flex-col-reverse
       max-w-[1440px]
       space-y-4 
       flex 
-      flex-col-reverse
       items-center
-      lg:flex-row 
+      px-20
       lg:space-x-4 
       lg:space-y-0 
       lg:justify-center 
@@ -59,16 +59,14 @@ export default function Section1({
           ContainerTitleProps={ContainerTitleProps}
           ContainerTextProps={ContainerTextProps}
           TitleClassProps="ml-[5vw]"
-          TextClassProps="ml-[5vw] mt-4 mb-4"
+          TextClassProps="ml-[5vw] mt-4 mb-4 pt-20"
         />
 
         {buttons ?
           <div
             className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
           >
-            <Button size="medium" type="primary" path="https://virufy.org/study/welcome" label={shareButtonLabel} />
-            <Button size="medium" type="secondary" path="/ourTechnology" label={learnMoreButtonLabel} />
-
+            <Button size="medium" type="primary" path="https://virufy.org/paper" label={shareButtonLabel} /> 
           </div> : null
         }
 

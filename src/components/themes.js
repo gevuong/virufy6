@@ -1,12 +1,12 @@
 //BUTTON THEMES
 export const ButtonType = {
-    primary: "bg-[#3074DC] border-solid border-2 border-[#3074DC] text-base text-white font-bold rounded hover:bg-[#265db0] hover:border-[#265db0]",
+    primary: "bg-gradient-to-b from-green-500 to-blue-500 border-none border-2 border-[#3074DC] text-base text-white font-medium rounded-full hover:bg-[#265db0] hover:border-[#265db0]",
     secondary: "bg-[#ffffff] border-solid border-2 border-[#3074DC] text-base text-[#3074DC] font-bold rounded hover:bg-[#D7E4F8]"
 };
 
 export const ButtonSize = {
     small: "h-[52px] w-[86px]" ,
-    medium: "h-[52px] w-[250px]",
+    medium: "h-[65px] w-[260px]",
     large: "h-[52px] w-[345px]",
 };
 
@@ -56,6 +56,7 @@ export const TitleProps = {
     h5tepsHome: "text-[1.25rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[2.5rem]",
     h5Modals: "text-[1.25rem] leading-[1.8rem]  md:text-[1.9rem] md:leading-[2.4rem]",
     h5Modals2: "text-[1rem] leading-[1.8rem]  md:text-[1.4rem] md:leading-[2rem] text-center",
+    h10: "text-[3.6rem] leading-[2.5rem]   md:text-[3.5rem] md:leading-[3.3rem] lg:text-[5rem] lg:leading-[3.50rem] xl:text-[5rem] xl:leading-[4rem]",
 };
 
 //TEXT THEMES
@@ -63,7 +64,8 @@ export const TextProps = {
     subtitle: "text-[1.125rem] leading-[1.75rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
     normal: "  text-[0.875rem] leading-[1.5rem] md:text-[1.1rem] md:leading-[1.8rem] lg:text-[1.3rem] lg:leading-[2.2rem] xl:text-[1.5rem] xl:leading-[2.5rem]",
     normalCardHome: "  text-[0.875rem] leading-[1.25rem] md:text-[1.1rem]",
-    small: "   text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]"
+    small: "   text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]",
+    large: "text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]"
 };
 
 //LINK THEMES
