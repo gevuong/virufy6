@@ -37,7 +37,7 @@ export default function Section8({
         TextClassProps={""}
       />
       
-      <div className="flex-col xl:flex-row mb-4 text-center xl:items-start items-center w-[100] justify-center mt-[80px] z-10">
+      <div className="flex-col xl:flex-row mb-4 text-center xl:items-start items-center w-full justify-center mt-[80px] z-10">
 
         {/* 01 card */}
         <div className="bg-blue-500 bg-opacity-50 flex flex-row text-left items-center
