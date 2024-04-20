@@ -41,7 +41,7 @@ export default function Section8({
 
         {/* 01 card */}
         <div className="bg-blue-500 bg-opacity-50 flex flex-row text-left items-center
-        xs:w-[100] sm:w-[500px] md:w-[500px] lg:w-[900px] xl:w-[1000px] 
+        xs:w-full sm:w-[500px] md:w-[500px] lg:w-[900px] xl:w-[1000px] 
         xs:h-[100px] sm:h-[220px] md:h-[220px] lg:h-[200px] xl:h-[200px]
         m-auto mt-0 rounded-3xl">
           
@@ -110,14 +110,6 @@ export default function Section8({
         </div>
 
       </div>
-      {/* <div className="pt-5 text-center">
-        <Button
-          size="medium"
-          type="primary"
-          label={buttonLabel}
-          path="https://virufy.org/study/welcome"
-        />
-      </div> */}
     </div>
   )
 }

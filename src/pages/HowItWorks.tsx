@@ -17,8 +17,9 @@ export default function HowItWorks() {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
-        
-      <Image src={howItWorks1} alt='background' className="absolute top-0 left-0 w-full h-full object-cover z-0 "/> 
+
+      {/* Background img 1   */}
+      <Image src={howItWorks1} alt='background 1' className="absolute top-0 left-0 w-full h-full object-cover z-0 "/> 
       
         <div className="flex flex-col items-center justify-center text-white z-10">
         
@@ -48,8 +49,8 @@ export default function HowItWorks() {
           <div className='w-full mt-60 z-10'>
 
           {/* Background img 2  */}
-          <Image src={howItWorksStep3} alt='background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
-          xs:h-100 sm:h-[950px] md:h-[940px] lg:h-[100] xl:h-[890px]"/>
+          <Image src={howItWorksStep3} alt='cards background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
+          xs:h-100 sm:h-[950px] md:h-[940px] lg:h-full xl:h-[890px]"/>
 
             <Section8
               TitleLabel={sectiontCovidTestExplanation?.title}
@@ -59,7 +60,7 @@ export default function HowItWorks() {
               //Image
               sizeImg="pr30"
               border="none"
-              route1={""}
+              route1={''}
               route2={''}
               route3={''}
               alt=""

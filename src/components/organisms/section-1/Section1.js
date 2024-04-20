@@ -22,14 +22,13 @@ export default function Section1({
 }) {
   return (
     <div className="
-      w-[100]
+      w-full
       flex-col-reverse
       max-w-[1440px]
       space-y-4 
       flex 
       items-center
-      pr-20
-      pl-20
+      px-20
       lg:space-x-4 
       lg:space-y-0 
       lg:justify-center 
@@ -68,8 +67,6 @@ export default function Section1({
             className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
           >
             <Button size="medium" type="primary" path="https://virufy.org/paper" label={shareButtonLabel} /> 
-            {/* <Button size="medium" type="secondary" path="/ourTechnology" label={learnMoreButtonLabel} /> */}
-
           </div> : null
         }
 
