@@ -13,13 +13,11 @@ import {
 export default function AboutUs() {
   return (
     <div>
-      {/* TODO: try swapping section with div or classes between section and div */}
-      {/* About Us Section */}
       <section className="h-[52vh]">
         {/* About Us Container */}
-        <div className="absolute top-0 left-0 h-[60vh] bg-gradient-to-b from-black to-[#162b4c]">
+        <div className="absolute top-0 left-0 h-[60vh] w-full bg-gradient-to-b from-black to-[#162b4c]">
           <Image
-            className="h-full w-screen object-cover opacity-40"
+            className="h-full w-full object-cover opacity-40"
             src={MaskHeader}
             alt="image of a person wearing face mask"
           />
@@ -27,8 +25,8 @@ export default function AboutUs() {
           {/* Text Position Container */}
           <div className="absolute inset-0 flex flex-col items-center justify-center lg:right-56">
             {/* Sizing & Spacing Container */}
-            <div className="max-w-lg space-y-6 px-10 text-center text-white lg:max-w-2xl lg:text-left">
-              <h2 className="text-5xl">About Us</h2>
+            <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white lg:max-w-2xl lg:text-left">
+              <h2 className="text-5xl font-normal">About Us</h2>
               <p>
                 Our innovative approach aims to offer superior COVID
                 pre-screening for patients, clinicians and governments,
@@ -45,23 +43,23 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <div className="relative h-[230vh] w-full bg-gradient-to-b from-[#162b4c] to-[#3468b2] md:h-[180vh] lg:h-[160vh] xl:h-[160vh]">
+      <div className="relative w-full bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <Image
           src={HalfToneDots}
           alt="background with dots"
-          className="h-full w-full object-cover opacity-40"
+          className="absolute h-full w-full object-cover opacity-40"
         />
 
         {/* Story, Values, Privacy Container */}
-        <div className="absolute inset-0 top-40">
+        <div className="py-40">
           {/* Story Section */}
           <div className="">
             <section className="mb-40">
               {/* Story Container */}
               <div className="relative flex items-center justify-center lg:right-28">
                 {/* Sizing & Spacing Container */}
-                <div className="max-w-lg space-y-6 px-10 text-center text-white lg:max-w-2xl lg:text-left">
-                  <h2 className="text-5xl">Story</h2>
+                <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl lg:text-left">
+                  <h2 className="text-5xl font-normal">Story</h2>
                   <p>
                     When the pandemic hit, Virufy’s founder, Amil Khanzada, knew
                     smartphones were omnipresent and that COVID impacted the
@@ -88,8 +86,8 @@ export default function AboutUs() {
             {/* Values Container */}
             <div className="flex items-center justify-center">
               {/* Sizing & Spacing Container */}
-              <div className="max-w-3xl space-y-6 px-10 text-left text-white lg:max-w-4xl">
-                <h2 className="text-center text-5xl text-white lg:text-left">
+              <div className="max-w-3xl space-y-6 px-10 text-left font-medium text-white opacity-95 lg:max-w-4xl">
+                <h2 className="text-center text-5xl font-normal lg:text-left">
                   Values
                 </h2>
 
@@ -228,13 +226,13 @@ export default function AboutUs() {
           </section>
 
           {/* Privacy Section */}
-          <section className="mb-40">
+          <section>
             {/* Privacy Container */}
-            <div className="mx-auto max-w-lg px-10 text-center lg:max-w-2xl">
-              <h2 className="mb-10 text-5xl text-white">
+            <div className="mx-auto max-w-xl px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl">
+              <h2 className="mb-10 text-5xl font-normal">
                 Our Commitment to Privacy
               </h2>
-              <p className="leading-10 text-white lg:leading-normal">
+              <p className="leading-10 lg:leading-normal">
                 Virufy takes the privacy and protection of your personal
                 information seriously. Our legal team has prepared a detailed
                 Privacy Policy and Cookie Policy to protect the personal
