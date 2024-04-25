@@ -12,37 +12,41 @@ import {
 
 export default function AboutUs() {
   return (
-    <div>
-      <section className="h-[52vh]">
-        {/* About Us Container */}
-        <div className="absolute top-0 left-0 h-[60vh] w-full bg-gradient-to-b from-black to-[#162b4c]">
+    <div className="relative -top-24 w-full">
+      {/* Hero Section */}
+      <section>
+        <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
           <Image
-            className="h-full w-full object-cover opacity-40"
+            className="absolute h-full w-full object-cover opacity-40"
             src={MaskHeader}
-            alt="image of a person wearing face mask"
+            alt="background image of a person's face wearing face mask"
           />
 
-          {/* Text Position Container */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center lg:right-56">
-            {/* Sizing & Spacing Container */}
-            <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white lg:max-w-2xl lg:text-left">
-              <h2 className="text-5xl font-normal">About Us</h2>
-              <p>
-                Our innovative approach aims to offer superior COVID
-                pre-screening for patients, clinicians and governments,
-                especially in low-income countries.
-              </p>
-              <p>
-                We aspire to be the leading nonprofit organization for
-                technology - enabled disease identification, transforming global
-                healthcare and inspiring others to support and invest in this
-                mission with us.
-              </p>
+          {/* About Us Container */}
+          <div className="py-60">
+            {/* Position Container */}
+            <div className="relative flex flex-col items-center justify-center lg:right-28">
+              {/* Sizing & Spacing Container */}
+              <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white lg:max-w-2xl lg:text-left">
+                <h2 className="text-5xl font-normal">About Us</h2>
+                <p>
+                  Our innovative approach aims to offer superior COVID
+                  pre-screening for patients, clinicians and governments,
+                  especially in low-income countries.
+                </p>
+                <p>
+                  We aspire to be the leading nonprofit organization for
+                  technology - enabled disease identification, transforming
+                  global healthcare and inspiring others to support and invest
+                  in this mission with us.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Gradient Overlay Container */}
       <div className="relative w-full bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <Image
           src={HalfToneDots}
@@ -50,36 +54,34 @@ export default function AboutUs() {
           className="absolute h-full w-full object-cover opacity-40"
         />
 
-        {/* Story, Values, Privacy Container */}
-        <div className="py-40">
+        {/* Story, Values, and Privacy Container */}
+        <div className="-mb-24 py-40">
           {/* Story Section */}
-          <div className="">
-            <section className="mb-40">
-              {/* Story Container */}
-              <div className="relative flex items-center justify-center lg:right-28">
-                {/* Sizing & Spacing Container */}
-                <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl lg:text-left">
-                  <h2 className="text-5xl font-normal">Story</h2>
-                  <p>
-                    When the pandemic hit, Virufy’s founder, Amil Khanzada, knew
-                    smartphones were omnipresent and that COVID impacted the
-                    nose, throat, and lungs.
-                  </p>
-                  <p>
-                    He hypothesized that breathing and cough sounds could be
-                    analyzed with machine learning to detect COVID patterns.
-                  </p>
-                  <p>
-                    Wanting to make a positive impact, he orchestrated a
-                    clinical study with 362 patients in an esteemed university
-                    hospital. The original team of Virufy, beginning with
-                    Stanford graduate AI students, expanded to volunteers from
-                    universities globally.
-                  </p>
-                </div>
+          <section className="mb-40">
+            {/* Story Container */}
+            <div className="relative flex items-center justify-center lg:right-28">
+              {/* Sizing & Spacing Container */}
+              <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl lg:text-left">
+                <h2 className="text-5xl font-normal">Story</h2>
+                <p>
+                  When the pandemic hit, Virufy’s founder, Amil Khanzada, knew
+                  smartphones were omnipresent and that COVID impacted the nose,
+                  throat, and lungs.
+                </p>
+                <p>
+                  He hypothesized that breathing and cough sounds could be
+                  analyzed with machine learning to detect COVID patterns.
+                </p>
+                <p>
+                  Wanting to make a positive impact, he orchestrated a clinical
+                  study with 362 patients in an esteemed university hospital.
+                  The original team of Virufy, beginning with Stanford graduate
+                  AI students, expanded to volunteers from universities
+                  globally.
+                </p>
               </div>
-            </section>
-          </div>
+            </div>
+          </section>
 
           {/* Values Section */}
           <section className="mb-40">
@@ -95,7 +97,6 @@ export default function AboutUs() {
                 <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-[#132D62] px-16 py-12 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-y-16 lg:gap-x-20 lg:space-y-0 lg:px-20">
                   {/* Card 1 Container */}
                   <div>
-                    {/* Title Container */}
                     <div className="mb-4 flex items-center space-x-2 lg:mb-0">
                       <h3 className="text-2xl font-semibold text-[#3686ff]">
                         Transformation
@@ -113,7 +114,6 @@ export default function AboutUs() {
 
                   {/* Card 2 Container */}
                   <div>
-                    {/* Title Container */}
                     <div className="mb-4 flex items-center space-x-2 lg:mb-0">
                       <h3 className="text-2xl font-semibold text-[#3686ff]">
                         Collaboration
@@ -136,7 +136,6 @@ export default function AboutUs() {
 
                   {/* Card 3 Container */}
                   <div>
-                    {/* Title Container */}
                     <div className="mb-4 flex items-center space-x-2 lg:mb-0">
                       <h3 className="text-2xl font-semibold text-[#3686ff]">
                         Health
@@ -159,7 +158,6 @@ export default function AboutUs() {
 
                   {/* Card 4 Container */}
                   <div>
-                    {/* Title Container */}
                     <div className="mb-4 flex items-center space-x-2 lg:mb-0">
                       <h3 className="text-2xl font-semibold text-[#3686ff]">
                         Affordability
@@ -177,7 +175,6 @@ export default function AboutUs() {
 
                   {/* Card 5 Container */}
                   <div>
-                    {/* Title Container */}
                     <div className="mb-4 flex items-center space-x-1 lg:mb-0">
                       <h3 className="text-2xl font-semibold text-[#3686ff]">
                         Efficiency
@@ -200,7 +197,6 @@ export default function AboutUs() {
 
                   {/* Card 6 Container */}
                   <div>
-                    {/* Title Container */}
                     <div className="mb-4 flex items-center space-x-1 lg:mb-0">
                       <h3 className="text-2xl font-semibold text-[#3686ff]">
                         Innovation
