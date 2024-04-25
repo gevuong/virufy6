@@ -1,16 +1,21 @@
 import Image from 'next/image'
 import {
-  LoopIcon,
-  GlobeIcon,
-  HeartRhythmIcon,
-  TeamIcon,
   FingerSnapIcon,
-  PhoneInHandIcon,
-  MaskHeader,
+  GlobeIcon,
   HalfToneDots,
+  HeartRhythmIcon,
+  LoopIcon,
+  MaskHeader,
+  PhoneInHandIcon,
+  TeamIcon,
 } from '~/assets/static/images/aboutUs/index'
+import { useI18n } from '~/i18n'
 
 export default function AboutUs() {
+  const {
+    AboutUs: { aboutUsSection },
+  } = useI18n()
+
   return (
     <div className="relative -top-24 w-full">
       {/* Hero Section */}
@@ -28,7 +33,7 @@ export default function AboutUs() {
             <div className="relative flex flex-col items-center justify-center lg:right-28">
               {/* Sizing & Spacing Container */}
               <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white lg:max-w-2xl lg:text-left">
-                <h2 className="text-5xl font-normal">About Us</h2>
+                <h2 className="text-5xl font-normal">{aboutUsSection.title}</h2>
                 <p>
                   Our innovative approach aims to offer superior COVID
                   pre-screening for patients, clinicians and governments,
