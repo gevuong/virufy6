@@ -64,7 +64,7 @@ import Card2VH from "~/assets/static/images/ourSupporters/card2-VH.png" */
 import SectionOneYoungWorld from '~/components/organisms/SectionOneYoungWorld/SectionOneYoungWorld'
 import TitleText from '~/components/molecules/TitleText/TitleText'
 import CardSliderTall from '~/components/organisms/CardSlider/CardSliderTall'
-import OurSupportersSection from '~/components/organisms/OurSupportersSection/OurSupportersSection'
+import OurSupportersSection from '~/components/organisms/OurSupportersSection/OurSupportersSection2'
 
 export default function OurSupporters() {
   const {
@@ -215,18 +215,20 @@ export default function OurSupporters() {
 
   return (
     <>
+
+      {/* globe img */}
       <TextinsImg2
-        sizeImg="auto"
+        sizeImg=""
         borderImg="none"
         src={ImageinsText}
         altImg="background img"
-        Text={titleImage}
+        Text={titleImage} 
       />
 
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#111B2E] to-[#4064AD] z-10 -top-24 relative">
 
-        <div className="flex max-w-[1440px] flex-col items-center justify-center ">
-          <OurSupportersSection TextProps={sectionSupporters} />
+        <div className="flex max-w-[1440px] flex-col items-center justify-center" id='supps'>
+         <OurSupportersSection TextProps={sectionSupporters} />
         </div>
         
         {/* <div className="flex w-[100%] flex-col items-center justify-center bg-[#F9FAFB]">

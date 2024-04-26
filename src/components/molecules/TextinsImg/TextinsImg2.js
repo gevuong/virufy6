@@ -9,8 +9,8 @@ export default function TextinsImg({
   Text
 }) {
   return (
-    <div className="over overflow-hidden absolute flex justify-center top-0">
-      <div className="h-[700px]">
+    <div className="flex justify-center -top-24 relative">
+      <div className="h-[700px] object-cover w-full h-full object-cover">
         <ImageAtomLocal
         ImageStyleProps=""
           imagesize={sizeImg}
