@@ -11,8 +11,9 @@ import { useI18n } from '~/i18n'
 
 export default function Footer() {
   const links1 = [
+    { label: 'Home', route: '/home' },
     { label: 'Our Technology', route: '/OurTechnology' },
-    { label: 'Get Involved', route: '/GetInvolved' },
+    { label: 'CoughCheck App', route: '/GetInvolved' },
     { label: 'About', route: '/AboutUs' },
     { label: 'FAQ', route: '/FAQ' },
   ]
@@ -770,7 +771,7 @@ export default function Footer() {
         ) : null}
       </div>
 
-      <footer className="bg-gray-200">
+      <footer className="bg-black">
         <div className="mx-auto flex w-full max-w-screen-xl flex-col p-4 py-10">
           <Link href="/" className="flex justify-center lg:hidden">
             <ImageAtomLocal
@@ -781,9 +782,6 @@ export default function Footer() {
               border=""
             />
           </Link>
-          <div className="flex w-full">
-            <hr className="mx-auto my-4 h-px w-11/12 rounded border-0 bg-gray-700" />
-          </div>
           <div className="absolute mx-12 mt-12 hidden w-56 justify-start lg:flex">
             <Link href="/">
               <ImageAtomLocal
@@ -795,47 +793,64 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <ul className="mb-6 flex flex-wrap text-[#393939] lg:hidden">
-            <li className="my-1 flex w-full items-center justify-center underline">
+          <ul className="mb-6 flex flex-wrap text-white lg:hidden">
+            <li className="my-1 flex w-full items-center justify-center">
               <LinkAtom Routes={links1} Style="linkFooter" />
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="my-1 flex w-full items-center justify-center">
               <div onClick={() => setShowModalCookiesPolicy(true)}>
                 <LinkAtom Routes={links2} Style="linkFooter" />
               </div>
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="my-1 flex w-full items-center justify-center">
               <LinkAtom Routes={links3} Style="linkFooter" />
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="my-1 flex w-full items-center justify-center">
               <div onClick={() => setShowModalPrivacyPolicy(true)}>
                 <LinkAtom Routes={links4} Style="linkFooter" />
               </div>
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="my-1 flex w-full items-center justify-center">
               <div onClick={() => setShowModalMyInformation(true)}>
                 <LinkAtom Routes={links5} Style="linkFooter" />
               </div>
             </li>
           </ul>
-          <ul className="mb-6 hidden flex-wrap text-[#393939] lg:flex">
-            <li className="my-6 flex w-full items-center justify-center underline">
-              <LinkAtom Routes={links1} Style="linkFooter" />
-            </li>
-
-            <li className="my-6 flex w-full items-center justify-center underline">
-              <div onClick={() => setShowModalCookiesPolicy(true)}>
-                <LinkAtom Routes={links2} Style="linkFooter" />
-              </div>
-              <div onClick={() => setShowModalPrivacyPolicy(true)}>
-                <LinkAtom Routes={links4} Style="linkFooter" />
-              </div>
-
-              <div onClick={() => setShowModalMyInformation(true)}>
-                <LinkAtom Routes={links5} Style="linkFooter" />
-              </div>
+          <ul className="mb-6 hidden flex-wrap text-white lg:flex">
+            <li className="mt-16 space-x-10 flex w-full align-text-bottom justify-center">
+              {links1.map((link, index) => {
+                return(
+                  <Link
+                    key={index}
+                    className='hover:before:scale-x-100 hover:before:origin-left
+                      relative before:w-full before:h-0.5 before:origin-right
+                      before:transition-transform before:duration-300 before:scale-x-0
+                      before:bg-white before:absolute before:left-0 before:bottom-0'
+                    href={link.route}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
             </li>
           </ul>
+          <div className="flex w-full">
+            <hr className="mx-auto my-4 h-px w-11/12 rounded border-0 bg-white" />
+          </div>
+          <li className="my-6 space-x-4 flex text-white font-semibold w-full items-center justify-center">
+            <div onClick={() => setShowModalCookiesPolicy(true)}>
+              <LinkAtom Routes={links2} Style="linkFooter" />
+            </div>
+            <div onClick={() => setShowModalCookiesSetting(true)}>
+              <LinkAtom  Routes={links3} Style="linkFooter" />
+            </div>
+            <div onClick={() => setShowModalPrivacyPolicy(true)}>
+              <LinkAtom Routes={links4} Style="linkFooter" />
+            </div>
+            <div onClick={() => setShowModalMyInformation(true)}>
+              <LinkAtom Routes={links5} Style="linkFooter" />
+            </div>
+          </li>
           <div className="flex justify-center gap-7">
             <Link
               href="https://www.instagram.com/virufy/"
@@ -886,7 +901,7 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <div className="align-center mt-7 flex w-full flex-col gap-7 text-[#393939] lg:hidden">
+          <div className="align-center mt-7 flex w-full flex-col gap-7 text-white lg:hidden">
             <div className="align-center m-auto max-w-4xl text-center">
               <Text Text="Nonprofit Status" Style="normal" TextClassProps="" />
             </div>
@@ -905,11 +920,11 @@ export default function Footer() {
               />
             </div>
           </div>
-          <div className="align-center mt-10 hidden w-full flex-col gap-7 text-[#393939] lg:flex">
-            <div className="align-center m-auto max-w-4xl text-center">
+          <div className="align-center mt-10 hidden w-full flex-col gap-7 text-white lg:flex">
+            <div className="align-center m-auto max-w-4xl font-semibold text-center">
               <Text
                 Text="Nonprofit Status"
-                Style="subtitle"
+                Style="small"
                 TextClassProps=""
               />
             </div>
@@ -917,14 +932,14 @@ export default function Footer() {
               <Text
                 TextClassProps=""
                 Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
-                Style="subtitle"
+                Style="normalCardHome"
               />
             </div>
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
                 Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
-                Style="subtitle"
+                Style="normalCardHome"
               />
             </div>
           </div>
