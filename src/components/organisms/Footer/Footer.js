@@ -900,7 +900,7 @@ export default function Footer() {
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
                 Style="normal"
               />
             </div>
@@ -923,7 +923,7 @@ export default function Footer() {
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
                 Style="subtitle"
               />
             </div>
