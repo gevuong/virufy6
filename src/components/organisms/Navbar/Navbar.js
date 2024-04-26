@@ -145,9 +145,14 @@ export default function Navbar() {
                             }`}
                     >
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 xl:space-x-9 lg:space-y-0">
-                            <li className="text-white">
+                            <li className="text-[#393939]">
                                 <div>
-                                    <Link className="peer py-2 text-white" href="/OurTechnology">{ourTecnology?.section}</Link>
+
+                                </div>
+                            </li>
+                            <li className="text-[#393939]">
+                                <div>
+                                    <Link className="peer py-2 text-[#393939]" href="/OurTechnology">{ourTecnology?.section}</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/HowItWorks">{ourTecnology?.howItWorks}</Link>
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">{ourTecnology?.shareYourCough}</Link>
@@ -158,7 +163,7 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <Link className="peer py-2 text-white" href="/GetInvolved">{getInvolved?.section}</Link>
+                                    <Link className="peer py-2 text-[#393939]" href="/GetInvolved">{getInvolved?.section}</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <Link onClick={() => setShowModal(true)} className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="#">{getInvolved?.donate}</Link>
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/JobListing">{getInvolved?.joinOurTeam}</Link>
@@ -168,7 +173,7 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <Link className="peer py-2 text-white" href="/AboutUs">{aboutUs?.section}</Link>
+                                    <Link className="peer py-2 text-[#393939]" href="/AboutUs">{aboutUs?.section}</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurPeople1">{aboutUs?.ourPeople}</Link>
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurSupporters">{aboutUs?.ourSopporters}</Link>
@@ -179,7 +184,7 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <Link className="peer py-2 text-white" href="/FAQ">{faq}</Link>
+                                    <Link className="peer py-2 text-[#393939]" href="/FAQ">{faq}</Link>
                                 </div>
                             </li>
 

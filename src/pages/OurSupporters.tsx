@@ -1,4 +1,4 @@
-import TextinsImg from '~/components/molecules/TextinsImg/TextinsImg'
+import TextinsImg2 from '~/components/molecules/TextinsImg/TextinsImg2'
 import ImageinsText from '~/assets/static/images/ourSupporters/ImageinsText.png'
 import CardLarge from '~/components/organisms/section-9/CardLarge'
 
@@ -29,6 +29,34 @@ import Card17TL from '~/assets/static/images/ourSupporters/card17.png'
 import Card18TL from '~/assets/static/images/ourSupporters/card18.png'
 import Card19TL from '~/assets/static/images/ourSupporters/card19.png'
 import Card from '~/components/molecules/Card/Card'
+
+import Supporter1 from '~/assets/static/images/ourSupporters/icon-supports/supporter-1.png'
+import Supporter2 from '~/assets/static/images/ourSupporters/icon-supports/supporter-2.png'
+import Supporter3 from '~/assets/static/images/ourSupporters/icon-supports/supporter-3.png'
+import Supporter4 from '~/assets/static/images/ourSupporters/icon-supports/supporter-4.png'
+import Supporter5 from '~/assets/static/images/ourSupporters/icon-supports/supporter-5.png'
+import Supporter6 from '~/assets/static/images/ourSupporters/icon-supports/supporter-6.png'
+import Supporter7 from '~/assets/static/images/ourSupporters/icon-supports/supporter-7.png'
+import Supporter8 from '~/assets/static/images/ourSupporters/icon-supports/supporter-8.png'
+import Supporter9 from '~/assets/static/images/ourSupporters/icon-supports/supporter-9.png'
+import Supporter10 from '~/assets/static/images/ourSupporters/icon-supports/supporter-10.png'
+import Supporter11 from '~/assets/static/images/ourSupporters/icon-supports/supporter-11.png'
+import Supporter12 from '~/assets/static/images/ourSupporters/icon-supports/supporter-12.png'
+import Supporter13 from '~/assets/static/images/ourSupporters/icon-supports/supporter-13.png'
+import Supporter14 from '~/assets/static/images/ourSupporters/icon-supports/supporter-14.png'
+import Supporter15 from '~/assets/static/images/ourSupporters/icon-supports/supporter-15.png'
+import Supporter16 from '~/assets/static/images/ourSupporters/icon-supports/supporter-16.png'
+import Supporter17 from '~/assets/static/images/ourSupporters/icon-supports/supporter-17.png'
+import Supporter18 from '~/assets/static/images/ourSupporters/icon-supports/supporter-18.png'
+import Supporter19 from '~/assets/static/images/ourSupporters/icon-supports/supporter-19.png'
+import Supporter20 from '~/assets/static/images/ourSupporters/icon-supports/supporter-20.png'
+import Supporter21 from '~/assets/static/images/ourSupporters/icon-supports/supporter-21.png'
+import Supporter22 from '~/assets/static/images/ourSupporters/icon-supports/supporter-22.png'
+import Supporter23 from '~/assets/static/images/ourSupporters/icon-supports/supporter-23.png'
+import Supporter24 from '~/assets/static/images/ourSupporters/icon-supports/supporter-24.png'
+import Supporter25 from '~/assets/static/images/ourSupporters/icon-supports/supporter-25.png'
+import Supporter26 from '~/assets/static/images/ourSupporters/icon-supports/supporter-26.png'
+import Supporter27 from '~/assets/static/images/ourSupporters/icon-supports/supporter-27.png'
 
 /* import Card1VH from "~/assets/static/images/ourSupporters/card1-VH.png"
 import Card2VH from "~/assets/static/images/ourSupporters/card2-VH.png" */
@@ -187,21 +215,23 @@ export default function OurSupporters() {
 
   return (
     <>
-      <TextinsImg
+      <TextinsImg2
         sizeImg="auto"
         borderImg="none"
         src={ImageinsText}
-        altImg="Imagen cabezera"
+        altImg="background img"
         Text={titleImage}
       />
 
       <div className="flex flex-col items-center justify-center">
+
         <div className="flex max-w-[1440px] flex-col items-center justify-center ">
           <OurSupportersSection TextProps={sectionSupporters} />
         </div>
-        <div className="flex w-[100%] flex-col items-center justify-center bg-[#F9FAFB]">
-          <div className="mt-[190px] flex max-w-[1440px] flex-col items-center justify-center bg-[#F9FAFB] pb-[362px]">
-            <SectionOneYoungWorld TextProps={sectionOneYoungWorld} />
+        
+        {/* <div className="flex w-[100%] flex-col items-center justify-center bg-[#F9FAFB]">
+          <div className="mt-[190px] flex max-w-[1440px] flex-col items-center justify-center bg-[#F9FAFB] pb-[362px]"> */}
+            {/* <SectionOneYoungWorld TextProps={sectionOneYoungWorld} />
 
             <Title
               H="h2"
@@ -222,13 +252,15 @@ export default function OurSupporters() {
               TextClassProps={'m-10 '}
               ContainerTitleProps
               ContainerTextProps="max-w-[800px] mb-[80px]"
-            />
+            /> */}
 
             {/* DESCOMENTAR CUANDO FUNCIONE EL CMS ////////////////////////////*/}
             {/* <CardSliderTall /> */}
-          </div>
-        </div>
-        <div className="my-[80px] flex max-w-[1440px] flex-col items-center justify-center">
+          {/* </div>
+        </div> */}
+
+        {/* team leads section */}
+        {/* <div className="my-[80px] flex max-w-[1440px] flex-col items-center justify-center">
           <Title
             H="h2"
             Text={sectionTeamLeads.title}
@@ -238,7 +270,7 @@ export default function OurSupporters() {
             CardsData={CardsDataTL}
             CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[15px] h-[350px] shadow-xl"
           />
-        </div>
+        </div> */}
       </div>
     </>
   )
