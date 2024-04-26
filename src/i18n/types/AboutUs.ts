@@ -12,9 +12,10 @@ interface ValuesSection {
   cards: ValuesCard[]
 }
 
-interface ValuesCard {
+export interface ValuesCard {
   title: string
-  card: StaticImageData
+  image: StaticImageData
+  imageText: string
   text: string
 }
 

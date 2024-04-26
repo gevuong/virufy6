@@ -1,10 +1,10 @@
 import {
-  LoopIcon,
+  FingerSnapIcon,
   GlobeIcon,
   HeartRhythmIcon,
-  TeamIcon,
-  FingerSnapIcon,
+  LoopIcon,
   PhoneInHandIcon,
+  TeamIcon,
 } from '~/assets/static/images/aboutUs/index'
 
 export const AboutUs = {
@@ -28,32 +28,38 @@ export const AboutUs = {
     cards: [
       {
         title: 'Transformation',
-        card: LoopIcon,
+        image: LoopIcon,
+        imageText: 'loop icon',
         text: 'We aim to transform expensive healthcare systems by using technology to drive necessary changes.',
       },
       {
         title: 'Collaboration',
-        card: GlobeIcon,
+        image: GlobeIcon,
+        imageText: 'globe icon',
         text: 'We commit to making rapid disease detection available to every person in the world, regardless of background.',
       },
       {
         title: 'Health',
-        card: HeartRhythmIcon,
+        image: HeartRhythmIcon,
+        imageText: 'heart rhythm icon',
         text: 'We commit to always putting the health and well-being of all people across the globe first and foremost.',
       },
       {
         title: 'Affordability',
-        card: TeamIcon,
+        image: TeamIcon,
+        imageText: 'group of people icon',
         text: 'We aim to use technology to make disease prevention and detection free for all people around the world.',
       },
       {
         title: 'Efficiency',
-        card: FingerSnapIcon,
+        image: FingerSnapIcon,
+        imageText: 'finger snapping icon',
         text: 'We commit to creating intuitive technology that delivers rapid detection, stopping virus spread and saving lives.',
       },
       {
         title: 'Innovation',
-        card: PhoneInHandIcon,
+        image: PhoneInHandIcon,
+        imageText: 'phone in hand icon',
         text: 'We aim to ensure rapid detection of diseases with just one tap on a mobile device.',
       },
     ],
