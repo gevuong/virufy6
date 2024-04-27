@@ -24,6 +24,16 @@ interface Section {
   texts: string[]
 }
 
+interface StorySection {
+  title: string
+  texts: StorySectionText[][]
+}
+
+interface StorySectionText {
+  type: 'text' | 'link'
+  text: string
+  url?: string
+}
+
 type AboutUsSection = Section
-type StorySection = Section
 type PrivacySection = Section

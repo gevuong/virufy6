@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { Fragment } from 'react'
 import { HalfToneDots, MaskHeader } from '~/assets/static/images/aboutUs/index'
 import ValuesCard from '~/components/molecules/Card/ValuesCard'
 import { useI18n } from '~/i18n'
@@ -10,26 +12,24 @@ export default function AboutUs() {
 
   return (
     <div className="relative -top-24 w-full">
-      {/* Hero Section */}
+      {/* About Us Hero Section */}
       <section>
         <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
           <Image
             className="absolute h-full w-full object-cover opacity-40"
             src={MaskHeader}
             alt="background image of a person's face wearing a face mask"
+            priority
           />
 
-          {/* About Us Text Container */}
-          <div className="py-60">
-            {/* Position Container */}
-            <div className="relative flex flex-col items-center justify-center lg:right-28">
-              {/* Sizing & Spacing Container */}
-              <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white lg:max-w-2xl lg:text-left">
-                <h2 className="text-5xl font-normal">{aboutUsSection.title}</h2>
-                {aboutUsSection.texts.map((text, i) => (
-                  <p key={i}>{text}</p>
-                ))}
-              </div>
+          {/* Text Container */}
+          <div className="relative flex flex-col items-center justify-center py-60 lg:right-28">
+            {/* Sizing & Spacing Container */}
+            <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white lg:max-w-2xl lg:text-left">
+              <h2 className="text-5xl font-normal">{aboutUsSection.title}</h2>
+              {aboutUsSection.texts.map((text, i) => (
+                <p key={i}>{text}</p>
+              ))}
             </div>
           </div>
         </div>
@@ -52,8 +52,20 @@ export default function AboutUs() {
               {/* Sizing & Spacing Container */}
               <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl lg:text-left">
                 <h2 className="text-5xl font-normal">{storySection.title}</h2>
-                {storySection.texts.map((text, i) => (
-                  <p key={i}>{text}</p>
+                {storySection.texts.map((el, i) => (
+                  // render text or an anchor tag in paragraph element
+                  <p key={i}>
+                    {el.map((text, i) =>
+                      text.type === 'text' ? (
+                        <Fragment key={i}>{text.text}</Fragment>
+                      ) : (
+                        // <span key={i}>{text.text}</span>
+                        <Link className="text-blue-500" key={i} href={text.url}>
+                          {text.text}
+                        </Link>
+                      ),
+                    )}
+                  </p>
                 ))}
               </div>
             </div>

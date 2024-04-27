@@ -18,9 +18,33 @@ export const AboutUs = {
   storySection: {
     title: 'Historia',
     texts: [
-      'Cuando llegó la pandemia, el fundador de Virufy, Amil Khanzada, sabía que los teléfonos inteligentes eran omnipresentes y que el COVID afectaba la nariz, la garganta y los pulmones.',
-      'Planteó la hipótesis de que los sonidos de la respiración y la tos podrían analizarse con aprendizaje automático para detectar patrones de COVID.',
-      'Con el deseo de generar un impacto positivo, orquestó un estudio clínico con 362 pacientes en un prestigioso hospital universitario. El equipo original de Virufy, que comenzó con estudiantes graduados en IA de Stanford, se amplió a voluntarios de universidades de todo el mundo.',
+      [
+        {
+          type: 'text',
+          text: 'Cuando llegó la pandemia, ',
+        },
+        {
+          type: 'link',
+          url: '/OurPeople2',
+          text: 'el fundador de Virufy, Amil Khanzada',
+        },
+        {
+          type: 'text',
+          text: ', sabía que los teléfonos inteligentes eran omnipresentes y que el COVID afectaba la nariz, la garganta y los pulmones.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Planteó la hipótesis de que los sonidos de la respiración y la tos podrían analizarse con aprendizaje automático para detectar patrones de COVID.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Con el deseo de generar un impacto positivo, orquestó un estudio clínico con 362 pacientes en un prestigioso hospital universitario. El equipo original de Virufy, que comenzó con estudiantes graduados en IA de Stanford, se amplió a voluntarios de universidades de todo el mundo.',
+        },
+      ],
     ],
   },
   valuesSection: {

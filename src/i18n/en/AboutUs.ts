@@ -18,9 +18,33 @@ export const AboutUs = {
   storySection: {
     title: 'Story',
     texts: [
-      'When the pandemic hit, Virufy’s founder, Amil Khanzada, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
-      'He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns.',
-      'Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities globally.',
+      [
+        {
+          type: 'text',
+          text: 'When the pandemic hit, ',
+        },
+        {
+          type: 'link',
+          url: '/OurPeople2',
+          text: 'Virufy’s founder, Amil Khanzada',
+        },
+        {
+          type: 'text',
+          text: ', knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities globally.',
+        },
+      ],
     ],
   },
   valuesSection: {
