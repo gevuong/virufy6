@@ -7,21 +7,11 @@ export interface AboutUs {
   privacySection: PrivacySection
 }
 
-interface ValuesSection {
-  title: string
-  cards: ValuesCard[]
-}
-
 export interface ValuesCard {
   title: string
   image: StaticImageData
   imageText: string
   text: string
-}
-
-interface Section {
-  title: string
-  texts: string[]
 }
 
 interface StorySection {
@@ -30,9 +20,19 @@ interface StorySection {
 }
 
 interface StorySectionText {
-  type: 'text' | 'link'
+  type: string
   text: string
   url?: string
+}
+
+interface ValuesSection {
+  title: string
+  cards: ValuesCard[]
+}
+
+interface Section {
+  title: string
+  texts: string[]
 }
 
 type AboutUsSection = Section

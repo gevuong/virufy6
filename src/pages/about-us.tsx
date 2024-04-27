@@ -53,7 +53,7 @@ export default function AboutUs() {
               <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl lg:text-left">
                 <h2 className="text-5xl font-normal">{storySection.title}</h2>
                 {storySection.texts.map((el, i) => (
-                  // render text or an anchor tag in paragraph element
+                  // render fragment or link component in paragraph element
                   <p key={i}>
                     {el.map((text, i) =>
                       text.type === 'text' ? (
