@@ -13,7 +13,7 @@ export default function Footer() {
   const links1 = [
     { label: 'Our Technology', route: '/OurTechnology' },
     { label: 'Get Involved', route: '/GetInvolved' },
-    { label: 'About', route: '/AboutUs' },
+    { label: 'About', route: '/about-us' },
     { label: 'FAQ', route: '/FAQ' },
   ]
 
