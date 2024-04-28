@@ -16,7 +16,7 @@ export default function OurPublications() {
           alt=""
         />
         {/* Text Container */}
-        <div className="px-50 mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 py-52 px-10 text-center font-medium">
+        <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 py-52 px-10 text-center font-medium opacity-95">
           <h1 className="text-5xl text-green-500">Publications</h1>
           <p className="text-white">
             Below you can find several of our papers that showcase the
@@ -29,14 +29,14 @@ export default function OurPublications() {
       <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <Image
           src={HexagonDottedBackground}
-          className="absolute h-full w-full object-cover opacity-30"
+          className="absolute h-full w-full object-cover opacity-10"
           alt=""
         />
 
         {/* Cards Container */}
-        <div className="flex flex-col items-center justify-center space-y-8 px-10 pt-40">
+        <div className="relative flex flex-col items-center justify-center space-y-8 px-10 pt-28">
           {/* Card 1 Container */}
-          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+          <div className="space-y-4 rounded-xl bg-[#00000038] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
             <h3 className="max-w-lg text-xl font-medium md:max-w-md">
               Hierarchical Multi-modal Transformer for Automatic Detection of
               COVID-19
@@ -45,9 +45,8 @@ export default function OurPublications() {
               <ul className="list-inside list-disc">
                 <li>October 2022</li>
               </ul>
-              <button>
+              <button className="rounded-3xl bg-white py-2 px-8 text-[#123d62]">
                 <Link
-                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
                   target="_blank"
                   href="https://dl.acm.org/doi/10.1145/3556384.3556414"
                 >
@@ -58,7 +57,7 @@ export default function OurPublications() {
           </div>
 
           {/* Card 2 Container */}
-          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+          <div className="space-y-4 rounded-xl bg-[#00000038] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
             <h3 className="max-w-lg text-xl font-medium md:max-w-md">
               Covid 19 Calculator -- Positive U.S. Socio-Economic Impact
             </h3>
@@ -66,9 +65,8 @@ export default function OurPublications() {
               <ul className="list-inside list-disc">
                 <li>January 2022</li>
               </ul>
-              <button>
+              <button className="rounded-3xl bg-white py-2 px-8 text-[#123d62]">
                 <Link
-                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
                   target="_blank"
                   href="https://dl.acm.org/doi/10.1145/3556384.3556414"
                 >
@@ -79,7 +77,7 @@ export default function OurPublications() {
           </div>
 
           {/* Card 3 Container */}
-          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+          <div className="space-y-4 rounded-xl bg-[#00000038] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
             <h3 className="max-w-lg text-xl font-medium md:max-w-md">
               Using Deep Learning with Large Aggregated Datasets for COVID-19
               Classification from Cough
@@ -88,9 +86,8 @@ export default function OurPublications() {
               <ul className="list-inside list-disc">
                 <li>January 2022</li>
               </ul>
-              <button>
+              <button className="rounded-3xl bg-white py-2 px-8 text-[#123d62]">
                 <Link
-                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
                   target="_blank"
                   href="https://dl.acm.org/doi/10.1145/3556384.3556414"
                 >
@@ -101,7 +98,7 @@ export default function OurPublications() {
           </div>
 
           {/* Card 4 Container */}
-          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+          <div className="space-y-4 rounded-xl bg-[#00000038] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
             <h3 className="max-w-lg text-xl font-medium md:max-w-md">
               Virufy: Global Applicability of Crowdsourced and Clinical Datasets
               for AI Detection of COVID-19 from Cough
@@ -110,9 +107,8 @@ export default function OurPublications() {
               <ul className="list-inside list-disc">
                 <li>November 2020</li>
               </ul>
-              <button>
+              <button className="rounded-3xl bg-white py-2 px-8 text-[#123d62]">
                 <Link
-                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
                   target="_blank"
                   href="https://dl.acm.org/doi/10.1145/3556384.3556414"
                 >
@@ -123,7 +119,7 @@ export default function OurPublications() {
           </div>
 
           {/* Card 5 Container */}
-          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+          <div className="space-y-4 rounded-xl bg-[#00000038] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
             <h3 className="max-w-lg text-xl font-medium md:max-w-md">
               Challenges and Opportunities in the Deploying of COVID-19 Cough AI
               Systems
@@ -132,9 +128,8 @@ export default function OurPublications() {
               <ul className="list-inside list-disc">
                 <li>September 2021</li>
               </ul>
-              <button>
+              <button className="rounded-3xl bg-white py-2 px-8 text-[#123d62]">
                 <Link
-                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
                   target="_blank"
                   href="https://dl.acm.org/doi/10.1145/3556384.3556414"
                 >
@@ -146,11 +141,11 @@ export default function OurPublications() {
         </div>
 
         {/* Record/Share Your Cough Container */}
-        <div className="mx-auto max-w-4xl space-y-14 px-10 py-40 text-center font-medium text-white">
-          <p className="text-5xl leading-normal">
+        <div className="relative mx-auto max-w-4xl space-y-14 px-10 py-40 text-center font-medium text-white">
+          <p className="text-5xl leading-normal md:text-4xl md:leading-relaxed">
             Let's help the world and save lives by recording your cough
           </p>
-          <button className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-3xl font-medium opacity-95">
+          <button className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-3xl font-medium md:py-4 md:px-8 md:text-lg">
             <Link target="_blank" href="https://virufy.org/study/welcome">
               Share Your Cough
             </Link>
