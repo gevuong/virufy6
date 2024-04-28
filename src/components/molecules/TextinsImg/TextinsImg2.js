@@ -21,7 +21,7 @@ export default function TextinsImg({
       </div>
       <Title
         Text={Text}
-        H="h4"
+        H="h1"
         TitleClassProps="
 					absolute top-[50%] 
 					left-[50%] 
