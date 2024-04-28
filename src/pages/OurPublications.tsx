@@ -1,43 +1,14 @@
 import Image from 'next/image'
-
-/* import Section9 from "~/components/organisms/section-9/Section9" */
-import CardLargue from '~/components/organisms/section-9/CardLarge'
-
-//image
-import notebook from '~/assets/static/images/OurPublications/notebook1.png'
-import Title from '~/components/atoms/Title/Title'
-import Button from '~/components/atoms/button/Button'
-import { useI18n } from '~/i18n'
-
-import PhoneHeader from '~/assets/static/images/OurPublications/phone_header.png'
-import HexagonDottedBackground from '~/assets/static/images/OurPublications/hexagon_dotted_background.png'
+import Link from 'next/link'
+import {
+  HexagonDottedBackground,
+  PhoneHeader,
+} from '../assets/static/images/OurPublications/index'
 
 export default function OurPublications() {
-  const {
-    ourPublications: { publicationCarts, helpText, buttonText },
-  } = useI18n()
-
-  const CardsData = [
-    {
-      route: notebook,
-      text: publicationCarts?.cardStudy,
-    },
-    {
-      route: notebook,
-      text: publicationCarts?.cardVoice,
-    },
-    {
-      route: notebook,
-      text: publicationCarts?.cardSensibility,
-    },
-    {
-      route: notebook,
-      text: publicationCarts?.cardInvestigation,
-    },
-  ]
-
   return (
-    <div>
+    <div className="relative -top-24">
+      {/* Publications/Hero Container */}
       <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
         <Image
           src={PhoneHeader}
@@ -45,81 +16,144 @@ export default function OurPublications() {
           alt=""
         />
         {/* Text Container */}
-        <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 py-60 text-center font-medium">
-          <h1 className="text-5xl text-green-600">Publications</h1>
+        <div className="px-50 mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 py-52 px-10 text-center font-medium">
+          <h1 className="text-5xl text-green-500">Publications</h1>
           <p className="text-white">
             Below you can find several of our papers that showcase the
             development and science behind the power of Virufy.
           </p>
         </div>
       </div>
-      <div className="relative h-[2000px] bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
+
+      {/* Gradient Overlay Container */}
+      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <Image
           src={HexagonDottedBackground}
-          className="absolute h-full w-full object-cover opacity-40"
+          className="absolute h-full w-full object-cover opacity-30"
           alt=""
         />
 
         {/* Cards Container */}
         <div className="flex flex-col items-center justify-center space-y-8 px-10 pt-40">
           {/* Card 1 Container */}
-          <div className="max-w-4xl space-y-2 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white">
-            <h3 className="max-w-lg text-xl font-medium">
+          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+            <h3 className="max-w-lg text-xl font-medium md:max-w-md">
               Hierarchical Multi-modal Transformer for Automatic Detection of
               COVID-19
             </h3>
-            <ul className="list-inside list-disc">
-              <li>October 2022</li>
-            </ul>
+            <div className="items-center space-y-6 md:flex md:flex-row md:justify-between md:space-y-0">
+              <ul className="list-inside list-disc">
+                <li>October 2022</li>
+              </ul>
+              <button>
+                <Link
+                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
+                  target="_blank"
+                  href="https://dl.acm.org/doi/10.1145/3556384.3556414"
+                >
+                  Read More
+                </Link>
+              </button>
+            </div>
           </div>
-          {/* Card 1 Container */}
-          <div className="max-w-4xl space-y-2 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white">
-            <h3 className="max-w-lg text-xl font-medium">
-              Hierarchical Multi-modal Transformer for Automatic Detection of
-              COVID-19
+
+          {/* Card 2 Container */}
+          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+            <h3 className="max-w-lg text-xl font-medium md:max-w-md">
+              Covid 19 Calculator -- Positive U.S. Socio-Economic Impact
             </h3>
-            <ul className="list-inside list-disc">
-              <li>October 2022</li>
-            </ul>
+            <div className="items-center space-y-6 md:flex md:flex-row md:justify-between md:space-y-0">
+              <ul className="list-inside list-disc">
+                <li>January 2022</li>
+              </ul>
+              <button>
+                <Link
+                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
+                  target="_blank"
+                  href="https://dl.acm.org/doi/10.1145/3556384.3556414"
+                >
+                  Read More
+                </Link>
+              </button>
+            </div>
           </div>
-          {/* Card 1 Container */}
-          <div className="max-w-4xl space-y-2 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white">
-            <h3 className="max-w-lg text-xl font-medium">
-              Hierarchical Multi-modal Transformer for Automatic Detection of
-              COVID-19
+
+          {/* Card 3 Container */}
+          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+            <h3 className="max-w-lg text-xl font-medium md:max-w-md">
+              Using Deep Learning with Large Aggregated Datasets for COVID-19
+              Classification from Cough
             </h3>
-            <ul className="list-inside list-disc">
-              <li>October 2022</li>
-            </ul>
+            <div className="items-center space-y-6 md:flex md:flex-row md:justify-between md:space-y-0">
+              <ul className="list-inside list-disc">
+                <li>January 2022</li>
+              </ul>
+              <button>
+                <Link
+                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
+                  target="_blank"
+                  href="https://dl.acm.org/doi/10.1145/3556384.3556414"
+                >
+                  Read More
+                </Link>
+              </button>
+            </div>
           </div>
-          {/* Card 1 Container */}
-          <div className="max-w-4xl space-y-2 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white">
-            <h3 className="max-w-lg text-xl font-medium">
-              Hierarchical Multi-modal Transformer for Automatic Detection of
-              COVID-19
+
+          {/* Card 4 Container */}
+          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+            <h3 className="max-w-lg text-xl font-medium md:max-w-md">
+              Virufy: Global Applicability of Crowdsourced and Clinical Datasets
+              for AI Detection of COVID-19 from Cough
             </h3>
-            <ul className="list-inside list-disc">
-              <li>October 2022</li>
-            </ul>
+            <div className="items-center space-y-6 md:flex md:flex-row md:justify-between md:space-y-0">
+              <ul className="list-inside list-disc">
+                <li>November 2020</li>
+              </ul>
+              <button>
+                <Link
+                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
+                  target="_blank"
+                  href="https://dl.acm.org/doi/10.1145/3556384.3556414"
+                >
+                  Read More
+                </Link>
+              </button>
+            </div>
           </div>
-          {/* Card 1 Container */}
-          <div className="max-w-4xl space-y-2 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white">
-            <h3 className="max-w-lg text-xl font-medium">
-              Hierarchical Multi-modal Transformer for Automatic Detection of
-              COVID-19
+
+          {/* Card 5 Container */}
+          <div className="space-y-4 rounded-xl bg-[#132d62] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5">
+            <h3 className="max-w-lg text-xl font-medium md:max-w-md">
+              Challenges and Opportunities in the Deploying of COVID-19 Cough AI
+              Systems
             </h3>
-            <ul className="list-inside list-disc">
-              <li>October 2022</li>
-            </ul>
+            <div className="items-center space-y-6 md:flex md:flex-row md:justify-between md:space-y-0">
+              <ul className="list-inside list-disc">
+                <li>September 2021</li>
+              </ul>
+              <button>
+                <Link
+                  className="rounded-3xl bg-white py-2 px-8 text-[#123d62] opacity-95"
+                  target="_blank"
+                  href="https://dl.acm.org/doi/10.1145/3556384.3556414"
+                >
+                  Read More
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
 
-        <div className="mx-auto max-w-4xl space-y-14 px-10 pt-40 text-center text-white">
+        {/* Record/Share Your Cough Container */}
+        <div className="mx-auto max-w-4xl space-y-14 px-10 py-40 text-center font-medium text-white">
           <p className="text-5xl leading-normal">
             Let's help the world and save lives by recording your cough
           </p>
           <button className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-3xl font-medium opacity-95">
-            Share Your Cough
+            <Link target="_blank" href="https://virufy.org/study/welcome">
+              Share Your Cough
+            </Link>
           </button>
         </div>
       </div>
