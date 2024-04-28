@@ -1,5 +1,5 @@
 export const OurSupporters = {
-    titleImage: "Empresas y organizaciones nos respaldan con su amplio conocimiento y nos brindan seguridad y certeza en lo que hacemos.",
+    titleImage: "Seguidores",
     sectionSupporters: {
         title: "Nuestros seguidores",
         Transformers: "Transformadores ($1M +)",

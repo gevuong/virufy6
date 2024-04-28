@@ -69,15 +69,8 @@ export default function OurSupportersSection({
 
   return (
     <>
-      <div className="max-w-[1440px] w-[100vw] md:hidden mt-[250px]" >
+      <div className="max-w-[1440px] w-[100vw] md:hidden mt-[80px]" >
         
-      <TextinsImg2
-        sizeImg=""
-        borderImg="none"
-        src={ImageinsText}
-        altImg="background img"
-        Text={titleImage} 
-      />
         {/* Supporters mobile */}
 
         <div>

@@ -35,5 +35,5 @@ export default function TextinsImg({
     </div>
   )
 }
-
+// 
 // this is used in the Our Supporters page. the only difference from orginal TextingsImg is <div className=" contrast-50 brightness-50">

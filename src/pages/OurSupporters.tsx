@@ -198,23 +198,8 @@ export default function OurSupporters() {
     },
   ]
 
-  /*   const cardSliderData = [
-      {
-        route: Card1VH,
-        name: "Annelisse Torrez Daza",
-        textLabel: "“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”",
-        country: "Bolivia",
-      },
-      {
-        route: Card2VH,
-        name: "Sebastian Pedraza",
-        textLabel: "“Virufy unites the power of youth and technology to transform the world. We hope that this solution will reach the whole world and that it will become a support for doctors, especially in low-income countries.”",
-        country: "Columbia",
-      },
-    ] */
-
   return (
-    <div className=''>
+    <div className='h-full bg-[#4064AD]'>
 
       {/* Globe background img */}
       <TextinsImg2
@@ -227,7 +212,7 @@ export default function OurSupporters() {
 
       <div className="flex flex-col items-center justify-center bg-gradient-to-b from-[#111B2E] to-[#4064AD] z-10 -top-24 relative">
 
-        <div className="flex max-w-[1440px] flex-col items-center justify-center" id='supps'>
+        <div className="flex max-w-[1440px] flex-col items-center justify-center">
          <OurSupportersSection TextProps={sectionSupporters} />
         </div>
         
@@ -235,3 +220,4 @@ export default function OurSupporters() {
     </div>
   )
 }
+// 
