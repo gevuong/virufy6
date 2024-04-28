@@ -57,7 +57,7 @@ export default function OurPeople2() {
               ImageStyleProps={""}
             />
           </div>
-          <div className="flex-col flex-1 text-xl m-20 ml-2 mr-[6vw] text-white
+          <div className="flex-col flex-1 text-xl m-10 ml-2 mr-[12vw] text-white
           ">
             <Text
               Style=""
@@ -94,9 +94,9 @@ export default function OurPeople2() {
             />
           </div>
           <div className="flex-col flex-1
-            mr-[6vw] text-xl text-white
+            ml-4 mr-[8vw] text-xl text-white
           ">
-            <div className="m-12">
+            <div className="m-6 mr-[10vw]">
               <Text
                 Style=""
                 Text={sectionAmil.textAmil[3]}
@@ -114,7 +114,7 @@ export default function OurPeople2() {
           <div className="flex-col flex-1
             ml-4 text-xl text-white
           ">
-            <div className="m-12">
+            <div className="ml-[4vw] m-12">
               <Text
                 Style=""
                 Text={sectionAmil.textAmil[4]}
@@ -122,18 +122,15 @@ export default function OurPeople2() {
               />
             </div>
           </div>
-          <div className="mt-10"
-          >
-            <ImageAtomLocal
-              imagesize={"px600"}
-              alt="Amil"
-              src={Amil3}
-              border={""}
-              ImageStyleProps={""}
-            />
-          </div>
+          <ImageAtomLocal
+            imagesize={"px600"}
+            alt="Amil"
+            src={Amil3}
+            border={""}
+            ImageStyleProps={""}
+          />
         </div>
-        <div className="ml-[4vw] mt-[20px] flex flex-wrap flex-row items-start
+        <div className="ml-[4vw] mt-[10px] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
