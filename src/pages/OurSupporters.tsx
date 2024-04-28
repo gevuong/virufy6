@@ -214,9 +214,9 @@ export default function OurSupporters() {
     ] */
 
   return (
-    <>
+    <div className=''>
 
-      {/* globe img */}
+      {/* Globe background img */}
       <TextinsImg2
         sizeImg=""
         borderImg="none"
@@ -231,49 +231,7 @@ export default function OurSupporters() {
          <OurSupportersSection TextProps={sectionSupporters} />
         </div>
         
-        {/* <div className="flex w-[100%] flex-col items-center justify-center bg-[#F9FAFB]">
-          <div className="mt-[190px] flex max-w-[1440px] flex-col items-center justify-center bg-[#F9FAFB] pb-[362px]"> */}
-            {/* <SectionOneYoungWorld TextProps={sectionOneYoungWorld} />
-
-            <Title
-              H="h2"
-              Text={sectionOneYoungWorld.titleQuestion}
-              TitleClassProps="text-center mt-4 mb-[48px]"
-            />
-            <CardLarge
-              CardsData={CardsData}
-              CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
-            />
-
-            <TitleText
-              TitleSize={'h2'}
-              TitleLabel={sectionVolunterStories.title}
-              TitleClassProps={'text-center mt-32 '}
-              TextSize={'normal'}
-              TextLabel={sectionVolunterStories.text}
-              TextClassProps={'m-10 '}
-              ContainerTitleProps
-              ContainerTextProps="max-w-[800px] mb-[80px]"
-            /> */}
-
-            {/* DESCOMENTAR CUANDO FUNCIONE EL CMS ////////////////////////////*/}
-            {/* <CardSliderTall /> */}
-          {/* </div>
-        </div> */}
-
-        {/* team leads section */}
-        {/* <div className="my-[80px] flex max-w-[1440px] flex-col items-center justify-center">
-          <Title
-            H="h2"
-            Text={sectionTeamLeads.title}
-            TitleClassProps="text-center mt-[80px]"
-          />
-          <Card
-            CardsData={CardsDataTL}
-            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[15px] h-[350px] shadow-xl"
-          />
-        </div> */}
       </div>
-    </>
+    </div>
   )
 }
