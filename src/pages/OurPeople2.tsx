@@ -1,5 +1,3 @@
-
-import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
 import Title from "~/components/atoms/Title/Title";
 import Text from "~/components/atoms/Text/Text";
 import Video from "~/components/atoms/videoAtom/Video";
@@ -22,15 +20,15 @@ export default function OurPeople2() {
   return (
     <>
     <div className="flex flex-col justify-center items-center bg-gradient-to-b from-[#000] to-[#2D5987]">
-      <div className="m-10 mt-40">
-        <Video
-          width={`1000px`}
-          height={`480px`}
-          url="https://www.youtube.com/watch?v=od0GGkbC_gQ"
-        />
-      </div>
       <div className="flex flex-col justify-center items-center max-w-[1440px] h-[100%]">
-        <div className="ml-[5vw] mt-[80px] flex flex-wrap flex-row items-start
+        <div className="m-10 mt-40">
+          <Video
+            width={`1275px`}
+            height={`650px`}
+            url="https://www.youtube.com/watch?v=od0GGkbC_gQ"
+          />
+        </div>
+        <div className="ml-[4vw] mt-[80px] mb-[80px] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
@@ -52,27 +50,25 @@ export default function OurPeople2() {
               />
             </div>
             <ImageAtomLocal
-              imagesize={"pr80"}
+              imagesize={"px300x400"}
               alt="Amil"
               src={Amil1}
               border={""}
               ImageStyleProps={""}
             />
           </div>
-          <div className="flex-col flex-1 text-xl mr-[12vw] text-white
+          <div className="flex-col flex-1 text-xl m-20 ml-2 mr-[6vw] text-white
           ">
             <Text
               Style=""
               Text={sectionAmil.textAmil[0]}
               TextClassProps=""
             />
-
             <Text
               Style=""
               Text={sectionAmil.textAmil[1]}
               TextClassProps="mt-6"
             />
-
             <Text
               Style=""
               Text={sectionAmil.textAmil[2]}
@@ -87,7 +83,7 @@ export default function OurPeople2() {
           xl:flex-row xl:items-end
         ">
           <div
-            className="mt-10"
+            className="ml-2"
           >
             <ImageAtomLocal
               imagesize={"px600"}
@@ -98,31 +94,36 @@ export default function OurPeople2() {
             />
           </div>
           <div className="flex-col flex-1
-            ml-2 mr-[6vw] text-xl text-white
+            mr-[6vw] text-xl text-white
           ">
-            <div className="m-20">
+            <div className="m-12">
               <Text
                 Style=""
                 Text={sectionAmil.textAmil[3]}
-                TextClassProps="mt-4"
+                TextClassProps=""
               />
             </div>
           </div>
         </div>
-        <div className="ml-[5vw] mt-[20px] flex flex-wrap flex-row items-start
+        <div className="mr-[10vw] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
           xl:flex-row xl:items-end
         ">
-          <div className="flex sm:flex ml-2 mr-[6vw] text-xl text-white">
-            <div className="m-6">
+          <div className="flex-col flex-1
+            ml-4 text-xl text-white
+          ">
+            <div className="m-12">
               <Text
                 Style=""
                 Text={sectionAmil.textAmil[4]}
-                TextClassProps="mt-4"
+                TextClassProps=""
               />
             </div>
+          </div>
+          <div className="mt-10"
+          >
             <ImageAtomLocal
               imagesize={"px600"}
               alt="Amil"
@@ -132,7 +133,7 @@ export default function OurPeople2() {
             />
           </div>
         </div>
-        <div className="ml-[5vw] mt-[20px] flex flex-wrap flex-row items-start
+        <div className="ml-[4vw] mt-[20px] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
@@ -140,14 +141,14 @@ export default function OurPeople2() {
         ">
           <div className="flex sm:flex ml-2 mr-[6vw] text-white">
             <ImageAtomLocal
-              imagesize={"px650"}
+              imagesize={"px600x500"}
               alt="Amil"
               src={Amil4}
               border={""}
               ImageStyleProps={""}
             />
             <div className="flex-col flex-1
-            ml-2 mr-[6vw] text-xl text-white
+            ml-4 mr-[6vw] text-xl text-white
             ">
               <div className="m-6">
                 <Text
@@ -158,7 +159,7 @@ export default function OurPeople2() {
                 <Text
                   Style=""
                   Text={sectionAmil.textAmil[6]}
-                  TextClassProps="mt-6"
+                  TextClassProps=""
                 />
               </div>
             </div>
