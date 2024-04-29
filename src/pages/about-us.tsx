@@ -11,8 +11,8 @@ export default function AboutUs() {
   } = useI18n()
 
   return (
-    <div className="relative -top-24 w-full">
-      {/* About Us Hero Section */}
+    <div className="relative -top-24">
+      {/* About Us/Hero Section */}
       <section>
         <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
           <Image
@@ -36,7 +36,7 @@ export default function AboutUs() {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative w-full bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
+      <div className="relative bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <Image
           src={HalfToneDots}
           alt=""
@@ -59,7 +59,6 @@ export default function AboutUs() {
                       text.type === 'text' ? (
                         <Fragment key={i}>{text.text}</Fragment>
                       ) : (
-                        // <span key={i}>{text.text}</span>
                         <Link className="text-blue-500" key={i} href={text.url}>
                           {text.text}
                         </Link>

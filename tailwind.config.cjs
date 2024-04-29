@@ -14,16 +14,6 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-montserrat)', ...fontFamily.sans],
       },
-      backgroundImage: {
-        'publications-header':
-          'url(../assets/static/images/OurPublications/phone_header.png)',
-        // 'publications-header':
-        //   'url(../assets/static/images/OurPublications/phone_header.png), linear-gradient(to bottom, black, #162b4c)',
-        'publications-body':
-          'url(../assets/static/images/OurPublications/hexagon_dotted_background.png)',
-        // 'publications-body':
-        //   'url(../assets/static/images/OurPublications/hexagon_dotted_background.png), linear-gradient(to bottom, #162b4c, #3468b2)',
-      },
     },
   },
   plugins: [],
