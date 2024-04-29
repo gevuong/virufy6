@@ -1,10 +1,10 @@
-import { StaticImageData } from 'next/image'
 import { Home } from './types/Home'
 import { FAQ } from './types/FAQ'
 import { NavbarType } from './types/NavbarType'
 import { BlogListing } from './types/BlogListingType'
 import { BlogDetails } from './types/BlogDetailsType'
 import { Footer } from './types/Footer'
+import { type AboutUs } from './types/AboutUs'
 
 export type I18nData = {
   locale: string
@@ -57,14 +57,14 @@ export interface SectiontCovidTestExplanation {
 // ---- Job Listing ----
 export interface JobListing {
   JobList: object[] | any[]
-  titleImage: string;
-  title: string;
-  text: string;
-  modal: { 
-    text: string;
-    yes: string;
-    no: string;
-   }
+  titleImage: string
+  title: string
+  text: string
+  modal: {
+    text: string
+    yes: string
+    no: string
+  }
 }
 // ---- | ----
 
@@ -175,43 +175,6 @@ export interface sectionTellYouStory {
   buttonTellYourStory: string
 }
 // ---- | ----
-
-// ---- About Us ---
-export interface AboutUs {
-  titleImage: string
-  sectionOurMissionStory: sectionOurMissionStory
-  sectionOurValues: sectionOurValues
-  sectionOurCommitmentPrivacy: sectionOurCommitmentPrivacy
-}
-
-export interface sectionOurMissionStory {
-  titleMission: string
-  textMission: string
-  titleStory: string
-  textStory: string
-}
-
-export interface sectionOurValues {
-  title: string
-  Transformation: string
-  textTransformation: string
-  Collaboration: string
-  textCollaboration: string
-  Health: string
-  textHealth: string
-  Affordability: string
-  textAffordability: string
-  Efficiency: string
-  textEfficiency: string
-  Innovation: string
-  textInnovation: string
-}
-
-export interface sectionOurCommitmentPrivacy {
-  title: string
-  text: string
-}
-//---- | ----
 
 // ---- OurPeople1 ---
 export interface OurPeople1 {
