@@ -16,7 +16,7 @@ export default function Footer() {
     { label: 'Home', route: '/home' },
     { label: 'Our Technology', route: '/OurTechnology' },
     { label: 'CoughCheck App', route: '/GetInvolved' },
-    { label: 'About', route: '/AboutUs' },
+    { label: 'About', route: '/about-us' },
     { label: 'FAQ', route: '/FAQ' },
   ]
 
