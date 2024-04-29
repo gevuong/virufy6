@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Title from '~/components/atoms/Title/Title'
 import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal'
 import VirufyLogo from '~/assets/static/images/logo/virufy.svg'
@@ -50,6 +50,15 @@ export default function Footer() {
     },
   ]
   const {footer: {sectionPersonalInformation}}= useI18n()
+
+  const [activeLink, setActiveLink] = useState('');
+
+  useEffect(() => {
+    {links1.map((link, index) => {
+      link.route === window.location.pathname ? setActiveLink(link.label) : null})
+    }
+  }, []);
+
   return (
     <>
       <div>
@@ -784,7 +793,7 @@ export default function Footer() {
             />
           </Link>
           <div className="absolute mx-12 mt-12 hidden w-56 justify-start lg:flex">
-            <Link href="/">
+            <Link href="/" onClick={() => setActiveLink('Home')}>
               <ImageAtomLocal
                 src={VirufyLogo}
                 imagesize="px160"
@@ -823,10 +832,14 @@ export default function Footer() {
                 return(
                   <Link
                     key={index}
-                    className='hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                    className={`${activeLink === link.label
+                      ? 'solid border-b-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                      : 'hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                    }`}
                     href={link.route}
+                    onClick={() => setActiveLink(link.label)}
                   >
-                     {link.label}
+                    {link.label}
                   </Link>
                 )
               })}
