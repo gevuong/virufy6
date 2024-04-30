@@ -4,7 +4,7 @@ import { AboutUs } from './AboutUs'
 import { GetInvolved_ } from './GetInvolved'
 import { dashboard } from './Dashboard'
 import { JobDescription } from './JobDescription'
-import { ourPublications } from './OurPublications'
+import { Publications } from './OurPublications'
 import { ourTechnology } from './OurTecnology'
 import { howItWorks } from './HowItWorks'
 import { OurPeople1 } from './OurPeople1'
@@ -27,7 +27,7 @@ export const data: I18nData = {
   dashboard,
   JobListing,
   JobDescription,
-  ourPublications,
+  Publications,
   ourTechnology,
   OurPeople1,
   OurPeople2,
@@ -38,5 +38,5 @@ export const data: I18nData = {
   blogDetails,
   faq,
   navbar,
-  footer
+  footer,
 }

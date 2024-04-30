@@ -2,7 +2,7 @@ import { type Section } from './AboutUs'
 
 export interface Publications {
   publicationsSection: Section
-  publicationCards: PublicationCard[]
+  publicationsCards: PublicationCard[]
   coughSection: PublicationsCoughSection
 }
 
@@ -13,6 +13,7 @@ export interface PublicationCard {
   linkText: string
 }
 
-interface PublicationsCoughSection extends Section {
+interface PublicationsCoughSection {
+  title: string
   linkText: string
 }

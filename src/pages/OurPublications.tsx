@@ -9,7 +9,7 @@ import {
 
 export default function OurPublications() {
   const {
-    Publications: { publicationsSection, publicationCards, coughSection },
+    Publications: { publicationsSection, publicationsCards, coughSection },
   } = useI18n()
 
   return (
@@ -20,6 +20,7 @@ export default function OurPublications() {
           src={PhoneHeader}
           className="absolute h-full w-full object-cover opacity-40"
           alt=""
+          priority
         />
         {/* Text Container */}
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 py-52 px-10 text-center font-medium opacity-95">
@@ -38,16 +39,17 @@ export default function OurPublications() {
       <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <Image
           src={HexagonDottedBackground}
-          className="absolute h-full w-full object-cover opacity-10"
+          className="absolute h-full w-full object-cover opacity-30"
           alt=""
+          priority
         />
 
         {/* Cards Container */}
         <div className="relative flex flex-col items-center justify-center space-y-8 px-10 pt-28">
-          {publicationCards.map((publication, i) => (
+          {publicationsCards.map((publication, i) => (
             <div
               key={i}
-              className="space-y-4 rounded-xl bg-[#00000038] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5"
+              className="space-y-4 rounded-xl bg-[#00000060] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5"
             >
               <PublicationCard {...publication} />
             </div>

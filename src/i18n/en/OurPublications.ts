@@ -5,7 +5,7 @@ export const Publications = {
       'Below you can find several of our papers that showcase the development and science behind the power of Virufy.',
     ],
   },
-  publicationCards: [
+  publicationsCards: [
     {
       title:
         'Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19',

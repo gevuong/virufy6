@@ -18,7 +18,7 @@ export default function AboutUs() {
           <Image
             className="absolute h-full w-full object-cover opacity-40"
             src={MaskHeader}
-            alt="background image of a person's face wearing a face mask"
+            alt=""
             priority
           />
 
