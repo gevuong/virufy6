@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Title from '~/components/atoms/Title/Title'
 import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal'
 import VirufyLogo from '~/assets/static/images/logo/virufy.svg'
 import Link from 'next/link'
 import LinkAtom from '~/components/atoms/LinkAtom/LinkAtom'
+import InstagramIcon from '~/assets/static/icons/footer/Instagram1.svg'
+import LinkedinIcon from '~/assets/static/icons/footer/Linkedin1.svg'
 import Instagram from '~/assets/static/icons/footer/Instagram.svg'
 import Linkedin from '~/assets/static/icons/footer/Linkedin.svg'
 import Text from '~/components/atoms/Text/Text'
@@ -11,8 +13,9 @@ import { useI18n } from '~/i18n'
 
 export default function Footer() {
   const links1 = [
+    { label: 'Home', route: '/home' },
     { label: 'Our Technology', route: '/OurTechnology' },
-    { label: 'Get Involved', route: '/GetInvolved' },
+    { label: 'CoughCheck App', route: '/GetInvolved' },
     { label: 'About', route: '/about-us' },
     { label: 'FAQ', route: '/FAQ' },
   ]
@@ -25,8 +28,6 @@ export default function Footer() {
 
   const links5 = [{ label: 'Do Not Sell My Personal Information', route: '#' }]
 
-  const links6 = [{ label: 'Code of Conduct', route: '#' }]
-
   const [showModalCookiesSetting, setShowModalCookiesSetting] = useState(false)
 
   const [showModalCookiesPolicy, setShowModalCookiesPolicy] = useState(false)
@@ -35,7 +36,6 @@ export default function Footer() {
 
   const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false)
 
-  const [showModalCodeOfConduct, setShowModalCodeOfConduct] = useState(false)
   const privacyDetails = [
     {
       title: 'Lorem Ipsum',
@@ -49,8 +49,16 @@ export default function Footer() {
         'Aenean lacinia interdum malesuada. Nam pharetra sem a erat scelerisque, nec iaculis erat venenatis. Donec enim dui, euismod vel magna at, semper vehicula tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id ultricies leo. Cras aliquet egestas lectus quis porta. Morbi vel augue sed tortor malesuada venenatis at in ipsum. Sed dolor sapien, lobortis ac scelerisque in, semper sit amet ante. Nullam ornare lacus et ante semper, sit amet aliquet libero molestie. Curabitur ornare, ex sit amet aliquet cursus, dolor est pellentesque sapien, nec ornare risus quam sed velit. Pellentesque ante magna, ultricies quis massa vitae, convallis vestibulum urna. Mauris massa metus, volutpat at consequat posuere, mattis eu mauris.',
     },
   ]
-
   const {footer: {sectionPersonalInformation}}= useI18n()
+
+  const [activeLink, setActiveLink] = useState('');
+
+  useEffect(() => {
+    {links1.map((link, index) => {
+      link.route === window.location.pathname ? setActiveLink(link.label) : null})
+    }
+  }, []);
+
   return (
     <>
       <div>
@@ -449,60 +457,6 @@ export default function Footer() {
           </>
         ) : null}
       </div>
-      <div>
-        {showModalCodeOfConduct ? (
-          <>
-            <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1000px]">
-                {/*content*/}
-                <div className="relative flex w-full flex-col rounded-xl border-0 bg-white shadow-lg outline-none focus:outline-none">
-                  {/*header*/}
-                  <div className="flex w-full rounded-t border-b border-solid border-slate-200">
-                    <Title
-                      H="h5Modals"
-                      Text="Code of Conduct "
-                      TitleClassProps={
-                        'mt-[80px] text-center md:mt-[30px] md:mx-auto mb-[30px]'
-                      }
-                    />
-                    <div className="absolute flex w-full flex-col items-end p-6">
-                      <button
-                        className="flex h-[35px] w-[35px] justify-center rounded-full bg-gray-300 px-1 py-2 font-bold text-black shadow-xl outline-none transition-all duration-150 ease-linear hover:bg-gray-400"
-                        type="button"
-                        onClick={() => setShowModalCodeOfConduct(false)}
-                      >
-                        X
-                      </button>
-                    </div>
-                  </div>
-                  {/*body*/}
-
-                  <div className="flex w-full items-center justify-center">
-                    <div className="w-full px-0">
-                      {privacyDetails.map((detail, index) => (
-                        <div key={index}>
-                          <details className="mb-3 w-full cursor-pointer bg-white">
-                            <summary className="text-dark mt-3 flex justify-between bg-white px-4 py-3 font-bold after:content-['+']">
-                              {detail.title}
-                            </summary>
-                            <hr className="border-1 mt-3 border-gray-400" />
-                            <p className="mt-3 px-4 py-3">{detail.content}</p>
-                          </details>
-                          {index < privacyDetails.length - 1 && (
-                            <hr className="border-1 border-gray-400" />
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  {/*footer*/}
-                </div>
-              </div>
-            </div>
-            <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
-          </>
-        ) : null}
-      </div>
 
       {/* _____________________ */}
 
@@ -827,9 +781,9 @@ export default function Footer() {
         ) : null}
       </div>
 
-      <footer className="bg-gray-200">
+      <footer className="bg-black">
         <div className="mx-auto flex w-full max-w-screen-xl flex-col p-4 py-10">
-          <Link href="/" className="flex justify-center lg:hidden">
+          <Link href="/" className="sm:hidden flex justify-center lg:hidden">
             <ImageAtomLocal
               ImageStyleProps="lg:h-12"
               src={VirufyLogo}
@@ -838,11 +792,8 @@ export default function Footer() {
               border=""
             />
           </Link>
-          <div className="flex w-full">
-            <hr className="mx-auto my-4 h-px w-11/12 rounded border-0 bg-gray-700" />
-          </div>
           <div className="absolute mx-12 mt-12 hidden w-56 justify-start lg:flex">
-            <Link href="/">
+            <Link href="/" onClick={() => setActiveLink('Home')}>
               <ImageAtomLocal
                 src={VirufyLogo}
                 imagesize="px160"
@@ -852,62 +803,76 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <ul className="mb-6 flex flex-wrap text-[#393939] lg:hidden">
-            <li className="my-1 flex w-full items-center justify-center underline">
+          <ul className="mb-6 flex flex-wrap text-white lg:hidden">
+            <li className="sm:hidden my-1 flex w-full items-center justify-center">
               <LinkAtom Routes={links1} Style="linkFooter" />
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="sm:hidden my-1 flex w-full items-center justify-center">
               <div onClick={() => setShowModalCookiesPolicy(true)}>
                 <LinkAtom Routes={links2} Style="linkFooter" />
               </div>
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="sm:hidden my-1 flex w-full items-center justify-center">
               <LinkAtom Routes={links3} Style="linkFooter" />
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="sm:hidden my-1 flex w-full items-center justify-center">
               <div onClick={() => setShowModalPrivacyPolicy(true)}>
                 <LinkAtom Routes={links4} Style="linkFooter" />
               </div>
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
+            <li className="sm:hidden my-1 flex w-full items-center justify-center">
               <div onClick={() => setShowModalMyInformation(true)}>
                 <LinkAtom Routes={links5} Style="linkFooter" />
               </div>
             </li>
-            <li className="my-1 flex w-full items-center justify-center underline">
-              <LinkAtom Routes={links6} Style="linkFooter" />
+          </ul>
+          <ul className="mb-6 hidden flex-wrap text-white lg:flex">
+            <li className="mt-16 space-x-10 flex w-full align-text-bottom justify-center">
+              {links1.map((link, index) => {
+                return(
+                  <Link
+                    key={index}
+                    className={`${activeLink === link.label
+                      ? 'solid border-b-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                      : 'hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                    }`}
+                    href={link.route}
+                    onClick={() => setActiveLink(link.label)}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
             </li>
           </ul>
-          <ul className="mb-6 hidden flex-wrap text-[#393939] lg:flex">
-            <li className="my-6 flex w-full items-center justify-center underline">
-              <LinkAtom Routes={links1} Style="linkFooter" />
-            </li>
-
-            <li className="my-6 flex w-full items-center justify-center underline">
-              <div onClick={() => setShowModalCookiesPolicy(true)}>
-                <LinkAtom Routes={links2} Style="linkFooter" />
-              </div>
-              <div onClick={() => setShowModalPrivacyPolicy(true)}>
-                <LinkAtom Routes={links4} Style="linkFooter" />
-              </div>
-
-              <div onClick={() => setShowModalMyInformation(true)}>
-                <LinkAtom Routes={links5} Style="linkFooter" />
-              </div>
-
-              <div onClick={() => setShowModalCodeOfConduct(true)}>
-                <LinkAtom Routes={links6} Style="linkFooter" />
-              </div>
-            </li>
-          </ul>
-          <div className="flex justify-center gap-7">
+          <div className="flex w-full">
+            <hr className="hidden lg:block mx-auto my-4 h-px w-11/12 rounded border-0 bg-white" />
+          </div>
+          <li className="lg:my-6 space-x-2 underline lg:no-underline lg:space-x-6 flex text-white font-semibold w-full items-center justify-center">
+            <div onClick={() => setShowModalCookiesPolicy(true)}>
+              <LinkAtom Routes={links2} Style={`text-[15px]`} />
+            </div>
+            <div className="font-bold lg:hidden">|</div>
+            <div onClick={() => setShowModalCookiesSetting(true)}>
+              <LinkAtom Routes={links3} Style={`text-[15px]`} />
+            </div>
+            <div className="font-bold lg:hidden">|</div>
+            <div onClick={() => setShowModalPrivacyPolicy(true)}>
+              <LinkAtom Routes={links4} Style={`text-[15px]`} />
+            </div>
+            <div className="font-bold lg:hidden">|</div>
+            <div onClick={() => setShowModalMyInformation(true)}>
+              <LinkAtom Routes={links5} Style={`text-[15px]`} />
+            </div>
+          </li>
+          <div className="flex justify-center gap-10 lg:gap-7 mt-8 lg:mt-4">
             <Link
               href="https://www.instagram.com/virufy/"
               className="lg:hidden"
             >
               <ImageAtomLocal
-                src={Instagram}
-                imagesize="px20"
+                src={InstagramIcon}
+                imagesize="px30x30"
                 alt="Virufy Logo"
                 border=""
                 ImageStyleProps=""
@@ -918,8 +883,8 @@ export default function Footer() {
               className="lg:hidden"
             >
               <ImageAtomLocal
-                src={Linkedin}
-                imagesize="px20"
+                src={LinkedinIcon}
+                imagesize="px30x30"
                 alt="Virufy Logo"
                 border=""
                 ImageStyleProps=""
@@ -950,30 +915,30 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <div className="align-center mt-7 flex w-full flex-col gap-7 text-[#393939] lg:hidden">
-            <div className="align-center m-auto max-w-4xl text-center">
-              <Text Text="Nonprofit Status" Style="normal" TextClassProps="" />
+          <div className="align-center mt-10 flex w-full flex-col gap-7 text-white lg:hidden">
+            <div className="align-center m-auto max-w-4xl text-[25px] text-center">
+              <Text Text="Nonprofit Status" Style="" TextClassProps="" />
             </div>
-            <div className="align-center m-auto max-w-4xl text-center">
+            <div className="align-center m-auto mx-12 max-w-4xl mt-4 text-center">
               <Text
                 TextClassProps=""
                 Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
                 Style="normal"
               />
             </div>
-            <div className="align-center m-auto max-w-4xl text-center">
+            <div className="align-center m-auto mx-12 max-w-4xl mt-4 text-center">
               <Text
                 TextClassProps=""
-                Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
                 Style="normal"
               />
             </div>
           </div>
-          <div className="align-center mt-10 hidden w-full flex-col gap-7 text-[#393939] lg:flex">
-            <div className="align-center m-auto max-w-4xl text-center">
+          <div className="align-center mt-10 hidden w-full flex-col gap-7 text-white lg:flex">
+            <div className="align-center m-auto max-w-4xl font-semibold text-center">
               <Text
                 Text="Nonprofit Status"
-                Style="subtitle"
+                Style="small"
                 TextClassProps=""
               />
             </div>
@@ -981,14 +946,14 @@ export default function Footer() {
               <Text
                 TextClassProps=""
                 Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
-                Style="subtitle"
+                Style="normalCardHome"
               />
             </div>
             <div className="align-center m-auto max-w-4xl text-center">
               <Text
                 TextClassProps=""
-                Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
-                Style="subtitle"
+                Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
+                Style="normalCardHome"
               />
             </div>
           </div>
