@@ -50,7 +50,7 @@ export default function HowItWorks() {
 
           {/* Background img 2  */}
           <Image src={howItWorksStep3} alt='cards background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
-          xs:h-100 sm:h-[950px] md:h-[940px] lg:h-full xl:h-[890px]"/>
+          xs:h-100 sm:h-[950px] md:h-[950px] lg:h-[900px] xl:h-[900px]"/>
 
             <Section8
               TitleLabel={sectiontCovidTestExplanation?.title}
