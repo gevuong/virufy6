@@ -5,7 +5,7 @@ import { HalfToneDots, MaskHeader } from '~/assets/static/images/aboutUs/index'
 import ValuesCard from '~/components/molecules/Card/ValuesCard'
 import { useI18n } from '~/i18n'
 
-export default function AboutUs() {
+export default function AboutUsPage() {
   const {
     AboutUs: { aboutUsSection, storySection, valuesSection, privacySection },
   } = useI18n()

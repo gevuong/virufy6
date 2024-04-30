@@ -5,9 +5,9 @@ import { useI18n } from '~/i18n'
 import {
   HexagonDottedBackground,
   PhoneHeader,
-} from '../assets/static/images/OurPublications/index'
+} from '../assets/static/images/publications/index'
 
-export default function OurPublications() {
+export default function PublicationsPage() {
   const {
     Publications: { publicationsSection, publicationsCards, coughSection },
   } = useI18n()
