@@ -30,7 +30,7 @@ interface ValuesSection {
   cards: ValuesCard[]
 }
 
-interface Section {
+export interface Section {
   title: string
   texts: string[]
 }

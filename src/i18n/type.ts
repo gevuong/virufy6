@@ -1,10 +1,11 @@
-import { Home } from './types/Home'
-import { FAQ } from './types/FAQ'
-import { NavbarType } from './types/NavbarType'
-import { BlogListing } from './types/BlogListingType'
-import { BlogDetails } from './types/BlogDetailsType'
-import { Footer } from './types/Footer'
 import { type AboutUs } from './types/AboutUs'
+import { type BlogDetails } from './types/BlogDetailsType'
+import { type BlogListing } from './types/BlogListingType'
+import { type FAQ } from './types/FAQ'
+import { type Footer } from './types/Footer'
+import { type Home } from './types/Home'
+import { type NavbarType } from './types/NavbarType'
+import { type Publications } from './types/Publications'
 
 export type I18nData = {
   locale: string
@@ -17,7 +18,7 @@ export type I18nData = {
   JobDescription?: {
     JobID: object[] | any[]
   }
-  ourPublications?: OurPublications
+  Publications?: Publications
   ourTechnology?: OurTechnology
   ourResearch?: OurResearch
   tellYourStory: TellYourStory
@@ -106,21 +107,6 @@ export interface SkillsSection {
   skillResponsability: string
 }
 // ---- | ----
-
-// ---- Our Publications ---
-export interface OurPublications {
-  publicationCarts: PublicationCards
-  helpText: string
-  buttonText: string
-}
-export interface PublicationCards {
-  title: string
-  cardStudy: string
-  cardVoice: string
-  cardSensibility: string
-  cardInvestigation: string
-}
-//---- | ----
 
 // ---- Our Technology ---
 export interface AboutVirufySection {
