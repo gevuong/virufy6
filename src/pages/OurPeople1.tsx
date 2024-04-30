@@ -119,12 +119,12 @@ export default function OurPeople1() {
       subtitle: "Artificial Intelligence Advisor",
       text: "Senior Research Engineer             Stanford School of Engineering",
     },
-    {
-      route: Card14,
-      name: "Richard Nall",
-      subtitle: "Marketing Advisor",
-      text: "CEO - The Brand Garden               Master's Organisational Leadership - Henley",
-    },
+    // {
+    //   route: Card14,
+    //   name: "Richard Nall",
+    //   subtitle: "Marketing Advisor",
+    //   text: "CEO - The Brand Garden               Master's Organisational Leadership - Henley",
+    // },
     {
       route: Card15,
       name: "Mathijs De Vaan",
@@ -177,49 +177,54 @@ export default function OurPeople1() {
       route: Card23,
       name: "Dr. Les Atlas",
       subtitle: "Audio and Machine Learning Advisor",
-      text: "Professor of Electrical and Computer Engineering - University of Washington                           Ph.D. Electrical Engineering, Stanford",
+      text: "Professor of Electrical and Computer Engineering - University of Washington                 Ph.D. Electrical Engineering, Stanford",
     }
   ]
 
   return (
     <>
       <TextinsImg
-        sizeImg="auto"
+        sizeImg={{ width: '1512px', height: '925px' }}
         borderImg="none"
         src={ImageinsText}
         altImg="Imagen cabezera"
         Text={titleImage}
       />
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center max-w-[1440px] ">
 
-          <Section4
-            TitleSize1="h1"
-            TitleSize2="h3"
-            TitleLabel1={sectionMeetOurFounder.titleMeetOurFounder}
-            TitleLabel2={sectionMeetOurFounder.titleAmil}
-            TextLabel={sectionMeetOurFounder.textAmil}
-            labelButton={sectionMeetOurFounder.button}
-            buttonRoute="/OurPeople2"
-            ContainerTitleProps
-            ContainerTextProps
-            border
-          alt
+
+<div className="flex flex-col justify-center items-center" style={{background: 'linear-gradient(180deg, #000000 0%, #162B4C 23.5%, #3468B2 90%)'}}>
+  <div className="flex flex-col justify-center items-center max-w-[1440px]">
+    <Section4
+      TitleSize1="h1"
+      TitleSize2="h3"
+      TitleLabel1={sectionMeetOurFounder.titleMeetOurFounder}
+      TitleLabel2={sectionMeetOurFounder.titleAmil}
+      TextLabel={sectionMeetOurFounder.textAmil}
+      labelButton="Read Amil's Story"
+      // labelButton={sectionMeetOurFounder.button}
+      buttonRoute="/OurPeople2"
+      ContainerTitleProps={{ style: { paddingLeft: '20px' } }}
+      ContainerTextProps
+      border
+      alt
+      style={{borderRadius: "50%" }}
+    />
+
+<Title
+  H="h1"
+  Text={sectionAdvisors.title}
+  TitleClassProps="text-center mt-20 bg-transparent 
+                   bg-clip-text text-transparent
+                   bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
+/>
+
+    <Card
+      CardsData={CardsData}
+      CardClassProps=""
         />
+  </div>
+</div>
 
-          <Title
-            H="h1"
-            Text={sectionAdvisors.title}
-            TitleClassProps="text-center m-[5vw]"
-          />
-
-          <Card
-            CardsData={CardsData}
-            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[5px] h-[370px] shadow-xl min-w-[330px]"
-          />
-
-        </div>
-      </div>
     </>
 
   );
