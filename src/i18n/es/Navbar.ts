@@ -2,11 +2,9 @@ import { NavbarType } from '../types/NavbarType'
 
 export const navbar: NavbarType = {
   ourTecnology: {
-    section: 'Nuestra Tecnología',
-    howItWorks: 'Cómo Funciona',
-    shareYourCough: 'Comparte tu Tos',
-    OurData: 'Nuestros Datos',
-    OurResearch: 'Nuestra Investigación',
+    section: 'Tecnología',
+    howItWorks: 'AI',
+    OurResearch: 'Publicaciones',
   },
   getInvolved: {
     section: 'Participa',

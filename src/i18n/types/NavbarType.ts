@@ -10,8 +10,6 @@ export interface NavbarType {
 export interface OurTecnology {
     section: string
     howItWorks: string
-    shareYourCough: string
-    OurData: string
     OurResearch: string
 }
 
