@@ -1,24 +1,24 @@
 import { type I18nData } from '../type'
-
-import { home } from './Home'
 import { AboutUs } from './AboutUs'
-import { GetInvolved_ } from './GetInvolved'
-import { howItWorks } from './HowItWorks'
+import { blogDetails } from './BlogDetail'
+import { blogListing } from './BlogListing'
 import { dashboard } from './Dashboard'
+import { faq } from './FAQ'
+import { footer } from './Footer'
+import { GetInvolved_ } from './GetInvolved'
+import { home } from './Home'
+import { howItWorks } from './HowItWorks'
 import { JobDescription } from './JobDescription'
-import { ourPublications } from './OurPublications'
-import { ourTechnology } from './OurTecnology'
+import { JobListing } from './JobListing'
+import { navbar } from './Navbar'
 import { OurPeople1 } from './OurPeople1'
 import { OurPeople2 } from './OurPeople2'
+import { Publications } from './publications'
 import { ourResearch } from './OurResearch'
-import { tellYourStory } from './TellYourStory'
 import { OurSupporters } from './OurSupporters'
-import { JobListing } from './JobListing';
-import { blogListing } from './BlogListing'
-import { blogDetails } from './BlogDetail';
-import { faq } from './FAQ'
-import { navbar } from './Navbar'
-import { footer } from './Footer'
+import { ourTechnology } from './OurTecnology'
+import { tellYourStory } from './TellYourStory'
+
 export const data: I18nData = {
   locale: 'en',
   home,
@@ -28,7 +28,7 @@ export const data: I18nData = {
   dashboard,
   JobListing,
   JobDescription,
-  ourPublications,
+  Publications,
   ourTechnology,
   OurPeople1,
   OurPeople2,
@@ -39,5 +39,5 @@ export const data: I18nData = {
   blogDetails,
   faq,
   navbar,
-  footer
+  footer,
 }
