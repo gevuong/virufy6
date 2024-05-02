@@ -1,4 +1,5 @@
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
+import Image from "next/image";
 
 import Supporter1 from '~/assets/static/images/ourSupporters/icon-supports/supporter-1.png'
 import Supporter2 from '~/assets/static/images/ourSupporters/icon-supports/supporter-2.png'
@@ -44,12 +45,17 @@ export default function OurSupportersSection({
         },
       } = useI18n()
 
+    const supporters = [];
+    
+    for (let index = 0; index < 28; index++) {
+        supporters[index] = eval(`Supporter${index + 1}`);
+    }
+
   return (
     <>
       <div className="max-w-[1440px] w-[100vw] md:hidden mt-[80px]" >
         
         {/* Supporters mobile */}
-
         <div>
           <div className="w-full flex justify-center" >
             <div className="flex mx-1">

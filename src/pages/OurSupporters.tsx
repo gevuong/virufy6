@@ -175,7 +175,7 @@ export default function OurSupporters() {
         sizeImg=""
         borderImg="none"
         src={ImageinsText}
-        altImg="background img"
+        altImg=""
         Text={titleImage} 
       />
 
