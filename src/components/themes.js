@@ -36,7 +36,7 @@ export const ImageSize = {
     px375x225: "w-[375px] h-[225px]",
     px375x300: "w-[375px] h-[300px]",
     px300x400: "w-[300px] h-[400px]",
-    px550: "w-[550px] h-[500px]",
+    px550: "w-[550px] h-[475px]",
     px550x360: "w-[550px] h-[360px]",
     px700: "w-[700px] h-[350px]",
     px160: "w-[160px] h-[48px]",
