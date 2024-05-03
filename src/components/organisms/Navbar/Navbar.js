@@ -173,7 +173,10 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
+
+
                                     <Link className="peer py-2 text-white" href="/about-us">{aboutUs?.section}</Link>
+
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurPeople1">{aboutUs?.ourPeople}</Link>
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurSupporters">{aboutUs?.ourSopporters}</Link>
