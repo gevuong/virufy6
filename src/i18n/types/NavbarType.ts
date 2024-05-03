@@ -1,5 +1,5 @@
 export interface NavbarType {
-    ourTecnology: OurTecnology
+    ourTechnology: OurTechnology
     getInvolved: GetInvolved
     aboutUs: AboutUs
     faq: string
@@ -7,7 +7,7 @@ export interface NavbarType {
     donate: string
 }
 
-export interface OurTecnology {
+export interface OurTechnology {
     section: string
     howItWorks: string
     OurResearch: string
@@ -23,7 +23,7 @@ export interface GetInvolved {
 export interface AboutUs {
     section: string
     ourPeople: string
-    ourSopporters: string
+    ourSupporters: string
     blog: string
     publications: string
 }

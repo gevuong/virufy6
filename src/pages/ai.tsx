@@ -4,7 +4,7 @@ import Section8 from '~/components/organisms/section-8/Section8'
 import Image from 'next/image';
 
 import howItWorks1 from '~/assets/static/images/howItWorks/1.jpg'
-import howItWorksStep3 from '~/assets/static/images/howItWorks/step3.jpg'
+import waveImg from '~/assets/static/images/howItWorks/wave.jpg'
 import { useI18n } from '~/i18n'
 
 export default function HowItWorks() {
@@ -49,8 +49,8 @@ export default function HowItWorks() {
           <div className='w-full mt-60 z-10'>
 
           {/* Background img 2  */}
-          <Image src={howItWorksStep3} alt='cards background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
-          xs:h-100 sm:h-[950px] md:h-[950px] lg:h-[900px] xl:h-[900px]"/>
+          <Image src={waveImg} alt='cards background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
+          xs:h-100 sm:h-[950px] md:h-[1035px] lg:h-[900px] xl:h-[900px]"/>
 
             <Section8
               TitleLabel={sectiontCovidTestExplanation?.title}

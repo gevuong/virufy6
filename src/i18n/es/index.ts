@@ -5,7 +5,7 @@ import { GetInvolved_ } from './GetInvolved'
 import { dashboard } from './Dashboard'
 import { JobDescription } from './JobDescription'
 import { Publications } from './publications'
-import { ourTechnology } from './OurTecnology'
+// import { ourTechnology } from './OurTechnology'
 import { howItWorks } from './HowItWorks'
 import { OurPeople1 } from './OurPeople1'
 import { OurPeople2 } from './OurPeople2'
@@ -28,7 +28,6 @@ export const data: I18nData = {
   JobListing,
   JobDescription,
   Publications,
-  ourTechnology,
   OurPeople1,
   OurPeople2,
   ourResearch,

@@ -16,7 +16,7 @@ import { OurPeople2 } from './OurPeople2'
 import { Publications } from './publications'
 import { ourResearch } from './OurResearch'
 import { OurSupporters } from './OurSupporters'
-import { ourTechnology } from './OurTecnology'
+// import { ourTechnology } from './OurTechnology'
 import { tellYourStory } from './TellYourStory'
 
 export const data: I18nData = {
@@ -29,7 +29,6 @@ export const data: I18nData = {
   JobListing,
   JobDescription,
   Publications,
-  ourTechnology,
   OurPeople1,
   OurPeople2,
   ourResearch,
