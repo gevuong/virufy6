@@ -1,10 +1,11 @@
-import { StaticImageData } from 'next/image'
-import { Home } from './types/Home'
-import { FAQ } from './types/FAQ'
-import { NavbarType } from './types/NavbarType'
-import { BlogListing } from './types/BlogListingType'
-import { BlogDetails } from './types/BlogDetailsType'
-import { Footer } from './types/Footer'
+import { type AboutUs } from './types/AboutUs'
+import { type BlogDetails } from './types/BlogDetailsType'
+import { type BlogListing } from './types/BlogListingType'
+import { type FAQ } from './types/FAQ'
+import { type Footer } from './types/Footer'
+import { type Home } from './types/Home'
+import { type NavbarType } from './types/NavbarType'
+import { type Publications } from './types/Publications'
 
 export type I18nData = {
   locale: string
@@ -17,7 +18,7 @@ export type I18nData = {
   JobDescription?: {
     JobID: object[] | any[]
   }
-  ourPublications?: OurPublications
+  Publications?: Publications
   ourTechnology?: OurTechnology
   ourResearch?: OurResearch
   tellYourStory: TellYourStory
@@ -57,14 +58,14 @@ export interface SectiontCovidTestExplanation {
 // ---- Job Listing ----
 export interface JobListing {
   JobList: object[] | any[]
-  titleImage: string;
-  title: string;
-  text: string;
-  modal: { 
-    text: string;
-    yes: string;
-    no: string;
-   }
+  titleImage: string
+  title: string
+  text: string
+  modal: {
+    text: string
+    yes: string
+    no: string
+  }
 }
 // ---- | ----
 
@@ -106,21 +107,6 @@ export interface SkillsSection {
   skillResponsability: string
 }
 // ---- | ----
-
-// ---- Our Publications ---
-export interface OurPublications {
-  publicationCarts: PublicationCards
-  helpText: string
-  buttonText: string
-}
-export interface PublicationCards {
-  title: string
-  cardStudy: string
-  cardVoice: string
-  cardSensibility: string
-  cardInvestigation: string
-}
-//---- | ----
 
 // ---- Our Technology ---
 export interface AboutVirufySection {
@@ -175,43 +161,6 @@ export interface sectionTellYouStory {
   buttonTellYourStory: string
 }
 // ---- | ----
-
-// ---- About Us ---
-export interface AboutUs {
-  titleImage: string
-  sectionOurMissionStory: sectionOurMissionStory
-  sectionOurValues: sectionOurValues
-  sectionOurCommitmentPrivacy: sectionOurCommitmentPrivacy
-}
-
-export interface sectionOurMissionStory {
-  titleMission: string
-  textMission: string
-  titleStory: string
-  textStory: string
-}
-
-export interface sectionOurValues {
-  title: string
-  Transformation: string
-  textTransformation: string
-  Collaboration: string
-  textCollaboration: string
-  Health: string
-  textHealth: string
-  Affordability: string
-  textAffordability: string
-  Efficiency: string
-  textEfficiency: string
-  Innovation: string
-  textInnovation: string
-}
-
-export interface sectionOurCommitmentPrivacy {
-  title: string
-  text: string
-}
-//---- | ----
 
 // ---- OurPeople1 ---
 export interface OurPeople1 {
