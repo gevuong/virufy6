@@ -20,10 +20,10 @@ export default function OurPeople2() {
   return (
     <>
     <div className="flex flex-col justify-center items-center 
-      bg-gradient-to-b from-[#000] to-[#2D5987] 
+      bg-gradient-to-b from-[#000] to-[#2D5987]
       hidden sm:hidden md:hidden xl:block overflow-hidden
     ">
-      <div className="flex flex-col justify-center items-center mx-[3.5vw] my-[3.5vw] max-w-[1440px] h-[100%]">
+      <div className="flex flex-col justify-center items-center mx-auto my-[3.5vw] max-w-[1650px] h-[100%]">
         <div className="m-10 mt-[40px]">
           <Video
             width={`1200px`}
@@ -37,7 +37,7 @@ export default function OurPeople2() {
           lg:flex-row lg:items-end
           xl:flex-row xl:items-end
         ">
-          <div className="ml-[6.5vw] w-[438px]
+          <div className="ml-[10vw] w-[438px]
             sm:w-[438px]
             md:w-[350px]
             lg:w-[300px]
@@ -60,7 +60,7 @@ export default function OurPeople2() {
               ImageStyleProps={""}
             />
           </div>
-          <div className="flex-col flex-1 text-xl m-2 mr-[6vw] text-white
+          <div className="flex-col flex-1 text-xl m-2 mr-[10vw] text-white
           ">
             <Text
               Style=""
@@ -70,16 +70,16 @@ export default function OurPeople2() {
             <Text
               Style=""
               Text={sectionAmil.textAmil[1]}
-              TextClassProps="mt-6"
+              TextClassProps="mt-4"
             />
             <Text
               Style=""
               Text={sectionAmil.textAmil[2]}
-              TextClassProps="mt-6"
+              TextClassProps="mt-4"
             />
           </div>
         </div>
-        <div className="ml-[6.5vw] mt-[20px] mb-[20px] flex flex-wrap flex-row items-start
+        <div className="ml-[10vw] mt-[20px] mb-[20px] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
@@ -97,9 +97,9 @@ export default function OurPeople2() {
             />
           </div>
           <div className="flex-col flex-1
-            ml-2 mr-[3vw] text-xl text-white
+            mr-[4vw] text-xl text-white
           ">
-            <div className="m-10 mr-[6vw]">
+            <div className="m-12 mr-[6vw]">
               <Text
                 Style=""
                 Text={sectionAmil.textAmil[3]}
@@ -108,7 +108,7 @@ export default function OurPeople2() {
             </div>
           </div>
         </div>
-        <div className="mr-[7.5vw] mt-[20px] mb-[20px] flex flex-wrap flex-row items-start
+        <div className="mr-[10vw] mt-[20px] mb-[20px] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
@@ -117,7 +117,7 @@ export default function OurPeople2() {
           <div className="flex-col flex-1
             ml-4 text-xl text-white
           ">
-            <div className="ml-[6.5vw] m-10">
+            <div className="ml-[10vw] m-10">
               <Text
                 Style=""
                 Text={sectionAmil.textAmil[4]}
@@ -133,7 +133,7 @@ export default function OurPeople2() {
             ImageStyleProps={""}
           />
         </div>
-        <div className="ml-[7.5vw] mt-[10px] mb-[100px] flex flex-wrap flex-row items-start
+        <div className="ml-[10vw] mt-[10px] mb-[100px] flex flex-wrap flex-row items-start
           sm:flex-col sm:items-center
           md:flex-row md:items-end
           lg:flex-row lg:items-end
@@ -148,9 +148,9 @@ export default function OurPeople2() {
               ImageStyleProps={""}
             />
             <div className="flex-col flex-1
-            ml-4 mr-[3.5vw] text-xl text-white
+            ml-4 mr-[4.5vw] text-xl text-white
             ">
-              <div className="m-6">
+              <div className="m-4">
                 <Text
                   Style=""
                   Text={sectionAmil.textAmil[5]}
@@ -211,7 +211,7 @@ export default function OurPeople2() {
 
       {/* Second row */}
       <div className="mt-[80px] mb-[80px] ml-[2vw] mr-[2vw] flex flex-row items-start">
-        <div className="justify-center items-center ml-[6vw]">
+        <div className="justify-center items-center ml-[5vw]">
           <div className="justify-center m-8 text-white"
           >
             <Title
@@ -254,7 +254,7 @@ export default function OurPeople2() {
       <div className="mt-[60px] mb-[10px] ml-[2vw] mr-[2vw] 
         flex flex-row items-start"
       >
-        <div className="ml-[10vw]">
+        <div className="ml-[8.5vw]">
           <ImageAtomLocal
             imagesize={"px375x225"}
             alt="Amil"
@@ -281,7 +281,7 @@ export default function OurPeople2() {
         <div className="flex-col flex-1
           ml-4 text-sm text-white
         ">
-          <div className="ml-[10vw] m-1.5">
+          <div className="ml-[9vw] m-2">
             <Text
               Style=""
               Text={sectionAmil.textAmil[4]}
@@ -302,7 +302,7 @@ export default function OurPeople2() {
       <div className="mt-[10px] mb-[10px] ml-[2vw] mr-[2vw] 
         flex flex-row items-start"
       >
-        <div className="ml-[10vw]">
+        <div className="ml-[8.5vw]">
           <ImageAtomLocal
             imagesize={"px375x300"}
             alt="Amil"
