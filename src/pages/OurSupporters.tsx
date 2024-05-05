@@ -4,6 +4,7 @@ import ImageinsText from '~/assets/static/images/ourSupporters/ImageinsText.png'
 import { useI18n } from '~/i18n'
 
 import OurSupportersSection from '~/components/organisms/OurSupportersSection/OurSupportersSection2'
+import { ImageSize } from '~/components/themes'
 
 export default function OurSupporters() {
   const {
@@ -17,11 +18,11 @@ export default function OurSupporters() {
   } = useI18n()
 
   return (
-    <div className='h-full bg-[#4064AD]'>
+    <div className=' bg-[#4064AD] '>
 
       {/* Globe background img */}
       <TextinsImg2
-        sizeImg=""
+        sizeImg={ImageSize}
         borderImg="none"
         src={ImageinsText}
         altImg=""

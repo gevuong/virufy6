@@ -24,7 +24,7 @@ export default function OurSupportersSection({
 
         <div className="w-full flex justify-center flex-wrap">
           {Array.from({ length: 27 }, (_, i) => (
-            <div className="flex mx-0 justify-center" key={i} style={{ flexBasis: '25%' }}>
+            <div className="flex mx-1 justify-center basis-1/4" key={i}>
               <ImageAtomLocal
                 imagesize=""
                 alt=""
@@ -47,7 +47,7 @@ export default function OurSupportersSection({
 
         <div className="w-full flex justify-center flex-wrap">
           {Array.from({ length: 27 }, (_, i) => (
-            <div className="flex mx-0 justify-center" key={i} style={{ flexBasis: '25%' }}>
+            <div className="flex mx-0 justify-center basis-1/4" key={i} >
               <ImageAtomLocal
                 imagesize=""
                 alt=""
