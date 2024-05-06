@@ -1,12 +1,13 @@
-# Virufy5 Website
+# Virufy 6.0 Website
 
 ## Install dependencies
 
 ```bash
-$ npm install
+npm i
 ```
 
-# Start project
+## Start project
+
 ```bash
-$ npm run dev
+npm run dev
 ```

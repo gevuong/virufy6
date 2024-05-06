@@ -42,7 +42,7 @@ export default function Section8({
         {/* 01 card */}
         <div className="bg-blue-500 bg-opacity-50 flex flex-row text-left items-center
         xs:w-full sm:w-[500px] md:w-[500px] lg:w-[900px] xl:w-[1000px] 
-        xs:h-[100px] sm:h-[220px] md:h-[220px] lg:h-[200px] xl:h-[200px]
+        xs:h-[100px] sm:h-[220px] md:h-[280px] lg:h-[200px] xl:h-[200px]
         m-auto mt-0 rounded-3xl">
           
           <ImageAtomLocal
@@ -67,7 +67,7 @@ export default function Section8({
         {/* 02 card */}
         <div className="bg-blue-500 bg-opacity-50 rounded-3xl flex flex-row text-left items-center w-[420px] 
         sm:w-[510px] md:w-[510px] lg:w-[900px] xl:w-[1000px] 
-        sm:h-[250px] md:h-[250px] lg:h-[200px] xl:h-[200px] 
+        sm:h-[250px] md:h-[280px] lg:h-[200px] xl:h-[200px]
         m-auto mt-20">
 
           <ImageAtomLocal
