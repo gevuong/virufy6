@@ -1,85 +1,102 @@
-//Organismo
-import Section1 from '~/components/organisms/section-1/Section1'
-import Section8 from '~/components/organisms/section-8/Section8'
-import Image from 'next/image';
-
+import Image from 'next/image'
+import Link from 'next/link'
 import howItWorks1 from '~/assets/static/images/howItWorks/1.jpg'
 import waveImg from '~/assets/static/images/howItWorks/wave.jpg'
-import { useI18n } from '~/i18n'
 
 export default function HowItWorks() {
-  const {
-    howItWorks: { sectionShareCougt, sectiontCovidTestExplanation },
-  } = useI18n()
-
-  const buttons = sectionShareCougt?.buttons
-
   return (
-    <>
-      <div className="flex flex-col items-center justify-center">
-
-      {/* Background img 1   */}
-      <Image src={howItWorks1} alt='background 1' className="absolute top-0 left-0 w-full h-full object-cover z-0 "/> 
-      
-        <div className="flex flex-col items-center justify-center text-white z-10">
-        
-          <Section1
-            //TitleText
-            TitleSize="h1"
-            TitleLabel={sectionShareCougt?.title} // {subtitle}
-            TextSize="normal"
-            TextLabel={sectionShareCougt?.textLabel}
-            ContainerTitleProps
-            ContainerTextProps="items-start h-[100%] mr-4 max-w-5xl"
-
-            //Image
-            border="none"
-            route={''}
+    <div className="relative -top-24">
+      {/* Hero Section */}
+      <section>
+        <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
+          <Image
+            className="absolute h-full w-full object-cover opacity-60"
+            src={howItWorks1}
             alt=""
-            sizeImg=".w-full"
-
-            //Buttons
-            buttons={buttons}
-            ImageStyleProps={''}
-            buttonTechnology={false}
-            shareButtonLabel={buttons?.[0]}
-            learnMoreButtonLabel={buttons?.[1]}
+            priority
           />
 
-          <div className='w-full mt-60 z-10'>
-
-          {/* Background img 2  */}
-          <Image src={waveImg} alt='cards background' className="absolute left-0 w-full object-cover z-0 h-[87rem]
-          xs:h-100 sm:h-[950px] md:h-[1035px] lg:h-[900px] xl:h-[900px]"/>
-
-            <Section8
-              TitleLabel={sectiontCovidTestExplanation?.title}
-              TitleSize="h2"
-              ContainerTitleProps="text-left mr-[5vw] z-10"
-              
-              //Image
-              sizeImg="pr30"
-              border="none"
-              route1={''}
-              route2={''}
-              route3={''}
-              alt=""
-              
-              //TitleText
-              TitleSize1="h10"
-              TitleLabel1={sectiontCovidTestExplanation?.titleLabelRecording}
-              TitleLabel2={sectiontCovidTestExplanation?.titleLabelProcessing}
-              TitleLabel3={sectiontCovidTestExplanation?.titleLabelResults}
-              TextSize="small"
-              TextLabel1={sectiontCovidTestExplanation?.textLabelRecording}
-              TextLabel2={sectiontCovidTestExplanation?.textLabelProcessing}
-              TextLabel3={sectiontCovidTestExplanation?.textLabelResults}
-              ContainerTextProps=""
-              buttonLabel={sectiontCovidTestExplanation.button}
-            />
+          {/* Text Container */}
+          <div className="relative flex flex-col items-center justify-center pt-60 pb-40 lg:right-[100px]">
+            {/* Sizing & Spacing Container */}
+            <div className="max-w-xl space-y-28 px-10 text-center text-white lg:max-w-3xl lg:text-left">
+              <h2 className="text-4xl font-semibold lg:text-5xl lg:font-normal">
+                Science behind <span className="text-blue-500">Virufy</span>
+              </h2>
+              <div className="space-y-16">
+                <p className="text-xl">
+                  Artificial Intelligence (AI) is capable of detecting minute
+                  differences in vocal patterns to detect disease presence.
+                </p>
+                <div>
+                  <Link
+                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-2xl font-medium lg:py-4 lg:px-8 lg:text-lg"
+                    href="/publications"
+                  >
+                    See our Research
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+
+      {/* Gradient Overlay Container */}
+      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
+        <Image
+          src={waveImg}
+          alt=""
+          className="absolute h-full w-full object-cover opacity-40"
+        />
+
+        {/* AI Section */}
+        <section>
+          {/* Title & Cards Container */}
+          <div className="flex items-center justify-center py-28">
+            {/* Spacing & Typography Container */}
+            <div className="space-y-8 px-10 text-left">
+              <h2 className="text-left text-4xl font-normal text-white opacity-95">
+                How does AI work?
+              </h2>
+
+              {/* Cards Container */}
+              <div className="space-y-16">
+                {/* Card One Container */}
+                <div className="flex items-center justify-between space-x-8 rounded-3xl bg-[#2d69c1] p-8 lg:space-x-16 lg:px-20 lg:py-12">
+                  {/* Left Number Container */}
+                  <div className="bg-gradient-to-b from-green-500 to-blue-500 bg-clip-text font-bold text-transparent opacity-80">
+                    <h3 className="text-7xl font-bold">01</h3>
+                  </div>
+                  <p className="max-w-xl font-medium text-white opacity-95">
+                    Our revolutionary CoughCheck app employs cutting-edge AI
+                    technology. By Simply coughing into your phone, our app
+                    captures and analyzes distinct cough patterns using
+                    sophisticated machine learning algorithms and neural
+                    networks.
+                  </p>
+                </div>
+
+                {/* Card Two Container */}
+                <div className="flex items-center justify-center space-x-8 rounded-3xl bg-[#2d69c1] p-8 lg:space-x-16 lg:px-20 lg:py-12">
+                  {/* Left Number Container */}
+                  <div className="bg-gradient-to-b from-green-500 to-blue-500 bg-clip-text font-bold text-transparent opacity-80">
+                    <h3 className="text-7xl font-bold">02</h3>
+                  </div>
+                  <p className="max-w-xl font-medium text-white opacity-95">
+                    It scrutinizes various elements of the cough, such as
+                    duration, frequency, and intensity. Leveraging a
+                    comprehensive database, the Al meticulously compares
+                    recorded cough patterns against known indicators of
+                    respiratory diseases, allowing for the early detection of
+                    potential health issues.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </>
+    </div>
   )
 }
