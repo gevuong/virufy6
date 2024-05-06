@@ -20,7 +20,7 @@ export const Ai = {
       {
         title: '01',
         text: 'Our revolutionary CoughCheck app employs cutting-edge AI technology. By Simply coughing into your phone, our app captures and analyzes distinct cough patterns using sophisticated machine learning algorithms and neural networks.',
-        style: ' tracking-widest',
+        style: 'tracking-widest',
       },
       {
         title: '02',

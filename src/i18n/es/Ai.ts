@@ -3,7 +3,7 @@ export const Ai = {
     title: [
       {
         type: 'text',
-        text: 'La ciencia detrás de ',
+        text: 'La Ciencia detrás de ',
       },
       {
         type: 'span',
@@ -15,7 +15,7 @@ export const Ai = {
     linkText: 'Vea nuestra Investigación',
   },
   aiSection: {
-    title: '¿Cómo funciona la IA?',
+    title: '¿Cómo funciona la Inteligencia Artificial (IA)?',
     aiCards: [
       {
         title: '01',
