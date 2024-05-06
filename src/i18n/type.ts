@@ -1,4 +1,5 @@
 import { type AboutUs } from './types/AboutUs'
+import { type Ai } from './types/Ai'
 import { type BlogDetails } from './types/BlogDetailsType'
 import { type BlogListing } from './types/BlogListingType'
 import { type FAQ } from './types/FAQ'
@@ -12,7 +13,7 @@ export type I18nData = {
   home: Home
   AboutUs?: AboutUs
   GetInvolved_?: GetInvolved
-  howItWorks?: HowItWorks
+  Ai?: Ai
   dashboard?: DashBoard
   JobListing: JobListing
   JobDescription?: {
@@ -31,29 +32,6 @@ export type I18nData = {
   navbar?: NavbarType
   footer: Footer
 }
-
-// ---- How It Works ----
-export interface HowItWorks {
-  sectionShareCougt: SectionShareCougt
-  sectiontCovidTestExplanation: SectiontCovidTestExplanation
-}
-
-export interface SectionShareCougt {
-  title: string
-  textLabel: string
-  buttons: string[]
-}
-export interface SectiontCovidTestExplanation {
-  title: string
-  titleLabelRecording: string
-  titleLabelProcessing: string
-  titleLabelResults: string
-  textLabelRecording: string
-  textLabelProcessing: string
-  textLabelResults: string
-  button: string
-}
-// ---- | ----
 
 // ---- Job Listing ----
 export interface JobListing {
