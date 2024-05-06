@@ -68,7 +68,7 @@ export default function AiPage() {
         <section>
           {/* Title & Cards Container */}
           <div className="flex items-center justify-center py-24">
-            {/* Spacing & Typography Container */}
+            {/* Spacing Container, shifts title to the left */}
             <div className="space-y-8 px-10">
               <h2 className="text-4xl font-normal text-white opacity-95">
                 {aiSection.title}
