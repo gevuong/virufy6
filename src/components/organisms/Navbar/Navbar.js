@@ -249,7 +249,7 @@ export default function Navbar() {
                     </Link>
                     <Link
                       className="px-5 py-3 text-[#393939] hover:bg-gray-200"
-                      href="/OurSupporters"
+                      href="/supporters"
                     >
                       {aboutUs?.ourSupporters}
                     </Link>
