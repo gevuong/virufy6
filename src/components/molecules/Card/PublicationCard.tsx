@@ -8,7 +8,7 @@ const PublicationCard = ({ title, date, url, linkText }: Props) => {
     <>
       <h3 className="max-w-lg text-xl font-medium md:max-w-md">{title}</h3>
       <div className="items-center space-y-6 md:flex md:flex-row md:justify-between md:space-y-0">
-        <ul className="list-inside list-disc">
+        <ul className="list-inside list-disc pb-6">
           <li>{date}</li>
         </ul>
         <Link
