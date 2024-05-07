@@ -58,7 +58,7 @@ export default function PublicationsPage() {
         </div>
 
         {/* Record/Share Your Cough Container */}
-        <div className="relative mx-auto max-w-4xl space-y-14 px-10 py-40 text-center font-medium text-white">
+        <div className="relative mx-auto max-w-4xl space-y-24 px-10 py-40 text-center font-medium text-white md:space-y-14">
           <h2 className="text-5xl leading-normal md:text-4xl md:leading-relaxed">
             {coughSection.title}
           </h2>
@@ -66,7 +66,7 @@ export default function PublicationsPage() {
           {/* Link Container */}
           <div>
             <Link
-              className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-3xl font-medium md:py-4 md:px-8 md:text-lg"
+              className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 p-8 text-3xl font-medium md:py-4 md:px-8 md:text-lg"
               target="_blank"
               href="https://virufy.org/study/welcome"
             >
