@@ -1,7 +1,7 @@
 import TitleText from "~/components/molecules/TitleText/TitleText";
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
-import Button from "~/components/atoms/button/Button";
 import ImageSection4 from "~/assets/static/images/section4/1.jpg";
+import Button1 from "~/components/atoms/Button1.js/Button1";
 
 export default function Section4({
   ContainerTitleProps,
@@ -15,7 +15,7 @@ export default function Section4({
   TextLabel,
   labelButton,
   buttonRoute,
-  style
+  
 }) {
   console.log(buttonRoute);
   console.log(labelButton);
@@ -72,7 +72,7 @@ export default function Section4({
               TextClassProps={""}
             />
             <div className="hidden sm:flex flex-col justify-center">
-            <Button 
+            <Button1 
               size="medium" 
               type="primary" 
               path={buttonRoute} 
@@ -80,7 +80,8 @@ export default function Section4({
               style={{}}
               radius='50px'
               gradientBackground = "linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)"
-              width="250px" height="65px"
+              width="250px" 
+              height="65px"
             />
           </div>
 

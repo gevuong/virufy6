@@ -21,6 +21,7 @@ export default function Card({
               // backgroundColor: 'rgba(0, 0, 0, 0.5)', // Add a semi-transparent background color to make text more readable
               position: 'relative', // Add position relative to the card content div
             }}
+            key={id}
           >
             <div 
             style={{

@@ -207,7 +207,7 @@ export default function OurPeople1() {
       ContainerTextProps
       border
       alt
-      style={{borderRadius: "50%" }}
+      // style={{borderRadius: "50%" }}
     />
 
 <Title
