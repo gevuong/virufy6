@@ -1,9 +1,9 @@
 export interface NavbarType {
+    home: string
     ourTechnology: OurTechnology
-    getInvolved: GetInvolved
+    coughCheckApp: string
     aboutUs: AboutUs
     faq: string
-    joinUs: string
     donate: string
 }
 
@@ -13,12 +13,12 @@ export interface OurTechnology {
     OurResearch: string
 }
 
-export interface GetInvolved {
-    section: string
-    donate: string
-    joinOurTeam: string
-    tellYourStory: string
-}
+// export interface GetInvolved {
+//     section: string
+//     donate: string
+//     joinOurTeam: string
+//     tellYourStory: string
+// }
 
 export interface AboutUs {
     section: string

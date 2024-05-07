@@ -6,7 +6,7 @@ export const ButtonType = {
 
 export const ButtonSize = {
     small: "h-[52px] w-[86px]" ,
-    medium: "h-[65px] w-[260px]",
+    medium: "h-[52px] w-[224px]",
     large: "h-[52px] w-[345px]",
 };
 
