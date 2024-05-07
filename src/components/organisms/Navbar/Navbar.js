@@ -9,7 +9,7 @@ import BarsMenu from '~/assets/static/icons/navbar/barsIconMenu.svg'
 import CloseMenu from '~/assets/static/icons/navbar/closeIconMenu.svg'
 import Select from '~/components/atoms/Select/Select'
 import Button from '~/components/atoms/button/Button'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useI18n } from '~/i18n'
 
 //Flags
@@ -39,7 +39,22 @@ export default function Navbar() {
   } = useI18n()
   const [navbar, setNavbar] = useState(false)
 
-  const [showModal, setShowModal] = React.useState(false)
+  const [showModal, setShowModal] = useState(false)
+
+  const [activeLink, setActiveLink] = useState('');
+
+  useEffect(() => {
+    window.location.pathname === '/' ? setActiveLink('home') :
+    window.location.pathname === '/home' ? setActiveLink('home') :
+    window.location.pathname === '/ai' ? setActiveLink('ourTechnology') :
+    window.location.pathname === '/publications' ? setActiveLink('ourTechnology') :
+    window.location.pathname === '/about-us' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/OurPeople1' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/OurPeople2' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/supporters' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/Blog' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
+  })
 
   return (
     <div className="bg-[#000]">
@@ -179,24 +194,26 @@ export default function Navbar() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 lg:space-y-0 xl:space-x-9">
-                            <li className="text-white
-                                hover:before:scale-x-100 hover:before:origin-left
-                                relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0"
-                            >
+                            <li className="text-white">
                                 <div>
-                                    <Link className="peer py-2 text-white" href="/home">
+                                    <Link
+                                        className={`${activeLink === 'home'
+                                            ? 'py-2 solid border-b-2'
+                                            : 'py-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
+                                        href="/home"
+                                    >
                                         {home}
                                     </Link>
                                 </div>
                             </li>
-                            <li className="text-[#393939]
-                                hover:before:scale-x-100 hover:before:origin-left
-                                relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0"
-                            >
+                            <li className="text-white">
                                 <div>
-                                    <Link className="peer py-2 text-white" href="/ai">
+                                    <Link
+                                        className={`${activeLink === 'ourTechnology'
+                                            ? 'peer py-2 text-white solid border-b-2'
+                                            : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
+                                        href="/ai"
+                                    >
                                         {ourTechnology?.section}
                                     </Link>
                                     <div className="fixed hidden w-[200px] flex-col bg-white drop-shadow-lg hover:flex peer-hover:flex">
@@ -227,13 +244,14 @@ export default function Navbar() {
                                 </div>
                             </li>
 
-                            <li className="text-white
-                                hover:before:scale-x-100 hover:before:origin-left
-                                relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0"
-                            >
+                            <li className="text-white">
                                 <div>
-                                <Link className="peer py-2 text-white" href="/about-us">
+                                <Link
+                                    className={`${activeLink === 'aboutUs'
+                                        ? 'peer py-2 text-white solid border-b-2'
+                                        : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
+                                    href="/about-us"
+                                >
                                     {aboutUs?.section}
                                 </Link>
 
@@ -259,13 +277,14 @@ export default function Navbar() {
                                 </div>
                                 </div>
                             </li>
-                            <li className="text-white
-                                hover:before:scale-x-100 hover:before:origin-left
-                                relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0"
-                            >
+                            <li className="text-white">
                                 <div>
-                                <Link className="peer py-2 text-white" href="/FAQ">
+                                <Link
+                                    className={`${activeLink === 'faq'
+                                        ? 'peer py-2 text-white solid border-b-2'
+                                        : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
+                                    href="/FAQ"
+                                >
                                     {faq}
                                 </Link>
                                 </div>
