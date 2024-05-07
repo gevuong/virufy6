@@ -11,11 +11,13 @@ const PublicationCard = ({ title, date, url, linkText }: Props) => {
         <ul className="list-inside list-disc">
           <li>{date}</li>
         </ul>
-        <button className="rounded-3xl bg-white py-2 px-8 text-[#123d62]">
-          <Link target="_blank" href={url}>
-            {linkText}
-          </Link>
-        </button>
+        <Link
+          className="rounded-3xl bg-white py-2 px-8 text-[#123d62]"
+          target="_blank"
+          href={url}
+        >
+          {linkText}
+        </Link>
       </div>
     </>
   )

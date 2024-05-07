@@ -14,7 +14,7 @@ export default function PublicationsPage() {
 
   return (
     <div className="relative -top-24">
-      {/* Publications/Hero Container */}
+      {/* Hero Container */}
       <div className="relative bg-gradient-to-b from-black to-[#162b4c]">
         <Image
           src={PhoneHeader}
@@ -22,6 +22,7 @@ export default function PublicationsPage() {
           alt=""
           priority
         />
+
         {/* Text Container */}
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 py-52 px-10 text-center font-medium opacity-95">
           <h1 className="text-5xl text-green-500">
@@ -61,11 +62,17 @@ export default function PublicationsPage() {
           <h2 className="text-5xl leading-normal md:text-4xl md:leading-relaxed">
             {coughSection.title}
           </h2>
-          <button className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-3xl font-medium md:py-4 md:px-8 md:text-lg">
-            <Link target="_blank" href="https://virufy.org/study/welcome">
+
+          {/* Link Container */}
+          <div>
+            <Link
+              className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-3xl font-medium md:py-4 md:px-8 md:text-lg"
+              target="_blank"
+              href="https://virufy.org/study/welcome"
+            >
               {coughSection.linkText}
             </Link>
-          </button>
+          </div>
         </div>
       </div>
     </div>

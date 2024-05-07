@@ -14,7 +14,7 @@ import { useI18n } from '~/i18n'
 export default function Footer() {
   const links1 = [
     { label: 'Home', route: '/home' },
-    { label: 'Our Technology', route: '/OurTechnology' },
+    { label: 'Technology', route: '/ai' },
     { label: 'CoughCheck App', route: '/GetInvolved' },
     { label: 'About', route: '/about-us' },
     { label: 'FAQ', route: '/FAQ' },
