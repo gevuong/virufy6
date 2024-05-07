@@ -1,34 +1,32 @@
 import { type I18nData } from '../type'
-import { home } from './Home'
 import { AboutUs } from './AboutUs'
-import { GetInvolved_ } from './GetInvolved'
+import { Ai } from './Ai'
+import { blogDetails } from './BlogDetails'
+import { blogListing } from './BlogListing'
 import { dashboard } from './Dashboard'
+import { faq } from './FAQ'
+import { footer } from './Footer'
+import { GetInvolved_ } from './GetInvolved'
+import { home } from './Home'
 import { JobDescription } from './JobDescription'
-import { Publications } from './publications'
-import { ourTechnology } from './OurTecnology'
-import { howItWorks } from './HowItWorks'
+import { JobListing } from './JobListing'
+import { navbar } from './Navbar'
 import { OurPeople1 } from './OurPeople1'
 import { OurPeople2 } from './OurPeople2'
 import { ourResearch } from './OurResearch'
-import { tellYourStory } from './TellYourStory'
 import { OurSupporters } from './OurSupporters'
-import { blogListing } from './BlogListing'
-import { JobListing } from './JobListing'
-import { blogDetails } from './BlogDetails'
-import { faq } from './FAQ'
-import { navbar } from './Navbar'
-import { footer } from './Footer'
+import { Publications } from './publications'
+import { tellYourStory } from './TellYourStory'
 export const data: I18nData = {
   locale: 'es',
   home,
   AboutUs,
   GetInvolved_,
-  howItWorks,
+  Ai,
   dashboard,
   JobListing,
   JobDescription,
   Publications,
-  ourTechnology,
   OurPeople1,
   OurPeople2,
   ourResearch,

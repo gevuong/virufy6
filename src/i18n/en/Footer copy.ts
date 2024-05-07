@@ -1,6 +1,6 @@
 export const footer = {
   sectionLinkPages: [
-    { label: 'Our Technology', route: '/OurTechnology' },
+    { label: 'Our Technology', route: '/ai' },
     { label: 'Get Involved', route: '/GetInvolved' },
     { label: 'About', route: '/AboutUs' },
     { label: 'FAQ', route: '/FAQ' },

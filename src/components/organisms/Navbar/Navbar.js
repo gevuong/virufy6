@@ -38,7 +38,7 @@ export default function Navbar() {
         "jp": POR
     }
     const { navbar:
-        { ourTecnology,
+        { ourTechnology,
             getInvolved,
             aboutUs,
             faq,
@@ -147,12 +147,10 @@ export default function Navbar() {
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 xl:space-x-9 lg:space-y-0">
                             <li className="text-white">
                                 <div>
-                                    <Link className="peer py-2 text-white" href="/OurTechnology">{ourTecnology?.section}</Link>
+                                    <Link className="peer py-2 text-white" href="/ai">{ourTechnology?.section}</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/HowItWorks">{ourTecnology?.howItWorks}</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">{ourTecnology?.shareYourCough}</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/Dashboard">{ourTecnology?.OurData}</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurResearch">{ourTecnology?.OurResearch}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/ai">{ourTechnology?.howItWorks}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/publications">{ourTechnology?.OurResearch}</Link>
                                     </div>
                                 </div>
                             </li>
@@ -171,9 +169,8 @@ export default function Navbar() {
                                     <Link className="peer py-2 text-white" href="/about-us">{aboutUs?.section}</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurPeople1">{aboutUs?.ourPeople}</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurSupporters">{aboutUs?.ourSopporters}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurSupporters">{aboutUs?.ourSupporters}</Link>
                                         <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/Blog">{aboutUs?.blog}</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/publications">{aboutUs?.publications}</Link>
                                     </div>
                                 </div>
                             </li>
