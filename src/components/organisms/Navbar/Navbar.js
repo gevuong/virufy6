@@ -225,7 +225,7 @@ export default function Navbar() {
                                     >
                                         {ourTechnology?.section}
                                     </Link>
-                                    <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex">
+                                    <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex ml-[-60px] text-center">
                                         <Link
                                             className="px-5 py-5 text-[white] hover:font-bold"
                                             href="/ai"
@@ -264,7 +264,7 @@ export default function Navbar() {
                                     {aboutUs?.section}
                                 </Link>
 
-                                <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex">
+                                <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex ml-[-60px] text-center">
                                     <Link
                                         className="py-5 text-white hover:font-bold"
                                         href="/OurPeople1"
