@@ -44,6 +44,15 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState('');
 
   useEffect(() => {
+    window.location.pathname === '/es/home' ? setActiveLink('home') :
+    window.location.pathname === '/es/ai' ? setActiveLink('ourTechnology') :
+    window.location.pathname === '/es/publications' ? setActiveLink('ourTechnology') :
+    window.location.pathname === '/es/about-us' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/OurPeople1' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/OurPeople2' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/supporters' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/Blog' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/FAQ' ? setActiveLink('faq') :
     window.location.pathname === '/' ? setActiveLink('home') :
     window.location.pathname === '/home' ? setActiveLink('home') :
     window.location.pathname === '/ai' ? setActiveLink('ourTechnology') :
@@ -216,15 +225,15 @@ export default function Navbar() {
                                     >
                                         {ourTechnology?.section}
                                     </Link>
-                                    <div className="fixed hidden w-[200px] flex-col bg-white drop-shadow-lg hover:flex peer-hover:flex">
+                                    <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex">
                                         <Link
-                                            className="px-5 py-3 text-[#393939] hover:bg-gray-200"
+                                            className="px-5 py-5 text-[white] hover:font-bold"
                                             href="/ai"
                                         >
                                         {ourTechnology?.howItWorks}
                                         </Link>
                                         <Link
-                                            className="px-5 py-3 text-[#393939] hover:bg-gray-200"
+                                            className="px-5 py-3 text-[white] hover:font-bold"
                                             href="/publications"
                                         >
                                         {ourTechnology?.OurResearch}
@@ -255,21 +264,21 @@ export default function Navbar() {
                                     {aboutUs?.section}
                                 </Link>
 
-                                <div className="fixed hidden w-[200px] flex-col bg-white drop-shadow-lg hover:flex peer-hover:flex">
+                                <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex">
                                     <Link
-                                        className="px-5 py-3 text-[#393939] hover:bg-gray-200"
+                                        className="py-5 text-white hover:font-bold"
                                         href="/OurPeople1"
                                     >
                                     {aboutUs?.ourPeople}
                                     </Link>
                                     <Link
-                                        className="px-5 py-3 text-[#393939] hover:bg-gray-200"
+                                        className="py-3 text-white hover:font-bold"
                                         href="/supporters"
                                     >
                                     {aboutUs?.ourSupporters}
                                     </Link>
                                     <Link
-                                        className="px-5 py-3 text-[#393939] hover:bg-gray-200"
+                                        className="py-3 text-white hover:font-bold"
                                         href="/Blog"
                                     >
                                     {aboutUs?.blog}
