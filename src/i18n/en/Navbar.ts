@@ -1,17 +1,13 @@
 import { NavbarType } from '../types/NavbarType'
 
 export const navbar: NavbarType = {
+  home: 'Home',
   ourTechnology: {
     section: 'Technology',
     howItWorks: 'AI',
     OurResearch: 'Publications',
   },
-  getInvolved: {
-    section: 'Get Involved',
-    donate: 'Donate',
-    joinOurTeam: 'Join Our Team',
-    tellYourStory: 'Tell Your Story',
-  },
+  coughCheckApp: 'CoughCheck App',
   aboutUs: {
     section: 'About Us',
     ourPeople: 'Our People',
@@ -20,6 +16,5 @@ export const navbar: NavbarType = {
     publications: 'Publications',
   },
   faq: 'FAQ',
-  joinUs: 'JOIN US',
   donate: 'DONATE',
 }

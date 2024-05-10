@@ -13,8 +13,8 @@ export const localeData = {
 }
 
 export const localeOptions = [
-  { value: 'en', label: 'ENG' },
-  { value: 'es', label: 'ESP' },
+  { value: 'en', label: 'EN' },
+  { value: 'es', label: 'ES' },
 ]
 
 export function useI18n(): I18nData {
