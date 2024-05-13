@@ -183,13 +183,15 @@ export default function OurPeople1() {
 
   return (
     <>
+    <div className="w-full overflow-hidden">
       <TextinsImg
-        sizeImg={{ width: '1512px', height: '925px' }}
+        sizeImg={{ width: '100%', height: 'auto' }}
         borderImg="none"
         src={ImageinsText}
         altImg="Imagen cabezera"
         Text={titleImage}
       />
+      </div>
 
 
 <div className="flex flex-col justify-center items-center" style={{background: 'linear-gradient(180deg, #000000 0%, #162B4C 23.5%, #3468B2 90%)'}}>
