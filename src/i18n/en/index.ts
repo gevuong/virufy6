@@ -16,6 +16,7 @@ import { OurPeople2 } from './OurPeople2'
 import { ourResearch } from './OurResearch'
 import { OurSupporters } from './OurSupporters'
 import { Publications } from './publications'
+import { ShareYourCough } from './ShareYourCough'
 import { tellYourStory } from './TellYourStory'
 
 export const data: I18nData = {
@@ -38,4 +39,5 @@ export const data: I18nData = {
   faq,
   navbar,
   footer,
+  ShareYourCough,
 }
