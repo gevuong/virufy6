@@ -10,7 +10,7 @@ const PublicationCard = ({ title, date, url, linkText }: PublicationCard) => {
           <li>{date}</li>
         </ul>
         <Link
-          className="rounded-3xl bg-white py-2 px-8 text-[#123d62]"
+          className="rounded-3xl bg-white py-2 px-4 text-[#123d62] sm:px-8"
           target="_blank"
           href={url}
         >

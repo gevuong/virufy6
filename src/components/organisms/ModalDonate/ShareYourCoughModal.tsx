@@ -23,6 +23,7 @@ const ShareYourCoughModal = ({ isOpen, handleClose }: Prop) => {
           />
         </div>
 
+        {/* Text */}
         <div className="my-10 text-sm text-white">
           An Independent Nonprofit Research Organization
         </div>

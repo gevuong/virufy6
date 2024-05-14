@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react'
-
 interface Prop {
   isOpen: boolean
   handleClose: () => void
@@ -7,32 +5,30 @@ interface Prop {
 }
 
 const Modal = ({ isOpen, handleClose, children }: Prop) => {
-  const modalRef = useRef<HTMLDialogElement>(null)
-
-  useEffect(() => {
-    const modalEl = modalRef.current
-    if (modalEl) {
-      if (isOpen) {
-        modalEl.showModal()
-      } else {
-        modalEl.close()
-      }
-    }
-  }, [isOpen])
-
   return (
-    <dialog
-      className="mx-auto max-w-xs rounded-3xl bg-gradient-to-b from-black to-[#3468B2] backdrop:bg-black/50 md:max-w-sm md:rounded-xl md:px-6"
-      ref={modalRef}
-    >
-      <button
-        onClick={handleClose}
-        className="absolute right-8 top-5 text-white duration-200 hover:scale-110"
-      >
-        X
-      </button>
-      {children}
-    </dialog>
+    <>
+      {isOpen ? (
+        // Modal Wrapper to handle outside modal clicks
+        <div
+          className="fixed top-0 bottom-0 left-0 right-0 z-10 flex items-center justify-center bg-black/50"
+          onClick={handleClose}
+        >
+          {/* Modal Container */}
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative max-w-xs rounded-3xl bg-gradient-to-b from-black to-[#3468B2] md:max-w-sm md:rounded-xl md:px-6"
+          >
+            <button
+              onClick={handleClose}
+              className="absolute right-8 top-5 text-white duration-200 hover:scale-110"
+            >
+              X
+            </button>
+            {children}
+          </div>
+        </div>
+      ) : null}
+    </>
   )
 }
 
