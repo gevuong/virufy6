@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import { type PublicationCard } from '~/i18n/types/Publications'
 
-type Props = PublicationCard
-
-const PublicationCard = ({ title, date, url, linkText }: Props) => {
+const PublicationCard = ({ title, date, url, linkText }: PublicationCard) => {
   return (
     <>
       <h3 className="max-w-lg text-xl font-medium md:max-w-md">{title}</h3>
