@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import PublicationCard from '~/components/molecules/Card/PublicationCard'
-import ShareYourCoughModal from '~/components/organisms/ModalDonate/ShareYourCoughModal'
+import ShareYourCoughModal from '~/components/organisms/Modals/ShareYourCoughModal'
 import { useI18n } from '~/i18n'
 import {
   HexagonDottedBackground,

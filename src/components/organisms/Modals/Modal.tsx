@@ -8,7 +8,7 @@ const Modal = ({ isOpen, handleClose, children }: Prop) => {
   return (
     <>
       {isOpen ? (
-        // Modal Wrapper to handle outside modal clicks
+        // Modal Wrapper to handle outside modal click
         <div
           className="fixed top-0 bottom-0 left-0 right-0 z-10 flex items-center justify-center bg-black/50"
           onClick={handleClose}
