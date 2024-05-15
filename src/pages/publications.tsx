@@ -61,9 +61,9 @@ export default function PublicationsPage() {
           ))}
         </div>
 
-        {/* Record/Share Your Cough Container */}
-        <div className="relative mx-auto max-w-4xl space-y-24 px-10 py-40 text-center font-medium text-white md:space-y-14">
-          <h2 className="text-5xl leading-normal md:text-4xl md:leading-relaxed">
+        {/* Share Your Cough Container */}
+        <div className="relative mx-auto max-w-4xl space-y-24 px-8 py-40 text-center font-medium text-white md:space-y-14">
+          <h2 className="text-4xl leading-normal md:leading-relaxed">
             {coughSection.title}
           </h2>
 
