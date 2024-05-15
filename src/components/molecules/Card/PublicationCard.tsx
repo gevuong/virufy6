@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import { type PublicationCard } from '~/i18n/types/Publications'
 
-type Props = PublicationCard
-
-const PublicationCard = ({ title, date, url, linkText }: Props) => {
+const PublicationCard = ({ title, date, url, linkText }: PublicationCard) => {
   return (
     <>
       <h3 className="max-w-lg text-xl font-medium md:max-w-md">{title}</h3>
@@ -12,7 +10,7 @@ const PublicationCard = ({ title, date, url, linkText }: Props) => {
           <li>{date}</li>
         </ul>
         <Link
-          className="rounded-3xl bg-white py-2 px-8 text-[#123d62]"
+          className="rounded-3xl bg-white py-2 px-4 text-[#123d62] sm:px-8"
           target="_blank"
           href={url}
         >

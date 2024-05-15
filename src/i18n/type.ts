@@ -7,6 +7,7 @@ import { type Footer } from './types/Footer'
 import { type Home } from './types/Home'
 import { type NavbarType } from './types/NavbarType'
 import { type Publications } from './types/Publications'
+import { type ShareYourCough } from './types/ShareYourCough'
 
 export type I18nData = {
   locale: string
@@ -31,6 +32,7 @@ export type I18nData = {
   faq: FAQ
   navbar?: NavbarType
   footer: Footer
+  ShareYourCough: ShareYourCough
 }
 
 // ---- Job Listing ----

@@ -8,34 +8,35 @@ export const Publications = {
   publicationsCards: [
     {
       title:
-        'Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19',
+        'Transformador Multimodal Jerárquico para Detección Automática de COVID-19',
       date: 'Octubre 2022',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
       linkText: 'Leer más',
     },
     {
-      title: 'Covid 19 Calculator -- Positive U.S. Socio-Economic Impact',
+      title:
+        'Calculadora de Covid 19: impacto socioeconómico positivo en EE. UU.',
       date: 'Enero 2022',
       url: 'https://arxiv.org/abs/2201.11109',
       linkText: 'Leer más',
     },
     {
       title:
-        'Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough',
+        'Uso del aprendizaje profundo con grandes conjuntos de datos agregados para la clasificación de COVID-19 a partir de la tos',
       date: 'Enero 2022',
       url: 'https://arxiv.org/abs/2201.01669',
       linkText: 'Leer más',
     },
     {
       title:
-        'Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems',
+        'Desafíos y oportunidades en la implementación de sistemas de inteligencia artificial para la tos COVID-19',
       date: 'Septiembre 2021',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
       linkText: 'Leer más',
     },
     {
       title:
-        'Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough',
+        'Virufy: Aplicabilidad global de conjuntos de datos clínicos y de colaboración colectiva para la detección mediante IA de COVID-19 a partir de la tos',
       date: 'Noviembre 2020',
       url: 'https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract',
       linkText: 'Leer más',

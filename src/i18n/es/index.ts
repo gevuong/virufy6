@@ -17,6 +17,8 @@ import { ourResearch } from './OurResearch'
 import { OurSupporters } from './OurSupporters'
 import { Publications } from './publications'
 import { tellYourStory } from './TellYourStory'
+import { ShareYourCough } from './ShareYourCough'
+
 export const data: I18nData = {
   locale: 'es',
   home,
@@ -37,4 +39,5 @@ export const data: I18nData = {
   faq,
   navbar,
   footer,
+  ShareYourCough,
 }

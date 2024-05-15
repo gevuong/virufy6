@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { useState } from 'react'
 import PublicationCard from '~/components/molecules/Card/PublicationCard'
+import ShareYourCoughModal from '~/components/organisms/Modals/ShareYourCoughModal'
 import { useI18n } from '~/i18n'
 import {
   HexagonDottedBackground,
@@ -11,6 +12,9 @@ export default function PublicationsPage() {
   const {
     Publications: { publicationsSection, publicationsCards, coughSection },
   } = useI18n()
+
+  const [isShareYourCoughModalOpen, setIsShareYourCoughModalOpen] =
+    useState(false)
 
   return (
     <div className="relative -top-24">
@@ -24,8 +28,8 @@ export default function PublicationsPage() {
         />
 
         {/* Text Container */}
-        <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 py-52 px-10 text-center font-medium opacity-95">
-          <h1 className="text-5xl text-green-500">
+        <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 pt-64 pb-40 text-center font-medium opacity-95">
+          <h1 className="text-4xl text-green-500 sm:text-5xl">
             {publicationsSection.title}
           </h1>
           {publicationsSection.texts.map((text, i) => (
@@ -50,31 +54,33 @@ export default function PublicationsPage() {
           {publicationsCards.map((publication, i) => (
             <div
               key={i}
-              className="space-y-4 rounded-xl bg-[#00000060] px-16 py-8 text-left text-white md:w-[700px] md:space-y-5"
+              className="space-y-4 rounded-xl bg-[#00000060] px-10 py-8 text-left text-white sm:px-16 md:w-[700px] md:space-y-5"
             >
               <PublicationCard {...publication} />
             </div>
           ))}
         </div>
 
-        {/* Record/Share Your Cough Container */}
-        <div className="relative mx-auto max-w-4xl space-y-24 px-10 py-40 text-center font-medium text-white md:space-y-14">
-          <h2 className="text-5xl leading-normal md:text-4xl md:leading-relaxed">
+        {/* Share Your Cough Container */}
+        <div className="relative mx-auto max-w-4xl space-y-24 px-8 py-40 text-center font-medium text-white md:space-y-14">
+          <h2 className="text-4xl leading-normal md:leading-relaxed">
             {coughSection.title}
           </h2>
 
-          {/* Link Container */}
-          <div>
-            <Link
-              className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 p-8 text-3xl font-medium md:py-4 md:px-8 md:text-lg"
-              target="_blank"
-              href="https://virufy.org/study/welcome"
-            >
-              {coughSection.linkText}
-            </Link>
-          </div>
+          <button
+            className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 p-6 px-6 text-xl font-medium sm:px-8 sm:text-2xl md:py-4 md:px-8 md:text-lg"
+            onClick={() => setIsShareYourCoughModalOpen(true)}
+          >
+            {coughSection.linkText}
+          </button>
         </div>
       </div>
+
+      {/* Share Your Cough Modal */}
+      <ShareYourCoughModal
+        isOpen={isShareYourCoughModalOpen}
+        handleClose={() => setIsShareYourCoughModalOpen(false)}
+      />
     </div>
   )
 }
