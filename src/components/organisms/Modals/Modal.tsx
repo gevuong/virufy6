@@ -16,7 +16,7 @@ const Modal = ({ isOpen, handleClose, children }: Prop) => {
           {/* Modal Container */}
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative mx-6 max-w-xs rounded-3xl bg-gradient-to-b from-black to-[#3468B2] px-4 md:max-w-sm md:rounded-xl md:px-6"
+            className="relative mx-6 max-w-xs rounded-3xl bg-gradient-to-b from-black to-[#3468B2] px-6 md:max-w-sm md:rounded-xl md:px-6"
           >
             <button
               onClick={handleClose}
