@@ -1,12 +1,12 @@
 //BUTTON THEMES
 export const ButtonType = {
-    primary: "bg-[#3074DC] border-solid border-2 border-[#3074DC] text-base text-white font-bold rounded hover:bg-[#265db0] hover:border-[#265db0]",
+    primary: "bg-gradient-to-b from-green-500 to-blue-500 border-none border-2 border-[#3074DC] text-base text-white font-medium rounded-full hover:bg-[#265db0] hover:border-[#265db0]",
     secondary: "bg-[#ffffff] border-solid border-2 border-[#3074DC] text-base text-[#3074DC] font-bold rounded hover:bg-[#D7E4F8]"
 };
 
 export const ButtonSize = {
     small: "h-[52px] w-[86px]" ,
-    medium: "h-[52px] w-[250px]",
+    medium: "h-[52px] w-[224px]",
     large: "h-[52px] w-[345px]",
 };
 
@@ -20,12 +20,25 @@ export const ImageBorder = {
 export const ImageSize = {
     px30: "w-[30px] h-[18px]",
     px20: "w-[20px] h-[20px]",
+    px30x30: "w-[30px] h-[40px]",
+    px40: "w-[40px] h-[40px]",
     px50: "w-[50px] h-[50px]",
     px64: "w-[64px] h-[64px]",
     px90: "w-[90px] h-[90px]",
     px100: "w-[100px] h-[100px]",
     px200: "w-[200px] h-[200px]",
+    px200x275: "w-[200px] h-[275px]",
+    px240x300: "w-[240px] h-[300px]",
     px300: "w-[300px] h-[300px]",
+    px325x200: "w-[325px] h-[200px]",
+    px325x250: "w-[325px] h-[250px]",
+    px325x275: "w-[325px] h-[275px]",
+    px375x225: "w-[375px] h-[225px]",
+    px375x300: "w-[375px] h-[300px]",
+    px300x400: "w-[300px] h-[400px]",
+    px550: "w-[550px] h-[450px]",
+    px550x360: "w-[550px] h-[360px]",
+    px700: "w-[700px] h-[350px]",
     px160: "w-[160px] h-[48px]",
     px120: "w-[120px] h-[120px]",
     px150: "w-[150px] h-[150px]",
@@ -56,6 +69,7 @@ export const TitleProps = {
     h5tepsHome: "text-[1.25rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[2.5rem]",
     h5Modals: "text-[1.25rem] leading-[1.8rem]  md:text-[1.9rem] md:leading-[2.4rem]",
     h5Modals2: "text-[1rem] leading-[1.8rem]  md:text-[1.4rem] md:leading-[2rem] text-center",
+    h10: "text-[3.6rem] leading-[2.5rem]   md:text-[3.5rem] md:leading-[3.3rem] lg:text-[5rem] lg:leading-[3.50rem] xl:text-[5rem] xl:leading-[4rem]",
 };
 
 //TEXT THEMES
@@ -63,7 +77,8 @@ export const TextProps = {
     subtitle: "text-[1.125rem] leading-[1.75rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
     normal: "  text-[0.875rem] leading-[1.5rem] md:text-[1.1rem] md:leading-[1.8rem] lg:text-[1.3rem] lg:leading-[2.2rem] xl:text-[1.5rem] xl:leading-[2.5rem]",
     normalCardHome: "  text-[0.875rem] leading-[1.25rem] md:text-[1.1rem]",
-    small: "   text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]"
+    small: "   text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]",
+    large: "text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]"
 };
 
 //LINK THEMES

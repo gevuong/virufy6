@@ -89,7 +89,7 @@ export default function OurResearch() {
               size="medium"
               type="primary"
               label={sectionResearch.button}
-              path="/OurPublications"
+              path="/publications"
             />
           </div>
         </div>

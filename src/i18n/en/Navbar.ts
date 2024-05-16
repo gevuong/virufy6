@@ -1,27 +1,20 @@
 import { NavbarType } from '../types/NavbarType'
 
 export const navbar: NavbarType = {
-  ourTecnology: {
-    section: 'Our Technology',
-    howItWorks: 'How It Works',
-    shareYourCough: 'Share Your Cough',
-    OurData: 'Our Data',
-    OurResearch: 'Our Research',
+  home: 'Home',
+  ourTechnology: {
+    section: 'Technology',
+    howItWorks: 'AI',
+    OurResearch: 'Publications',
   },
-  getInvolved: {
-    section: 'Get Involved',
-    donate: 'Donate',
-    joinOurTeam: 'Join Our Team',
-    tellYourStory: 'Tell Your Story',
-  },
+  coughCheckApp: 'CoughCheck App',
   aboutUs: {
     section: 'About Us',
     ourPeople: 'Our People',
-    ourSopporters: 'Our Supporters',
+    ourSupporters: 'Our Supporters',
     blog: 'Blog',
     publications: 'Publications',
   },
   faq: 'FAQ',
-  joinUs: 'JOIN US',
   donate: 'DONATE',
 }

@@ -26,7 +26,7 @@ export default function LocaleSelector({ optionsIcons = {} }) {
     }
   }, [locale])
   return (
-    <div className="flex content-center items-center lg:ml-9">
+    <div className="flex content-center items-center border border-zinc-200 rounded-full p-2 lg:ml-9">
       <ImageAtomLocal
         src={icon}
         alt="icon"
@@ -38,7 +38,7 @@ export default function LocaleSelector({ optionsIcons = {} }) {
         id="xyz"
         defaultValue={locale}
         onChange={handleChange}
-        className={`${styles.select} ml-2 text-[18px]`}
+        className={`${styles.select} bg-transparent text-white ml-1.5 text-[16px]`}
       >
         {/* <select onChange={handleChange} > */}
         {localeOptions.map((locales) => (
