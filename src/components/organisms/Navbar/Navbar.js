@@ -298,11 +298,11 @@ export default function Navbar() {
                                 </Link>
                                 </div>
                             </li>
-
-                            <li className="text-[#393939]">
-                                {/* <Select Text="" Options={options} optionsIcons={optionsIcons} /> */}
+                            {/* Remove language dropdown until website can support other languages (ie. Japanese, Spanish) */}
+                            {/* <li className="text-[#393939]">
+                                <Select Text="" Options={options} optionsIcons={optionsIcons} />
                                 <LocaleSelector optionsIcons={optionsIcons}></LocaleSelector>
-                            </li>
+                            </li> */}
                             <li className="text-[#393939]">
                                 <Button
                                     onClick={() => setShowModal(true)}
