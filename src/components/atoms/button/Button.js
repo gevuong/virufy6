@@ -1,13 +1,16 @@
 import Link from "next/link";
 import { ButtonType, ButtonSize } from "../../themes";
 
-// eslint-disable-next-line @typescript-eslint/no-empty-function
-export default function Button({ size, type, label, path, onClick = () => { } }) {
-
+export default function Button1({ size, type, label, style, radius, gradientBackground, path, width, height, onClick = () => { }}) {
     return (
-        <>
-
-            <button onClick={onClick} className={`${ButtonType?.[type]} ${ButtonSize?.[size]}`}><Link href={path}>{label?.toUpperCase()}</Link></button>
-        </>
+        <Link href={path}>
+            <button
+                onClick={onClick}
+                className={`${ButtonType?.[type]} ${ButtonSize?.[size]} ${style}`}
+                style={{ background: gradientBackground, borderRadius: radius, width: width, height: height }}
+            >
+                {label}
+            </button>
+        </Link>
     )
 }

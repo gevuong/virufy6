@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ButtonType, ButtonSize } from "../../themes";
 
-export default function Button1({ size, type, label, style, radius, gradientBackground, path, width, height, onClick = null }) {
+
+export default function Button1({ size, type, label, style, radius, gradientBackground, path, width, height, onClick = () => { }}) {
     return (
         <>
             <button
