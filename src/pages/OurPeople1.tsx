@@ -185,7 +185,7 @@ export default function OurPeople1() {
     <>
     <div className="w-full overflow-hidden">
       <TextinsImg
-        sizeImg={{ width: '100%', height: 'auto' }}
+        sizeImg='width-100vw'
         borderImg="none"
         src={ImageinsText}
         altImg="Imagen cabezera"

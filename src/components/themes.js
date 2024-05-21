@@ -56,6 +56,7 @@ export const ImageSize = {
     pr40: "w-[40%]",
     pr30: "w-[30%]",
     pr80sq: "w-[80%] h-[80%]",
+    "width-100vw": 'w-screen h-full object-cover',
 };
 
 //TITLE THEMES
