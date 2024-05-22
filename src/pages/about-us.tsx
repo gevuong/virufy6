@@ -81,7 +81,7 @@ export default function AboutUsPage() {
                 </h2>
 
                 {/* Cards Container */}
-                <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-[#132d62] px-16 py-12 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-y-16 lg:gap-x-20 lg:space-y-0 lg:px-20">
+                <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-[#132d62] px-8 py-16 sm:px-16 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-y-16 lg:gap-x-20 lg:space-y-0 lg:px-20">
                   {valuesSection.cards.map((card) => (
                     <div key={card.title}>
                       <ValuesCard {...card} />
@@ -96,7 +96,7 @@ export default function AboutUsPage() {
           <section>
             {/* Privacy Container */}
             <div className="mx-auto max-w-xl px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl">
-              <h2 className="mb-10 text-5xl font-normal">
+              <h2 className="mb-10 text-4xl font-normal sm:text-5xl">
                 {privacySection.title}
               </h2>
               {privacySection.texts.map((text, i) => (
