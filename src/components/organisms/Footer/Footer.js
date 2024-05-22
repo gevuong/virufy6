@@ -783,16 +783,7 @@ export default function Footer() {
 
       <footer className="bg-black">
         <div className="mx-auto flex w-full max-w-screen-xl flex-col p-4 py-10">
-          <Link href="/" className="sm:hidden flex justify-center lg:hidden">
-            <ImageAtomLocal
-              ImageStyleProps="lg:h-12"
-              src={VirufyLogo}
-              alt="Virufy Logo"
-              imagesize=""
-              border=""
-            />
-          </Link>
-          <div className="absolute mx-12 mt-12 hidden w-56 justify-start lg:flex">
+          <div className="absolute mx-12 mt-4 hidden w-56 justify-start lg:flex">
             <Link href="/" onClick={() => setActiveLink('Home')}>
               <ImageAtomLocal
                 src={VirufyLogo}
@@ -803,31 +794,8 @@ export default function Footer() {
               />
             </Link>
           </div>
-          <ul className="mb-6 flex flex-wrap text-white lg:hidden">
-            <li className="sm:hidden my-1 flex w-full items-center justify-center">
-              <LinkAtom Routes={links1} Style="linkFooter" />
-            </li>
-            <li className="sm:hidden my-1 flex w-full items-center justify-center">
-              <div onClick={() => setShowModalCookiesPolicy(true)}>
-                <LinkAtom Routes={links2} Style="linkFooter" />
-              </div>
-            </li>
-            <li className="sm:hidden my-1 flex w-full items-center justify-center">
-              <LinkAtom Routes={links3} Style="linkFooter" />
-            </li>
-            <li className="sm:hidden my-1 flex w-full items-center justify-center">
-              <div onClick={() => setShowModalPrivacyPolicy(true)}>
-                <LinkAtom Routes={links4} Style="linkFooter" />
-              </div>
-            </li>
-            <li className="sm:hidden my-1 flex w-full items-center justify-center">
-              <div onClick={() => setShowModalMyInformation(true)}>
-                <LinkAtom Routes={links5} Style="linkFooter" />
-              </div>
-            </li>
-          </ul>
           <ul className="mb-6 hidden flex-wrap text-white lg:flex">
-            <li className="mt-16 space-x-10 flex w-full align-text-bottom justify-center">
+            <li className="mt-8 flex w-full justify-center space-x-6 align-text-bottom xl:space-x-10">
               {links1.map((link, index) => {
                 return(
                   <Link
@@ -848,7 +816,7 @@ export default function Footer() {
           <div className="flex w-full">
             <hr className="hidden lg:block mx-auto my-4 h-px w-11/12 rounded border-0 bg-white" />
           </div>
-          <li className="lg:my-6 space-x-2 underline lg:no-underline lg:space-x-6 flex text-white font-semibold w-full items-center justify-center">
+          <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
             <div onClick={() => setShowModalCookiesPolicy(true)}>
               <LinkAtom Routes={links2} Style={`text-[15px]`} />
             </div>
