@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Fragment } from 'react'
-import { HalfToneDots, MaskHeader } from '~/assets/static/images/aboutUs/index'
+import { HalfToneDots, MaskHeader } from '~/assets/static/images/ourStory/index'
 import ValuesCard from '~/components/molecules/Card/ValuesCard'
 import { useI18n } from '~/i18n'
 
-export default function AboutUsPage() {
+export default function OurStoryPage() {
   const {
-    AboutUs: { aboutUsSection, storySection, valuesSection, privacySection },
+    OurStory: { aboutUsSection, storySection, valuesSection, privacySection },
   } = useI18n()
 
   return (

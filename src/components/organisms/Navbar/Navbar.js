@@ -47,7 +47,7 @@ export default function Navbar() {
     window.location.pathname === '/es/home' ? setActiveLink('home') :
     window.location.pathname === '/es/ai' ? setActiveLink('ourTechnology') :
     window.location.pathname === '/es/publications' ? setActiveLink('ourTechnology') :
-    window.location.pathname === '/es/about-us' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/our-story' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/OurPeople1' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/supporters' ? setActiveLink('aboutUs') :
@@ -57,7 +57,7 @@ export default function Navbar() {
     window.location.pathname === '/home' ? setActiveLink('home') :
     window.location.pathname === '/ai' ? setActiveLink('ourTechnology') :
     window.location.pathname === '/publications' ? setActiveLink('ourTechnology') :
-    window.location.pathname === '/about-us' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/our-story' ? setActiveLink('aboutUs') :
     window.location.pathname === '/OurPeople1' ? setActiveLink('aboutUs') :
     window.location.pathname === '/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/supporters' ? setActiveLink('aboutUs') :
@@ -259,14 +259,20 @@ export default function Navbar() {
                                     className={`${activeLink === 'aboutUs'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
-                                    href="/about-us"
+                                    href="/our-story"
                                 >
                                     {aboutUs?.section}
                                 </Link>
 
                                 <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex ml-[-60px] text-center">
                                     <Link
-                                        className="py-5 text-white hover:font-bold"
+                                        className="pt-6 pb-3 text-white hover:font-bold"
+                                        href="/our-story"
+                                    >
+                                    {aboutUs?.ourStory}
+                                    </Link>
+                                    <Link
+                                        className="py-3 text-white hover:font-bold"
                                         href="/OurPeople1"
                                     >
                                     {aboutUs?.ourPeople}
