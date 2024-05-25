@@ -43,7 +43,7 @@ export default function AiPage() {
                 <p className="text-xl">{heroSection.text}</p>
                 <div>
                   <Link
-                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-2xl font-medium lg:py-4 lg:px-8 lg:text-lg"
+                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-2xl font-medium lg:py-4 lg:px-8 lg:text-lg text-sm"
                     href={heroSection.url}
                   >
                     {heroSection.linkText}
@@ -56,7 +56,7 @@ export default function AiPage() {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
+      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2] ">
         <Image
           src={WaveBackground}
           alt=""
@@ -69,13 +69,13 @@ export default function AiPage() {
           {/* Title & Cards Container */}
           <div className="flex items-center justify-center py-24">
             {/* Spacing Container, shifts title to the left */}
-            <div className="space-y-8 px-10">
+            <div className="space-y-8 px-6">
               <h2 className="text-4xl font-normal text-white opacity-95">
                 {aiSection.title}
               </h2>
 
               {/* Cards Container */}
-              <div className="space-y-16">
+              <div className="space-y-16 text-sm">
                 {aiSection.aiCards.map((card) => (
                   <AiCard key={card.title} {...card} />
                 ))}
