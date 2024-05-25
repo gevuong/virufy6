@@ -61,6 +61,7 @@ export default function Card({
                   H="h4"
                   Text={name}
                   TitleClassProps="mt-[20px] text-white"
+                  as='span'
                 />
               )}
               <Text
