@@ -5,9 +5,9 @@ import {
   LoopIcon,
   PhoneInHandIcon,
   TeamIcon,
-} from '~/assets/static/images/aboutUs/index'
+} from '~/assets/static/images/ourStory/index'
 
-export const AboutUs = {
+export const OurStory = {
   aboutUsSection: {
     title: 'About Us',
     texts: [

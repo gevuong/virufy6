@@ -16,7 +16,7 @@ export default function Footer() {
     { label: 'Home', route: '/home' },
     { label: 'Technology', route: '/ai' },
     { label: 'CoughCheck App', route: '/GetInvolved' },
-    { label: 'About', route: '/about-us' },
+    { label: 'About', route: '/our-story' },
     { label: 'FAQ', route: '/FAQ' },
   ]
 
@@ -43,21 +43,26 @@ export default function Footer() {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut fermentum nibh. Ut at purus nec erat tincidunt fermentum et quis enim. Curabitur sagittis quam augue, at dignissim elit suscipit nec. Suspendisse tincidunt ullamcorper quam, nec finibus ligula iaculis in. Integer ornare nibh quis ipsum congue sodales. Aliquam faucibus ex velit, a pretium sapien finibus quis. Phasellus eu metus nibh. Donec porta urna augue, sed fermentum ex finibus et. Aliquam volutpat lorem metus, non aliquet eros sodales sed. Aliquam nec lorem ornare, blandit tellus eget, vehicula felis. Sed pellentesque, justo ut posuere scelerisque, sem eros luctus ipsum, sed malesuada odio leo nec risus. Morbi ac mauris varius, tempus quam quis, pharetra nunc. Curabitur lacinia finibus sapien, id mollis sapien dapibus nec. Vivamus volutpat et lorem in dignissim.',
     },
     {
-      title:
-        'Lorem Ipsum',
+      title: 'Lorem Ipsum',
       content:
         'Aenean lacinia interdum malesuada. Nam pharetra sem a erat scelerisque, nec iaculis erat venenatis. Donec enim dui, euismod vel magna at, semper vehicula tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id ultricies leo. Cras aliquet egestas lectus quis porta. Morbi vel augue sed tortor malesuada venenatis at in ipsum. Sed dolor sapien, lobortis ac scelerisque in, semper sit amet ante. Nullam ornare lacus et ante semper, sit amet aliquet libero molestie. Curabitur ornare, ex sit amet aliquet cursus, dolor est pellentesque sapien, nec ornare risus quam sed velit. Pellentesque ante magna, ultricies quis massa vitae, convallis vestibulum urna. Mauris massa metus, volutpat at consequat posuere, mattis eu mauris.',
     },
   ]
-  const {footer: {sectionPersonalInformation}}= useI18n()
+  const {
+    footer: { sectionPersonalInformation },
+  } = useI18n()
 
-  const [activeLink, setActiveLink] = useState('');
+  const [activeLink, setActiveLink] = useState('')
 
   useEffect(() => {
-    {links1.map((link, index) => {
-      link.route === window.location.pathname ? setActiveLink(link.label) : null})
+    {
+      links1.map((link, index) => {
+        link.route === window.location.pathname
+          ? setActiveLink(link.label)
+          : null
+      })
     }
-  }, []);
+  }, [])
 
   return (
     <>
@@ -797,12 +802,13 @@ export default function Footer() {
           <ul className="mb-6 hidden flex-wrap text-white lg:flex">
             <li className="mt-8 flex w-full justify-center space-x-6 align-text-bottom xl:space-x-10">
               {links1.map((link, index) => {
-                return(
+                return (
                   <Link
                     key={index}
-                    className={`${activeLink === link.label
-                      ? 'solid border-b-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
-                      : 'hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'
+                    className={`${
+                      activeLink === link.label
+                        ? 'solid relative border-b-2 before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                        : 'relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
                     }`}
                     href={link.route}
                     onClick={() => setActiveLink(link.label)}
@@ -814,7 +820,7 @@ export default function Footer() {
             </li>
           </ul>
           <div className="flex w-full">
-            <hr className="hidden lg:block mx-auto my-4 h-px w-11/12 rounded border-0 bg-white" />
+            <hr className="mx-auto my-4 hidden h-px w-11/12 rounded border-0 bg-white lg:block" />
           </div>
           <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
             <div onClick={() => setShowModalCookiesPolicy(true)}>
@@ -833,7 +839,7 @@ export default function Footer() {
               <LinkAtom Routes={links5} Style={`text-[15px]`} />
             </div>
           </li>
-          <div className="flex justify-center gap-10 lg:gap-7 mt-8 lg:mt-4">
+          <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
             <Link
               href="https://www.instagram.com/virufy/"
               className="lg:hidden"
@@ -884,17 +890,17 @@ export default function Footer() {
             </Link>
           </div>
           <div className="align-center mt-10 flex w-full flex-col gap-7 text-white lg:hidden">
-            <div className="align-center m-auto max-w-4xl text-[25px] text-center">
+            <div className="align-center m-auto max-w-4xl text-center text-[25px]">
               <Text Text="Nonprofit Status" Style="" TextClassProps="" />
             </div>
-            <div className="align-center m-auto mx-12 max-w-4xl mt-4 text-center">
+            <div className="align-center m-auto mx-12 mt-4 max-w-4xl text-center">
               <Text
                 TextClassProps=""
                 Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
                 Style="normal"
               />
             </div>
-            <div className="align-center m-auto mx-12 max-w-4xl mt-4 text-center">
+            <div className="align-center m-auto mx-12 mt-4 max-w-4xl text-center">
               <Text
                 TextClassProps=""
                 Text="©2024 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
@@ -903,12 +909,8 @@ export default function Footer() {
             </div>
           </div>
           <div className="align-center mt-10 hidden w-full flex-col gap-7 text-white lg:flex">
-            <div className="align-center m-auto max-w-4xl font-semibold text-center">
-              <Text
-                Text="Nonprofit Status"
-                Style="small"
-                TextClassProps=""
-              />
+            <div className="align-center m-auto max-w-4xl text-center font-semibold">
+              <Text Text="Nonprofit Status" Style="small" TextClassProps="" />
             </div>
             <div className="align-center m-auto max-w-4xl text-center">
               <Text

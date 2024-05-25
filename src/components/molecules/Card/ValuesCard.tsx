@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { type ValuesCard } from '../../../i18n/types/AboutUs'
+import { type ValuesCard } from '../../../i18n/types/OurStory'
 
 type Props = ValuesCard
 

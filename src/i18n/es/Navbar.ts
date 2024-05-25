@@ -10,6 +10,7 @@ export const navbar: NavbarType = {
   coughCheckApp: 'CoughCheck App',
   aboutUs: {
     section: 'Sobre Nosotros',
+    ourStory: 'Nuestra Historia',
     ourPeople: 'Nuestra Gente',
     ourSupporters: 'Nuestros Apoyantes',
     blog: 'Blog',

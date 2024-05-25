@@ -1,9 +1,9 @@
-import Card1 from '~/assets/static/images/aboutUs/card1.png'
-import Card2 from '~/assets/static/images/aboutUs/card2.png'
-import Card3 from '~/assets/static/images/aboutUs/card3.png'
-import Card4 from '~/assets/static/images/aboutUs/card4.png'
-import Card5 from '~/assets/static/images/aboutUs/card5.png'
-import Card7 from '~/assets/static/images/aboutUs/card7.png'
+import Card1 from '~/assets/static/images/ourStory/card1.png'
+import Card2 from '~/assets/static/images/ourStory/card2.png'
+import Card3 from '~/assets/static/images/ourStory/card3.png'
+import Card4 from '~/assets/static/images/ourStory/card4.png'
+import Card5 from '~/assets/static/images/ourStory/card5.png'
+import Card7 from '~/assets/static/images/ourStory/card7.png'
 export const faq = {
   sectionSearchQuestion: {
     title: '¿Cómo podemos ayudar?',
