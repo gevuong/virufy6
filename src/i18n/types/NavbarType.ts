@@ -22,6 +22,7 @@ export interface OurTechnology {
 
 export interface AboutUs {
     section: string
+    ourStory: string
     ourPeople: string
     ourSupporters: string
     blog: string

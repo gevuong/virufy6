@@ -1,4 +1,4 @@
-import { type AboutUs } from './types/AboutUs'
+import { type OurStory } from './types/OurStory'
 import { type Ai } from './types/Ai'
 import { type BlogDetails } from './types/BlogDetailsType'
 import { type BlogListing } from './types/BlogListingType'
@@ -12,7 +12,7 @@ import { type ShareYourCough } from './types/ShareYourCough'
 export type I18nData = {
   locale: string
   home: Home
-  AboutUs?: AboutUs
+  OurStory?: OurStory
   GetInvolved_?: GetInvolved
   Ai?: Ai
   dashboard?: DashBoard

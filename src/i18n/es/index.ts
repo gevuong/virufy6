@@ -1,5 +1,5 @@
 import { type I18nData } from '../type'
-import { AboutUs } from './AboutUs'
+import { OurStory } from './OurStory'
 import { Ai } from './Ai'
 import { blogDetails } from './BlogDetails'
 import { blogListing } from './BlogListing'
@@ -22,7 +22,7 @@ import { ShareYourCough } from './ShareYourCough'
 export const data: I18nData = {
   locale: 'es',
   home,
-  AboutUs,
+  OurStory,
   GetInvolved_,
   Ai,
   dashboard,
