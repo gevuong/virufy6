@@ -43,7 +43,7 @@ export default function AiPage() {
                 <p className="text-xl">{heroSection.text}</p>
                 <div>
                   <Link
-                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-2xl font-medium lg:py-4 lg:px-8 lg:text-lg text-sm"
+                    className="rounded-full bg-gradient-to-b from-green-500 to-blue-500 px-10 py-6 text-sm font-medium lg:py-4 lg:px-8 lg:text-lg"
                     href={heroSection.url}
                   >
                     {heroSection.linkText}
@@ -56,7 +56,7 @@ export default function AiPage() {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2] ">
+      <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
         <Image
           src={WaveBackground}
           alt=""
