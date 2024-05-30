@@ -87,7 +87,7 @@ export default function Navbar() {
                             ImageStyleProps=""
                             />
                             {/* Close button */}
-                            <div className="absolute flex w-full flex-col items-end p-3">
+                            <div className="absolute flex w-full flex-col items-end pt-3 pr-5">
                                 <button
                                     className="flex justify-center rounded-full font-medium text-white text-xl shadow-xl outline-none transition-all duration-150 ease-linear"
                                     type="button"
