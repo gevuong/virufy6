@@ -1,7 +1,7 @@
 export const GetInvolved_ = {
   sectionDonate: {
     title: "Donate",
-    textLabel: "We need your contribution to be able to continue helping millions of people in the fight against Covid-19",
+    textLabel: "We need your contribution to be able to continue helping millions of people in the fight against respiratory diseases.",
     button: "Donate",
   },
   sectionJoinOurTeam: {

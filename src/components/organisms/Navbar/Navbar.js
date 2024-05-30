@@ -74,9 +74,11 @@ export default function Navbar() {
                     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
                     <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px]">
                         {/*content*/}
-                        <div className="relative flex w-full flex-col rounded-xl border-0 bg-white shadow-lg outline-none focus:outline-none">
+                        <div className="relative flex w-full flex-col rounded-2xl border-0 bg-white shadow-lg outline-none focus:outline-none">
                         {/*header*/}
-                        <div className="flex w-full rounded-t border-b border-solid border-slate-200">
+                        
+                        {/* Background img */}
+                        <div className="flex w-full rounded-t">
                             <ImageAtomLocal
                             imagesize="pr100"
                             border="none"
@@ -84,32 +86,34 @@ export default function Navbar() {
                             alt="Logo Virufy"
                             ImageStyleProps=""
                             />
-                            <div className="absolute flex w-full flex-col items-end p-6">
-                            <button
-                                className="flex h-[35px] w-[35px] justify-center rounded-full bg-white px-1 py-2 font-bold text-black shadow-xl outline-none transition-all duration-150 ease-linear hover:bg-gray-300"
-                                type="button"
-                                onClick={() => setShowModal(false)}
-                            >
-                                X
-                            </button>
+                            {/* Close button */}
+                            <div className="absolute flex w-full flex-col items-end p-3">
+                                <button
+                                    className="flex justify-center rounded-full font-medium text-white text-xl shadow-xl outline-none transition-all duration-150 ease-linear"
+                                    type="button"
+                                    onClick={() => setShowModal(false)}
+                                >
+                                    X
+                                </button>
                             </div>
                         </div>
                         {/*body*/}
-                        <div className="relative flex flex-col items-center p-6">
+                        <div className="relative flex flex-col items-center p-6 bg-gradient-to-b from-[#273F6A] to-[#4167AD] rounded-b-2xl">
                             <p className=" mt-2 mb-6 text-lg leading-relaxed">
                             <Title
                                 as="span"
                                 Text={'Donate Options'}
-                                H={'h5tepsHome'}
-                                TitleClassProps={'text-center color-black'}
+                                H={''}
+                                TitleClassProps={'text-center color-black text-gray-200'}
                             />
                             </p>
                             <a
                             href="https://www.paypal.com/us/fundraiser/charity/4348461"
                             target="_blank"
                             >
+                            {/* paypal button */}
                             <button
-                                className="mr-1 mb-3 flex w-[270px] justify-center rounded bg-gray-200 px-6 py-2 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
+                                className="mr-1 mb-3 flex w-[270px] justify-center rounded-3xl bg-white px-6 py-[0.9rem] outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
                                 type="button"
                                 onClick={() => setShowModal(false)}
                             >
@@ -126,8 +130,9 @@ export default function Navbar() {
                             href="https://www.gofundme.com/f/virufy-covid19"
                             target="_blank"
                             >
+                            {/* gofundme button */}
                             <button
-                                className="mr-1 mb-1 flex w-[270px] justify-center rounded bg-gray-200 px-6 py-2 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
+                                className="mr-1 mb-1 flex w-[270px] justify-center rounded-3xl bg-white px-6 py-[0.8rem] outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[450px]"
                                 type="button"
                                 onClick={() => setShowModal(false)}
                             >
