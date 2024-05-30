@@ -5,8 +5,8 @@ import VirufyLogo from '~/assets/static/images/logo/virufy.svg'
 import DonateModalImg from '~/assets/static/images/Modals/DonateHero.png'
 import Paypal from '~/assets/static/images/Modals/Paypal.png'
 import Gofoundme from '~/assets/static/images/Modals/Gofoundme.png'
-import BarsMenu from '~/assets/static/icons/navbar/barsIconMenu.svg'
-import CloseMenu from '~/assets/static/icons/navbar/closeIconMenu.svg'
+import BarsMenu from '~/assets/static/icons/navbar/barsIconMenuWhite.svg'
+import CloseMenu from '~/assets/static/icons/navbar/closeIconMenuWhite.svg'
 import Select from '~/components/atoms/Select/Select'
 import Button from '~/components/atoms/button/Button'
 import React, { useState, useEffect } from 'react'
@@ -67,7 +67,7 @@ export default function Navbar() {
 
   return (
     <div className="bg-[#000]">
-        <nav className="sticky z-[100] w-full bg-transparent shadow" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+        <nav className="sticky z-[100] w-full bg-transparent shadow">
             <div>
                 {showModal ? (
                 <>
