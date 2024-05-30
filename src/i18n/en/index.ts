@@ -18,6 +18,7 @@ import { OurSupporters } from './OurSupporters'
 import { Publications } from './publications'
 import { ShareYourCough } from './ShareYourCough'
 import { tellYourStory } from './TellYourStory'
+import { OneYoungWorld } from './OneYoungWorld'
 
 export const data: I18nData = {
   locale: 'en',
@@ -40,4 +41,5 @@ export const data: I18nData = {
   navbar,
   footer,
   ShareYourCough,
+  OneYoungWorld,
 }
