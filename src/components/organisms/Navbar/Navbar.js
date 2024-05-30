@@ -71,7 +71,7 @@ export default function Navbar() {
             <div>
                 {showModal ? (
                 <>
-                    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
+                    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none" onClick={() => setShowModal(false)}>
                     <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px]">
                         {/*content*/}
                         <div className="relative flex w-full flex-col rounded-2xl border-0 bg-white shadow-lg outline-none focus:outline-none">
