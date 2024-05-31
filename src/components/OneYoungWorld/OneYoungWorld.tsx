@@ -18,25 +18,30 @@ interface Props {
   oneYoungWorld: OneYoungWorldSection
   teamLeads: TeamLeadsSection
 }
+
 export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
   const [showTeamLeads, setShowTeamLeads] = useState(false)
 
   return (
     <>
       {/* Navbar Container */}
-      <nav className="font-medium text-white">
-        <ul className="m-0 flex cursor-pointer justify-around border-b border-t border-gray-500 p-0 text-center">
+      <nav className="pt-4 font-medium text-white">
+        <ul className="m-0 flex cursor-pointer justify-around border-b border-t border-gray-500 p-0 text-center md:items-center md:justify-center md:gap-x-24 md:border-none md:font-semibold">
           <li
-            className={`w-1/2 py-4 ${
-              showTeamLeads ? '' : 'bg-green-800 font-bold'
+            className={`w-1/2 py-4 md:w-auto md:bg-inherit md:text-2xl ${
+              showTeamLeads
+                ? ''
+                : 'bg-green-800 font-bold md:border-b-2 md:border-[#30DA74] md:font-semibold'
             }`}
             onClick={() => setShowTeamLeads(false)}
           >
             One Young World
           </li>
           <li
-            className={`w-1/2 py-4 ${
-              showTeamLeads ? 'bg-green-800 font-bold' : ''
+            className={`w-1/2 py-4 md:w-auto md:bg-inherit md:text-2xl ${
+              showTeamLeads
+                ? 'bg-green-800 font-bold md:border-b-2 md:border-[#30DA74] md:font-semibold'
+                : ''
             }`}
             onClick={() => setShowTeamLeads(true)}
           >
