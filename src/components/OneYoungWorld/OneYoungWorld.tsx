@@ -24,6 +24,7 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
 
   return (
     <>
+      {/* only show background image in One Young World tab */}
       {!showTeamLeads && (
         <Image
           src={oneYoungWorld.backgroundImage}
@@ -64,9 +65,9 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
       ) : (
         <div className="mx-auto max-w-5xl">
           {/* One Young World Section */}
-          <section className="">
+          <section>
             {/* OYW Container */}
-            <div className="flex flex-col items-center justify-center px-8 py-12 text-white opacity-95 md:py-24">
+            <div className="flex flex-col items-center justify-center px-8 py-12 text-white opacity-95 md:py-20">
               {/* Virufy & OYW Text Container */}
               <div>
                 <h1 className="hidden md:mb-4 md:block md:text-5xl md:text-[#3074dc]">
@@ -78,7 +79,7 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
 
                 {/* Text Container */}
                 <div className="mb-12 space-y-8">
-                  <p className="text-sm font-medium leading-relaxed lg:text-base">
+                  <p className="text-sm font-medium leading-relaxed md:text-base">
                     Our world needs great leadership. The new generation is one
                     of the most informed, educated and well connected
                     generations in world history. One Young World identifies,
@@ -86,7 +87,7 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
                     across the globe to create a better world: a world with more
                     responsible and effective leadership.
                   </p>
-                  <p className="text-sm font-medium leading-relaxed lg:text-base">
+                  <p className="text-sm font-medium leading-relaxed md:text-base">
                     Virufy has been featured on various OYW platforms, including
                     in the Americas and Japan, ambassadors in action , and
                     ambassadors on the frontline for COVID-19 response . We are
@@ -134,8 +135,8 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
                     alt=""
                   />
                   <div className="space-y-4">
-                    <h3 className="text-lg lg:text-xl">Ambassador driven</h3>
-                    <p className="text-sm lg:text-base">
+                    <h3 className="text-lg md:text-xl">Ambassador driven</h3>
+                    <p className="text-sm md:text-base">
                       Our organization structure matches One Young World with
                       youth ambassadors leading operations in each country, with
                       regional coordinating ambassadors.
@@ -151,8 +152,8 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
                     alt=""
                   />
                   <div className="space-y-4">
-                    <h3 className="text-lg lg:text-xl">Youth led</h3>
-                    <p className="text-sm lg:text-base">
+                    <h3 className="text-lg md:text-xl">Youth led</h3>
+                    <p className="text-sm md:text-base">
                       Our growing team is led by youth from over a dozen
                       countries and are advised by global leaders.
                     </p>
@@ -167,10 +168,10 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
                     alt=""
                   />
                   <div className="space-y-4">
-                    <h3 className="text-lg lg:text-xl">
+                    <h3 className="text-lg md:text-xl">
                       Focused on global impact
                     </h3>
-                    <p className="text-sm lg:text-base">
+                    <p className="text-sm md:text-base">
                       Collect data and provide equitable solutions for people in
                       developing countries across the world.
                     </p>
@@ -185,10 +186,10 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
                     alt=""
                   />
                   <div className="space-y-4">
-                    <h3 className="text-lg lg:text-xl">
+                    <h3 className="text-lg md:text-xl">
                       Diverse representation
                     </h3>
-                    <p className="text-sm lg:text-base">
+                    <p className="text-sm md:text-base">
                       Our team has representation from over 25 universities and
                       15 countries and includes more than 10 One Young World
                       ambassadors.
@@ -211,7 +212,7 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
                 <h2 className="my-12 text-center text-2xl font-bold md:mb-6 md:mt-16 md:text-left md:text-3xl md:font-medium">
                   Volunteer Stories
                 </h2>
-                <p className="text-sm font-medium leading-relaxed lg:text-base">
+                <p className="text-sm font-medium leading-relaxed md:text-base">
                   Our team is led by students dedicated to social good from
                   reputable institutions like Stanford, Princeton, and One Young
                   World. We have strong trust in members of the One Young World
