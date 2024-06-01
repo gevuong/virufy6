@@ -51,7 +51,7 @@ export default function Navbar() {
     window.location.pathname === '/es/OurPeople1' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/supporters' ? setActiveLink('aboutUs') :
-    window.location.pathname === '/es/Blog' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/one-young-world' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/FAQ' ? setActiveLink('faq') :
     window.location.pathname === '/' ? setActiveLink('home') :
     window.location.pathname === '/home' ? setActiveLink('home') :
@@ -61,7 +61,7 @@ export default function Navbar() {
     window.location.pathname === '/OurPeople1' ? setActiveLink('aboutUs') :
     window.location.pathname === '/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/supporters' ? setActiveLink('aboutUs') :
-    window.location.pathname === '/Blog' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/one-young-world' ? setActiveLink('aboutUs') :
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
 
@@ -285,9 +285,9 @@ export default function Navbar() {
                                     </Link>
                                     <Link
                                         className="py-3 text-white hover:font-bold"
-                                        href="/Blog"
+                                        href="/one-young-world"
                                     >
-                                    {aboutUs?.blog}
+                                    {aboutUs?.oneYoungWorld}
                                     </Link>
                                 </div>
                                 </div>

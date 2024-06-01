@@ -1,16 +1,16 @@
 export interface NavbarType {
-    home: string
-    ourTechnology: OurTechnology
-    coughCheckApp: string
-    aboutUs: AboutUs
-    faq: string
-    donate: string
+  home: string
+  ourTechnology: OurTechnology
+  coughCheckApp: string
+  aboutUs: AboutUs
+  faq: string
+  donate: string
 }
 
 export interface OurTechnology {
-    section: string
-    howItWorks: string
-    OurResearch: string
+  section: string
+  howItWorks: string
+  OurResearch: string
 }
 
 // export interface GetInvolved {
@@ -21,11 +21,10 @@ export interface OurTechnology {
 // }
 
 export interface AboutUs {
-    section: string
-    ourStory: string
-    ourPeople: string
-    ourSupporters: string
-    blog: string
-    publications: string
+  section: string
+  ourStory: string
+  ourPeople: string
+  ourSupporters: string
+  blog: string
+  oneYoungWorld: string
 }
-
