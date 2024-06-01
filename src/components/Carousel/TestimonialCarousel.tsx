@@ -12,7 +12,7 @@ const TestimonialCarousel = ({ testimonials }: Props) => {
     testimonials[currentPage]
 
   return (
-    <div className="mx-4 flex items-center justify-center space-x-2">
+    <div className="mx-4 flex items-center justify-center space-x-2 pb-12 md:space-x-6">
       {/* Previous Button */}
       <button
         disabled={currentPage <= 0}
@@ -23,8 +23,10 @@ const TestimonialCarousel = ({ testimonials }: Props) => {
       </button>
 
       {/* Card Container */}
-      <div className="flex w-48 flex-col items-center space-y-14 rounded-2xl bg-[#3578de] bg-opacity-30 px-4 py-10 text-center font-medium sm:w-64 sm:max-w-xs md:w-auto md:max-w-sm">
-        <blockquote className="text-sm leading-loose">{testimonial}</blockquote>
+      <div className="flex w-48 flex-col items-center justify-center space-y-20 rounded-2xl bg-[#3578de] bg-opacity-30 px-4 py-10 text-center font-medium sm:w-64 sm:max-w-xs md:w-auto md:max-w-sm md:px-6 lg:h-[448px]">
+        <blockquote className="text-sm leading-loose md:leading-relaxed lg:text-base">
+          {testimonial}
+        </blockquote>
 
         {/* Author Container */}
         <div className="space-y-4">

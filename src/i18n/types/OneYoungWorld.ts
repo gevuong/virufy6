@@ -14,6 +14,8 @@ interface HeaderSection {
 
 // One Young World
 export interface OneYoungWorldSection {
+  backgroundImage: StaticImageData
+  altText: string
   virufyAndOyw: VirufyAndOywSection
   whyOyw: WhyOywSection
   volunteerStories: VolunteerStoriesSection

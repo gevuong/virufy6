@@ -3,10 +3,10 @@ import TeamLeadCard from '../molecules/Card/TeamLeadCard'
 
 const TeamLeads = ({ title, cards }: TeamLeadsSection) => {
   return (
-    <section className="mx-auto flex items-center justify-center pb-32">
+    <section className="mx-auto flex items-center justify-center pb-24">
       {/* Team Leads Container */}
       <div className="px-6 text-white">
-        <h1 className="py-14 text-center text-2xl font-bold md:py-24 md:text-left md:text-5xl md:font-semibold">
+        <h1 className="py-14 text-center text-2xl font-bold md:py-20 md:text-left md:text-4xl md:font-semibold">
           {title}
         </h1>
 

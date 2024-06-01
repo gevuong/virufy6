@@ -20,10 +20,10 @@ const OneYoungWorldPage = () => {
           />
 
           {/* Text Container */}
-          <div className="relative flex flex-col items-center justify-center pt-32 pb-12 md:py-60">
+          <div className="relative flex flex-col items-center justify-center pt-32 pb-12 md:pb-48 md:pt-60">
             {/* Sizing & Spacing Container */}
-            <div className="max-w-xl px-8 text-center font-medium text-white md:max-w-5xl">
-              <h1 className="text-2xl font-medium leading-loose md:text-4xl md:leading-normal">
+            <div className="max-w-xl px-8 text-center font-medium text-white md:max-w-4xl">
+              <h1 className="text-2xl font-medium leading-loose md:text-3xl md:leading-normal">
                 Companies and organizations support us from their extensive
                 knowledge and provide us with security and certainty in what we
                 do.
@@ -35,13 +35,6 @@ const OneYoungWorldPage = () => {
 
       {/* Gradient Overlay Container */}
       <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
-        {/* <Image
-          src={BodyBackground}
-          alt=""
-          className="absolute h-full w-full object-cover opacity-40"
-          priority
-        /> */}
-
         <OneYoungWorld oneYoungWorld={oneYoungWorld} teamLeads={teamLeads} />
       </div>
     </div>

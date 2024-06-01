@@ -4,6 +4,7 @@ import {
   Amil,
   Annelisse,
   Ayomide,
+  BodyBackground,
   DiverseIcon,
   GlobeIcon,
   Gonzalo,
@@ -35,6 +36,8 @@ export const OneYoungWorld = {
     altText: '',
   },
   oneYoungWorld: {
+    backgroundImage: BodyBackground,
+    altText: '',
     virufyAndOyw: {
       title: 'Virufy & One Young World',
       texts: [
