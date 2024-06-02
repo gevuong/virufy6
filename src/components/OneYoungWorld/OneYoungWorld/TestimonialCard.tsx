@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { type Testimonial } from '../../../i18n/types/OneYoungWorld'
+import { type Testimonial } from '~/i18n/types/OneYoungWorld'
 
 interface Props extends Testimonial {
   totalTestimonials: number

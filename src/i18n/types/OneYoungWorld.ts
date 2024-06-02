@@ -3,7 +3,6 @@ import { type StaticImageData } from 'next/image'
 export interface OneYoungWorld {
   header: HeaderSection
   oneYoungWorld: OneYoungWorldSection
-  teamLeads: TeamLeadsSection
 }
 
 interface HeaderSection {
@@ -27,6 +26,7 @@ interface VirufyAndOywSection {
   videoUrl: string
 }
 
+// Why One Young World
 interface WhyOywSection {
   title: string
   cards: OywCard[]
@@ -52,17 +52,4 @@ export interface Testimonial {
   image: StaticImageData
   altText: string
   testimonial: string
-}
-
-// Team Leads
-export interface TeamLeadsSection {
-  title: string
-  cards: TeamLeadCard[]
-}
-
-export interface TeamLeadCard {
-  name: string
-  texts: string[]
-  image: StaticImageData
-  altText: string
 }

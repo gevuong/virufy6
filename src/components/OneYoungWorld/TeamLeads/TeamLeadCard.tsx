@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { type TeamLeadCard } from '~/i18n/types/OneYoungWorld'
+import { type TeamLeadCard } from '~/i18n/types/TeamLeads'
 
 const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
   return (

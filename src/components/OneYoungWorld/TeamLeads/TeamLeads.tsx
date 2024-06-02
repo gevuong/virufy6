@@ -1,7 +1,11 @@
-import { type TeamLeadsSection } from '~/i18n/types/OneYoungWorld'
-import TeamLeadCard from '../molecules/Card/TeamLeadCard'
+import TeamLeadCard from './TeamLeadCard'
+import { useI18n } from '~/i18n'
 
-const TeamLeads = ({ title, cards }: TeamLeadsSection) => {
+const TeamLeads = () => {
+  const {
+    TeamLeads: { title, cards },
+  } = useI18n()
+
   return (
     <section className="mx-auto flex items-center justify-center pb-24">
       {/* Team Leads Container */}

@@ -9,6 +9,7 @@ import { type OneYoungWorld } from './types/OneYoungWorld'
 import { type OurStory } from './types/OurStory'
 import { type Publications } from './types/Publications'
 import { type ShareYourCough } from './types/ShareYourCough'
+import { type TeamLeads } from './types/TeamLeads'
 
 export type I18nData = {
   locale: string
@@ -35,6 +36,7 @@ export type I18nData = {
   footer: Footer
   ShareYourCough: ShareYourCough
   OneYoungWorld: OneYoungWorld
+  TeamLeads: TeamLeads
 }
 
 // ---- Job Listing ----

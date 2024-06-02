@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import { OneYoungWorld } from '~/components/OneYoungWorld/OneYoungWorld'
+import MainContent from '~/components/OneYoungWorld/MainContent'
 import { useI18n } from '~/i18n'
 
 const OneYoungWorldPage = () => {
   const {
-    OneYoungWorld: { header, oneYoungWorld, teamLeads },
+    OneYoungWorld: { header, oneYoungWorld },
   } = useI18n()
 
   return (
@@ -35,7 +35,8 @@ const OneYoungWorldPage = () => {
 
       {/* Gradient Overlay Container */}
       <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
-        <OneYoungWorld oneYoungWorld={oneYoungWorld} teamLeads={teamLeads} />
+        {/* Main Content Area */}
+        <MainContent bgImage={oneYoungWorld.backgroundImage} />
       </div>
     </div>
   )

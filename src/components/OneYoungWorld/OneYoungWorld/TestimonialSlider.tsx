@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { type Testimonial } from '../../i18n/types/OneYoungWorld'
-import TestimonialCard from '../molecules/Card/TestimonialCard'
+import { type Testimonial } from '~/i18n/types/OneYoungWorld'
+import TestimonialCard from './TestimonialCard'
 
 interface Props {
   testimonials: Testimonial[]
