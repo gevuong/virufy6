@@ -35,8 +35,7 @@ const TestimonialCarousel = ({ testimonials }: Props) => {
       </button>
 
       {/* Card Container */}
-      <div className="md:max-w-[450px]">
-        {/* <div className="w-48 sm:w-64 md:w-auto md:max-w-[450px]"> */}
+      <div className="w-48 sm:w-64 md:w-auto md:max-w-[450px]">
         <div className="flex overflow-hidden">
           {testimonials.map((testimonial, i) => (
             <TestimonialCard

@@ -24,7 +24,7 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
 
   return (
     <>
-      {/* only show background image in One Young World tab */}
+      {/* only show background image in 'One Young World' tab */}
       {!showTeamLeads && (
         <Image
           src={oneYoungWorld.backgroundImage}
@@ -67,7 +67,7 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
           {/* One Young World Section */}
           <section>
             {/* OYW Container */}
-            <div className="flex flex-col items-center justify-center px-8 py-12 text-white opacity-95 md:py-20">
+            <div className="flex flex-col items-center justify-center px-8 py-12 text-white opacity-95 md:py-0 md:pt-20">
               {/* Virufy & OYW Text Container */}
               <div>
                 <h1 className="hidden md:mb-4 md:block md:text-5xl md:text-[#3074dc]">
@@ -96,26 +96,20 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
                   </p>
                 </div>
               </div>
-
-              {/* Video */}
-              {/* <iframe
-                className="mb-12 rounded-lg lg:h-[577px] lg:w-[904px]"
-                src="https://www.youtube.com/watch?v=hvJgwPNYnZo"
-              /> */}
-              {/* <div className="">
-                <ReactPlayer
-                  controls
-                  // pip
-                  width=""
-                  height=""
-                  url="https://www.youtube.com/watch?v=hvJgwPNYnZo"
-                />
-              </div> */}
+              {/* Call to Action video */}
+              <iframe
+                className="aspect-video w-full rounded-lg px-4 py-1 md:px-16 md:py-9"
+                src="https://www.youtube.com/embed/hvJgwPNYnZo?si=k_ujoF1pBeYFg65C"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </section>
 
           {/* Horizontal divider */}
-          <div className="mx-8 border-b border-b-white pb-12 md:hidden"></div>
+          <div className="mx-8 border-b border-b-white md:hidden"></div>
 
           {/* Why OYW Section */}
           <section className="mb-16 md:opacity-95">
@@ -206,7 +200,7 @@ export const OneYoungWorld = ({ oneYoungWorld, teamLeads }: Props) => {
           {/* Volunteer Section */}
           <section className="pb-14 md:opacity-95">
             {/* Volunteer Container */}
-            <div className="mx-8 flex flex-col items-center space-y-10 text-white lg:pt-12">
+            <div className="mx-8 flex flex-col items-center space-y-10 text-white">
               {/* Title and Text Container */}
               <div className="md:pb-12">
                 <h2 className="my-12 text-center text-2xl font-bold md:mb-6 md:mt-16 md:text-left md:text-3xl md:font-medium">

@@ -10,7 +10,7 @@ const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
         alt={altText}
       />
 
-      {/* Opaque background to dim card */}
+      {/* apply opaque background to dim card */}
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-black bg-opacity-30"></div>
 
       {/* Text Container */}
