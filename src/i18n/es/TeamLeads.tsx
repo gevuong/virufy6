@@ -27,19 +27,19 @@ export const TeamLeads = {
       name: 'Amil Khanzada',
       texts: ['OYW Ambassador, Japan', 'Virufy Founder & Leader'],
       image: Amil,
-      altText: 'Amil Khanzada',
+      altText: 'image of Amil Khanzada',
     },
     {
       name: 'Madhav Datt',
       texts: ['OYW Ambassador, India', 'Virufy Advisor'],
       image: Madhav,
-      altText: 'Madhav Datt',
+      altText: 'image of Madhav Datt',
     },
     {
       name: 'Marcos Deza',
       texts: ['OYW Ambassador, Argentina', 'Virufy Digital Communications'],
       image: Marcos,
-      altText: 'Marcos Deza',
+      altText: 'image of Marcos Deza',
     },
     {
       name: 'Yulie Qiao',
