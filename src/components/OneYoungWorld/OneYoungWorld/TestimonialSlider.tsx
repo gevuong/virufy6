@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { type Testimonial } from '~/i18n/types/OneYoungWorld'
 import TestimonialCard from './TestimonialCard'
 
-interface Props {
+const TestimonialSlider = ({
+  testimonials,
+}: {
   testimonials: Testimonial[]
-}
-
-const TestimonialCarousel = ({ testimonials }: Props) => {
+}) => {
   const [imageIndex, setImageIndex] = useState(0)
 
   const showNextImage = () => {
@@ -38,12 +38,7 @@ const TestimonialCarousel = ({ testimonials }: Props) => {
       <div className="w-48 sm:w-64 md:w-auto md:max-w-[450px]">
         <div className="flex overflow-hidden">
           {testimonials.map((testimonial, i) => (
-            <TestimonialCard
-              key={i}
-              {...testimonial}
-              totalTestimonials={testimonials.length}
-              imageIndex={imageIndex}
-            />
+            <TestimonialCard key={i} {...testimonial} imageIndex={imageIndex} />
           ))}
         </div>
       </div>
@@ -60,4 +55,4 @@ const TestimonialCarousel = ({ testimonials }: Props) => {
   )
 }
 
-export default TestimonialCarousel
+export default TestimonialSlider

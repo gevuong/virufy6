@@ -18,7 +18,7 @@ import {
   Shreya,
   Veronica,
   Yulie,
-} from '~/assets/static/images/oneYoungWorld/index'
+} from '~/assets/static/images/oneYoungWorld'
 
 export const TeamLeads = {
   title: 'OYW Team Leads',

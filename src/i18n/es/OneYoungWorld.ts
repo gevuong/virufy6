@@ -1,33 +1,14 @@
 import {
-  Allana,
   AmbassadorIcon,
-  Amil,
-  Annelisse,
-  Ayomide,
   BodyBackground,
   DiverseIcon,
   GlobeIcon,
-  Gonzalo,
   GonzaloTestimonial,
   HeaderBackground,
-  Jason,
-  Kapil,
-  Katherine,
-  Kavya,
-  Kenmaru,
-  Laura,
-  Leonard,
-  Madhav,
-  Marcos,
   MarcosTestimonial,
-  Nathan,
-  Sebastian,
   SebastianTestimonial,
-  Shreya,
-  Veronica,
   YouthIcon,
-  Yulie,
-} from '../../assets/static/images/oneYoungWorld/index'
+} from '../../assets/static/images/oneYoungWorld'
 
 export const OneYoungWorld = {
   header: {
@@ -35,16 +16,22 @@ export const OneYoungWorld = {
     image: HeaderBackground,
     altText: '',
   },
-  oneYoungWorld: {
-    backgroundImage: BodyBackground,
+  navbarTexts: {
+    oyw: 'One Young World',
+    teamLeads: 'Team Leads',
+  },
+  oyw: {
+    bgImage: BodyBackground,
     altText: '',
     virufyAndOyw: {
-      title: 'Virufy & One Young World',
+      title: 'One Young World',
+      subTitle: 'Virufy & One Young World',
       texts: [
         'Our world needs great leadership. The new generation is one of the most informed, educated and well connected generations in world history. One Young World identifies, promotes and connects the most impactful young leaders across the globe to create a better world: a world with more responsible and effective leadership.',
         'Virufy has been featured on various OYW platforms, including in the Americas and Japan, ambassadors in action , and ambassadors on the frontline for COVID-19 response . We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts.',
       ],
-      videoUrl: 'https://www.youtube.com/watch?v=hvJgwPNYnZo',
+      videoUrl: 'https://www.youtube.com/embed/hvJgwPNYnZo?si=k_ujoF1pBeYFg65C',
+      videoTitle: "Virufy's Vision and Call to Action",
     },
     whyOyw: {
       title: 'Why One Young World?',
@@ -102,131 +89,5 @@ export const OneYoungWorld = {
         },
       ],
     },
-  },
-  teamLeads: {
-    title: 'OYW Team Leads',
-    cards: [
-      {
-        name: 'Amil Khanzada',
-        texts: ['OYW Ambassador, Japan', 'Virufy Founder & Leader'],
-        image: Amil,
-        altText: 'Amil Khanzada',
-      },
-      {
-        name: 'Madhav Datt',
-        texts: ['OYW Ambassador, India', 'Virufy Advisor'],
-        image: Madhav,
-        altText: 'Madhav Datt',
-      },
-      {
-        name: 'Marcos Deza',
-        texts: ['OYW Ambassador, Argentina', 'Virufy Digital Communications'],
-        image: Marcos,
-        altText: 'Marcos Deza',
-      },
-      {
-        name: 'Yulie Qiao',
-        texts: ['2021 OYW bp Delegate', 'Virufy Operations'],
-        image: Yulie,
-        altText: 'image of Yulie Qiao',
-      },
-      {
-        name: 'Ayomide Owoyemi, MD',
-        texts: [
-          '2021 OYW Novartis Delegate, Nigeria',
-          'Virufy Machine Learning Clinical Statistics',
-        ],
-        image: Ayomide,
-        altText: 'image of Ayomide Owoyemi',
-      },
-      {
-        name: 'Shreya Sreeram, MD',
-        texts: ['2021 Virufy Delegate, India', 'Virufy Clinical Research'],
-        image: Shreya,
-        altText: 'image of Shreya Sreeram',
-      },
-      {
-        name: 'Laura Velasquez',
-        texts: [
-          'OYW Johnson & Johnson Delegate, Colombia',
-          'Arkangel AI Co-founder & President',
-          'Virufy Partner',
-        ],
-        image: Laura,
-        altText: 'image of Laura Velasquez',
-      },
-      {
-        name: 'Nathan Thomas',
-        texts: ['OYW Coordinating Ambassador, USA'],
-        image: Nathan,
-        altText: 'image of Nathan Thomas',
-      },
-      {
-        name: 'Jason Pareja Jauregui',
-        texts: ['OYW Coordinating Ambassador LATAM, Peru'],
-        image: Jason,
-        altText: 'image of Jason Pareja Jauregui',
-      },
-      {
-        name: 'Katherine Thalia Ortiz Leon',
-        texts: ['OYW Ambassador, Peru'],
-        image: Katherine,
-        altText: 'image of Katherine Thalia Ortiz Leon',
-      },
-      {
-        name: 'Gonzalo Roiffe',
-        texts: ['OYW Ambassador, Argentina'],
-        image: Gonzalo,
-        altText: 'image of Gonzalo Roiffe',
-      },
-      {
-        name: 'Annelisse Torrez Daza',
-        texts: ['OYW Ambassador, Bolivia'],
-        image: Annelisse,
-        altText: 'image of Annelisse Torrez Daza',
-      },
-      {
-        name: 'Veronica Guzman Quilqueo',
-        texts: ['OYW Ambassador, Chile'],
-        image: Veronica,
-        altText: 'image of Veronica Guzman Quilqueo',
-      },
-      {
-        name: 'Sebastian Pedraza',
-        texts: ['OYW Ambassador, Colombia'],
-        image: Sebastian,
-        altText: 'image of Sebastian Pedraza',
-      },
-      {
-        name: 'Kenmaru Suedomi',
-        texts: ['OYW Ambassador, Japan'],
-        image: Kenmaru,
-        altText: 'image of Kenmaru Suedomi',
-      },
-      {
-        name: 'Kapil Narain, MD',
-        texts: ['OYW Ambassador, South Africa'],
-        image: Kapil,
-        altText: 'image of Kapil Narain',
-      },
-      {
-        name: 'Leonard Burhz',
-        texts: ['OYW Ambassador, Ireland'],
-        image: Leonard,
-        altText: 'image of Leonard Burhz',
-      },
-      {
-        name: 'Allana Doyle',
-        texts: ['Embajador OYW, EE.UU11'],
-        image: Allana,
-        altText: 'image of Allana Doyle',
-      },
-      {
-        name: 'Kavya Madhaven',
-        texts: ['OYW Ambassador'],
-        image: Kavya,
-        altText: 'image of Kavya Madhaven',
-      },
-    ],
   },
 }

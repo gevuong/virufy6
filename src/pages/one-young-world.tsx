@@ -4,7 +4,7 @@ import { useI18n } from '~/i18n'
 
 const OneYoungWorldPage = () => {
   const {
-    OneYoungWorld: { header, oneYoungWorld },
+    OneYoungWorld: { header, navbarTexts, oyw },
   } = useI18n()
 
   return (
@@ -24,9 +24,7 @@ const OneYoungWorldPage = () => {
             {/* Sizing & Spacing Container */}
             <div className="max-w-xl px-8 text-center font-medium text-white md:max-w-4xl">
               <h1 className="text-2xl font-medium leading-loose md:text-3xl md:leading-normal">
-                Companies and organizations support us from their extensive
-                knowledge and provide us with security and certainty in what we
-                do.
+                {header.text}
               </h1>
             </div>
           </div>
@@ -35,8 +33,7 @@ const OneYoungWorldPage = () => {
 
       {/* Gradient Overlay Container */}
       <div className="relative -mb-24 bg-gradient-to-b from-[#162b4c] to-[#3468b2]">
-        {/* Main Content Area */}
-        <MainContent bgImage={oneYoungWorld.backgroundImage} />
+        <MainContent oyw={oyw} navbarTexts={navbarTexts} />
       </div>
     </div>
   )

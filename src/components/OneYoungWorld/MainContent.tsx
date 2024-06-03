@@ -1,10 +1,19 @@
-import Image, { type StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { useState } from 'react'
+import {
+  type OywNavbarTexts,
+  type OywSection,
+} from '~/i18n/types/OneYoungWorld'
 import Navbar from './Navbar'
 import OneYoungWorld from './OneYoungWorld/OneYoungWorld'
 import TeamLeads from './TeamLeads/TeamLeads'
 
-const MainContent = ({ bgImage }: { bgImage: StaticImageData }) => {
+interface Props {
+  oyw: OywSection
+  navbarTexts: OywNavbarTexts
+}
+
+const MainContent = ({ oyw, navbarTexts }: Props) => {
   const [showTeamLeads, setShowTeamLeads] = useState(false)
 
   return (
@@ -13,8 +22,8 @@ const MainContent = ({ bgImage }: { bgImage: StaticImageData }) => {
       {!showTeamLeads && (
         <Image
           className="hidden md:absolute md:block md:h-full md:w-full md:object-cover md:opacity-30"
-          src={bgImage}
-          alt=""
+          src={oyw.bgImage}
+          alt={oyw.altText}
           priority
         />
       )}
@@ -22,9 +31,10 @@ const MainContent = ({ bgImage }: { bgImage: StaticImageData }) => {
       <Navbar
         showTeamLeads={showTeamLeads}
         setShowTeamLeads={setShowTeamLeads}
+        navbarTexts={navbarTexts}
       />
 
-      {showTeamLeads ? <TeamLeads /> : <OneYoungWorld />}
+      {showTeamLeads ? <TeamLeads /> : <OneYoungWorld {...oyw} />}
     </>
   )
 }

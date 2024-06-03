@@ -2,18 +2,25 @@ import { type StaticImageData } from 'next/image'
 
 export interface OneYoungWorld {
   header: HeaderSection
-  oneYoungWorld: OneYoungWorldSection
+  navbarTexts: OywNavbarTexts
+  oyw: OywSection
 }
 
+// Header and Navbar Section
 interface HeaderSection {
   text: string
   image: StaticImageData
   altText: string
 }
 
-// One Young World
-export interface OneYoungWorldSection {
-  backgroundImage: StaticImageData
+export interface OywNavbarTexts {
+  oyw: string
+  teamLeads: string
+}
+
+// One Young World Section
+export interface OywSection {
+  bgImage: StaticImageData
   altText: string
   virufyAndOyw: VirufyAndOywSection
   whyOyw: WhyOywSection
@@ -22,8 +29,10 @@ export interface OneYoungWorldSection {
 
 interface VirufyAndOywSection {
   title: string
+  subTitle: string
   texts: string[]
   videoUrl: string
+  videoTitle: string
 }
 
 // Why One Young World
