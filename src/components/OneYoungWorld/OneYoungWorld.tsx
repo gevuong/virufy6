@@ -41,7 +41,7 @@ const OneYoungWorld = ({
             className="aspect-video w-full px-4 py-1 md:px-16 md:py-9"
             src={videoUrl}
             title={videoTitle}
-            allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture; web-share"
+            allow="fullscreen"
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>

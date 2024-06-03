@@ -23,9 +23,9 @@ export const OneYoungWorld = {
   oyw: {
     bgImage: BodyBackground,
     altText: '',
-    title: 'One Young World',
     virufyAndOyw: {
-      title: 'Virufy & One Young World',
+      title: 'One Young World',
+      subTitle: 'Virufy & One Young World',
       texts: [
         'Our world needs great leadership. The new generation is one of the most informed, educated and well connected generations in world history. One Young World identifies, promotes and connects the most impactful young leaders across the globe to create a better world: a world with more responsible and effective leadership.',
         'Virufy has been featured on various OYW platforms, including in the Americas and Japan, ambassadors in action , and ambassadors on the frontline for COVID-19 response . We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts.',

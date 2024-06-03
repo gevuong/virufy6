@@ -5,7 +5,7 @@ import {
   type OywSection,
 } from '~/i18n/types/OneYoungWorld'
 import Navbar from './Navbar'
-import OneYoungWorld from './OneYoungWorld/OneYoungWorld'
+import OneYoungWorld from './OneYoungWorld'
 import TeamLeads from './TeamLeads/TeamLeads'
 
 interface Props {
