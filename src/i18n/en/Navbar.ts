@@ -1,4 +1,4 @@
-import { NavbarType } from '../types/NavbarType'
+import { type NavbarType } from '../types/NavbarType'
 
 export const navbar: NavbarType = {
   home: 'Home',
@@ -14,7 +14,7 @@ export const navbar: NavbarType = {
     ourPeople: 'Our People',
     ourSupporters: 'Our Supporters',
     blog: 'Blog',
-    publications: 'Publications',
+    oneYoungWorld: 'One Young World',
   },
   faq: 'FAQ',
   donate: 'DONATE',

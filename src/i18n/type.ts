@@ -1,4 +1,3 @@
-import { type OurStory } from './types/OurStory'
 import { type Ai } from './types/Ai'
 import { type BlogDetails } from './types/BlogDetailsType'
 import { type BlogListing } from './types/BlogListingType'
@@ -6,8 +5,11 @@ import { type FAQ } from './types/FAQ'
 import { type Footer } from './types/Footer'
 import { type Home } from './types/Home'
 import { type NavbarType } from './types/NavbarType'
+import { type OneYoungWorld } from './types/OneYoungWorld'
+import { type OurStory } from './types/OurStory'
 import { type Publications } from './types/Publications'
 import { type ShareYourCough } from './types/ShareYourCough'
+import { type TeamLeads } from './types/TeamLeads'
 
 export type I18nData = {
   locale: string
@@ -33,6 +35,8 @@ export type I18nData = {
   navbar?: NavbarType
   footer: Footer
   ShareYourCough: ShareYourCough
+  OneYoungWorld: OneYoungWorld
+  TeamLeads: TeamLeads
 }
 
 // ---- Job Listing ----

@@ -5,8 +5,8 @@ import VirufyLogo from '~/assets/static/images/logo/virufy.svg'
 import DonateModalImg from '~/assets/static/images/Modals/DonateHero.png'
 import Paypal from '~/assets/static/images/Modals/Paypal.png'
 import Gofoundme from '~/assets/static/images/Modals/Gofoundme.png'
-import BarsMenu from '~/assets/static/icons/navbar/barsIconMenu.svg'
-import CloseMenu from '~/assets/static/icons/navbar/closeIconMenu.svg'
+import BarsMenu from '~/assets/static/icons/navbar/barsIconMenuWhite.svg'
+import CloseMenu from '~/assets/static/icons/navbar/closeIconMenuWhite.svg'
 import Select from '~/components/atoms/Select/Select'
 import Button from '~/components/atoms/button/Button'
 import React, { useState, useEffect } from 'react'
@@ -51,7 +51,7 @@ export default function Navbar() {
     window.location.pathname === '/es/OurPeople1' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/supporters' ? setActiveLink('aboutUs') :
-    window.location.pathname === '/es/Blog' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/es/one-young-world' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/FAQ' ? setActiveLink('faq') :
     window.location.pathname === '/' ? setActiveLink('home') :
     window.location.pathname === '/home' ? setActiveLink('home') :
@@ -61,13 +61,13 @@ export default function Navbar() {
     window.location.pathname === '/OurPeople1' ? setActiveLink('aboutUs') :
     window.location.pathname === '/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/supporters' ? setActiveLink('aboutUs') :
-    window.location.pathname === '/Blog' ? setActiveLink('aboutUs') :
+    window.location.pathname === '/one-young-world' ? setActiveLink('aboutUs') :
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
 
   return (
     <div className="bg-[#000]">
-        <nav className="sticky z-[100] w-full bg-transparent shadow" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+        <nav className="sticky z-[100] w-full bg-transparent shadow">
             <div>
                 {showModal ? (
                 <>
@@ -290,9 +290,9 @@ export default function Navbar() {
                                     </Link>
                                     <Link
                                         className="py-3 text-white hover:font-bold"
-                                        href="/Blog"
+                                        href="/one-young-world"
                                     >
-                                    {aboutUs?.blog}
+                                    {aboutUs?.oneYoungWorld}
                                     </Link>
                                 </div>
                                 </div>
