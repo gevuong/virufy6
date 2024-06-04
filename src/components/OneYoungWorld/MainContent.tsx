@@ -21,7 +21,7 @@ const MainContent = ({ oyw, navbarTexts }: Props) => {
       {/* image is only shown under 'One Young World' tab in non-mobile view */}
       {!showTeamLeads && (
         <Image
-          className="hidden md:absolute md:block md:h-full md:w-full md:object-cover md:opacity-30"
+          className="hidden md:absolute md:block md:h-full md:w-full md:rotate-180 md:object-cover md:opacity-30"
           src={oyw.bgImage}
           alt={oyw.altText}
           priority
