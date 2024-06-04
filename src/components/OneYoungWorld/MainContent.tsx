@@ -34,7 +34,7 @@ const MainContent = ({ oyw, navbarTexts }: Props) => {
         navbarTexts={navbarTexts}
       />
 
-      {showTeamLeads ? <TeamLeads /> : <OneYoungWorld {...oyw} />}
+      <main>{showTeamLeads ? <TeamLeads /> : <OneYoungWorld {...oyw} />}</main>
     </>
   )
 }
