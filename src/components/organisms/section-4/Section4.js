@@ -18,7 +18,7 @@ export default function Section4({
 }) {
   return (
     <div className="text-center mt-[100px] mb-[40px] flex flex-col space-y-4 mx-[5vw]">
-      <div className="w-full flex justify-center mb-8 lg:hidden xl:hidden">
+      <div className="w-full flex justify-center mb-8 lg:hidden">
         <ImageAtomLocal
           imagesize={{ width: 643, height: 651 }}
           border={border}
@@ -27,7 +27,7 @@ export default function Section4({
           ImageStyleProps={""}
         />
       </div>
-      <div className="w-full text-center flex flex-col items-center gap-5 lg:hidden xl:hidden">
+      <div className="w-full text-center flex flex-col items-center gap-5 lg:hidden">
         <TitleText
           TitleSize={TitleSize1}
           TitleLabel={TitleLabel1}
@@ -50,7 +50,7 @@ export default function Section4({
           ContainerTitleProps={ContainerTitleProps}
           ContainerTextProps={ContainerTextProps}
           TitleClassProps={"text-white"}
-          TextClassProps={"text-white xl:text-white lg:text-white"}
+          TextClassProps={"text-white"}
         />
         <Button1 
           size="medium" 
@@ -65,7 +65,7 @@ export default function Section4({
         />
       </div>
 
-      <div className="hidden lg:flex xl:flex items-center flex-1 mt-[80px]">
+      <div className="hidden lg:flex items-center flex-1 mt-[80px]">
         <div className="w-1/2 flex items-center justify-start">
           <ImageAtomLocal
             imagesize={{ width: 643, height: 651 }}
