@@ -19,7 +19,7 @@ export default function section1({
   subText2
 }) {
   return (
-    <div className="relative flex justify-center overflow-hidden">
+    <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
       <div className="contrast-1 brightness-100">
         <ImageAtomLocal
           ImageStyleProps=""
@@ -83,7 +83,7 @@ export default function section1({
           <p className="text-[0.8rem] leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
            {mainText2}
           </p>
-          <p className="text-[0.5rem] leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem] font-bold">
+          <p className="text-[0.5rem] text-center leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem] font-bold">
             {subText2}
           </p>
         </div>

@@ -33,7 +33,16 @@ export default function Prueba() {
           mainText2="How It Works"
           subText2="With just a simple cough into your device's microphone, CoughCheck harnesses the power of Artificial Intelligence to detect unique sound patterns associated with respiratory diseases, such as those indicative of COVID-19, TB, Flu, RSV, COPD, and Asthma."
         />
-        <Section2 />
+        <Section2 
+        text="Your Health, Our Priority"
+        subtext="At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential. Join the thousands already benefiting from our App and take control of your health today!"
+        title1="Instant Analysis"
+        sub1="Receive immediate prompt feedback on your cough's characteristics and the likelihood of an infection based on the normality of cough*"
+        title2="Stay Informed"
+        sub2="Access the latest information and guidelines from health authorities regarding respiratory disease symptoms."
+        title3="User-Friendly Interface"
+        sub3="Intuitive design for easy navigation and seamless user experience."
+        />
       </div>
     </div>
     </>
