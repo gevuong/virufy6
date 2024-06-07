@@ -31,11 +31,11 @@ export default function section1({
       </div>
       <div className="absolute inset-0 flex flex-col justify-start p-4 md:p-8 lg:p-12 text-center sm:text-left text-white">
         <div className="flex flex-col mt-12 text-center lg:mt-12 xl:mt-[18rem] sm:mx-0 lg:mx-20 ml-[0rem] lg:ml-[6rem]">
-          <Title Text={text} H="h1" TitleClassProps="text-white text-[0.99rem] leading-[2rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"/>
+          <Title Text={text} H="" TitleClassProps="text-white text-[0.99rem] leading-[2rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"/>
           <div className="flex flex-col mt-0 sm:mt-0 lg:mt-12 sm:text-center">
             <Title
               Text={text2}
-              H="h1"
+              H=""
               TitleClassProps="font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-[0.99rem] leading-[1rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"
             />
           </div>
