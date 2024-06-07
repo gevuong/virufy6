@@ -33,8 +33,6 @@ export default function Prueba() {
           mainText2="How It Works"
           subText2="With just a simple cough into your device's microphone, CoughCheck harnesses the power of Artificial Intelligence to detect unique sound patterns associated with respiratory diseases, such as those indicative of COVID-19, TB, Flu, RSV, COPD, and Asthma."
         />
-      </div>
-      <div className="w-full overflow-hidden">
         <Section2 />
       </div>
     </div>
