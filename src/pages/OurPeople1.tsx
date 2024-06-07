@@ -197,7 +197,7 @@ export default function OurPeople1() {
       ContainerTitleProps={{ style: { paddingLeft: '20px' } }}
       ContainerTextProps={{ style: { paddingLeft: '20px' } }}
       border
-      alt="Amil Khanzanda's headshot Image"
+      alt="Amil Khanzada's headshot Image"
     />
 
 <Title
