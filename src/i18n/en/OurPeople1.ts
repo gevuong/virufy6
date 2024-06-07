@@ -1,5 +1,5 @@
 export const OurPeople1 = {
-    titleImage: "We unite from across the world to defeat COVID-19 one cough at a time.",
+    titleImage: "We unite from across the world to defeat infectious diseases one cough at a time.",
     sectionMeetOurFounder: {
         titleMeetOurFounder: "Meet Our Founder",
         titleAmil: "Amil Khanzada",

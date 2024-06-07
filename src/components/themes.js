@@ -56,6 +56,7 @@ export const ImageSize = {
     pr40: "w-[40%]",
     pr30: "w-[30%]",
     pr80sq: "w-[80%] h-[80%]",
+    "width-100vw": 'w-screen h-full object-cover',
 };
 
 //TITLE THEMES
@@ -64,6 +65,7 @@ export const TitleProps = {
     h2: "text-[1.875rem] leading-[2.25rem] md:text-[2.3rem] md:leading-[2.1rem] lg:text-[2.5rem] lg:leading-[2.30rem] xl:text-[3rem] xl:leading-[3.3rem]",
     h3: "text-[1.5rem] leading-[2rem]      md:text-[2.1rem] md:leading-[1.9rem] lg:text-[2.3rem] lg:leading-[2.10rem] xl:text-[2.9rem] xl:leading-[2.75rem]",
     h4: "text-[1.4rem] leading-[1.7rem]    md:text-[1.8rem] md:leading-[1.9rem] lg:text-[2.1rem] lg:leading-[2.30rem] xl:text-[2.4rem] xl:leading-[2.6rem]",
+    h4compact: "text-[1.4rem] leading-[1.4rem] md:text-[1.8rem] md:leading-[1.9rem] lg:text-[2.1rem] lg:leading-[2.30rem] xl:text-[2.4rem] xl:leading-[2.6rem]",
     h5: "text-[1.25rem] leading-[1.75rem]  md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[2.7rem] xl:leading-[0.7rem]",
     h6: "text-[1rem] leading-[1.5rem] font-semibold text-center",
     h5tepsHome: "text-[1.25rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[2.5rem]",
@@ -75,10 +77,12 @@ export const TitleProps = {
 //TEXT THEMES
 export const TextProps = {
     subtitle: "text-[1.125rem] leading-[1.75rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
+    subtitleCompact: "text-[1.125rem] leading-[1.25rem] sm:text-[1rem] sm:leading-[1rem] md:text-[1.3rem] md:leading-[1.3rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
     normal: "  text-[0.875rem] leading-[1.5rem] md:text-[1.1rem] md:leading-[1.8rem] lg:text-[1.3rem] lg:leading-[2.2rem] xl:text-[1.5rem] xl:leading-[2.5rem]",
     normalCardHome: "  text-[0.875rem] leading-[1.25rem] md:text-[1.1rem]",
     small: "   text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]",
-    large: "text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]"
+    large: "text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]",
+    xxs: "text-[0.5rem] leading-[0.5rem] md:text-[0.75rem] md:leading-[1rem] lg:text-[0.875rem] lg:leading-[1.25rem] xl:text-[1rem] xl:leading-[1.5rem]"
 };
 
 //LINK THEMES
