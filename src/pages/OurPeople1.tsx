@@ -1,7 +1,3 @@
-
-//Organismo
-import Section1 from "~/components/organisms/section-1/Section1"
-
 import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
 import Card from "~/components/molecules/Card/Card"
 import Title from "~/components/atoms/Title/Title"
@@ -119,16 +115,10 @@ export default function OurPeople1() {
       subtitle: "Artificial Intelligence Advisor",
       text: "Senior Research Engineer             Stanford School of Engineering",
     },
-    // {
-    //   route: Card14,
-    //   name: "Richard Nall",
-    //   subtitle: "Marketing Advisor",
-    //   text: "CEO - The Brand Garden               Master's Organisational Leadership - Henley",
-    // },
     {
       route: Card15,
       name: "Mathijs De Vaan",
-      subtitle: "Assistant Professor - UC Berkeley Haas Business School",
+      subtitle: "Asst. Professor - UC Berkeley",
       text: "Management of Organizations              PhD Sociology - Columbia University",
     },
     {
@@ -203,13 +193,11 @@ export default function OurPeople1() {
       TitleLabel2={sectionMeetOurFounder.titleAmil}
       TextLabel={sectionMeetOurFounder.textAmil}
       labelButton="Read Amil's Story"
-      // labelButton={sectionMeetOurFounder.button}
       buttonRoute="/OurPeople2"
       ContainerTitleProps={{ style: { paddingLeft: '20px' } }}
-      ContainerTextProps
+      ContainerTextProps={{ style: { paddingLeft: '20px' } }}
       border
-      alt
-      // style={{borderRadius: "50%" }}
+      alt="Amil Khanzanda's headshot Image"
     />
 
 <Title

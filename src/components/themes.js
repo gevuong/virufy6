@@ -76,10 +76,12 @@ export const TitleProps = {
 //TEXT THEMES
 export const TextProps = {
     subtitle: "text-[1.125rem] leading-[1.75rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
+    subtitleCompact: "text-[1.125rem] leading-[1.25rem] sm:text-[1rem] sm:leading-[1rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
     normal: "  text-[0.875rem] leading-[1.5rem] md:text-[1.1rem] md:leading-[1.8rem] lg:text-[1.3rem] lg:leading-[2.2rem] xl:text-[1.5rem] xl:leading-[2.5rem]",
     normalCardHome: "  text-[0.875rem] leading-[1.25rem] md:text-[1.1rem]",
     small: "   text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]",
-    large: "text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]"
+    large: "text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]",
+    xxs: "text-[0.5rem] leading-[0.75rem] md:text-[0.75rem] md:leading-[1rem] lg:text-[0.875rem] lg:leading-[1.25rem] xl:text-[1rem] xl:leading-[1.5rem]"
 };
 
 //LINK THEMES
