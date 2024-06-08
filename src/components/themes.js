@@ -67,7 +67,7 @@ export const TitleProps = {
     h4: "text-[1.4rem] leading-[1.7rem]    md:text-[1.8rem] md:leading-[1.9rem] lg:text-[2.1rem] lg:leading-[2.30rem] xl:text-[2.4rem] xl:leading-[2.6rem]",
     h4compact: "text-[1.4rem] leading-[1.4rem] md:text-[1.8rem] md:leading-[1.9rem] lg:text-[2.1rem] lg:leading-[2.30rem] xl:text-[2.4rem] xl:leading-[2.6rem]",
     h5: "text-[1.25rem] leading-[1.75rem]  md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[2.7rem] xl:leading-[0.7rem]",
-    h5spaced: "text-[1.3rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[2rem] xl:leading-[2.5rem]",
+    h5spaced: "text-[1.3rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[36px] xl:leading-[49px]",
     h6: "text-[1rem] leading-[1.5rem] font-semibold text-center",
     h5tepsHome: "text-[1.25rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[2.5rem]",
     h5Modals: "text-[1.25rem] leading-[1.8rem]  md:text-[1.9rem] md:leading-[2.4rem]",

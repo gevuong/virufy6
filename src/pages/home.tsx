@@ -5,6 +5,7 @@ import ImageSection2 from '~/assets/static/images/section1/Homepage.jpg';
 // Components
 import Section1 from '~/components/organisms/section-1/Section1'
 import Section2 from '~/components/organisms/section-2/Section2'
+import Section3 from '~/components/organisms/section-3/Section3'
 
 // Localization
 import { useI18n } from '~/i18n';
@@ -44,6 +45,11 @@ export default function Prueba() {
         sub3="Intuitive design for easy navigation and seamless user experience."
         disclaimer="*The results of the analysis done by the system do not replace the diagnosis by a specialized doctor."
         buttonText="Our Technology"
+        />
+        <Section3
+        title="Algorithms"
+        subtitle="AI-based applications are increasingly playing a crucial role in healthcare, especially in the early detection and diagnosis of diseases."
+        text="AI capabilities can monitor and analyze user-reported symptoms related to respiratory health. They can offer real-time monitoring of respiratory parameters, such as breathing rate and oxygen saturation levels."
         />
       </div>
     </div>

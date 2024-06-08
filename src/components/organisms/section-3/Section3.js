@@ -1,51 +1,43 @@
-//Atoms
-import Button from "~/components/atoms/button/Button"
+import { useI18n } from "~/i18n";
+import Title from '~/components/atoms/Title/Title';
+import ImageSection3 from '~/assets/static/images/section3/Algorithm.jpg';
+import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal';
 
-//Molecules
-import TitleText from "~/components/molecules/TitleText/TitleText"
-import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
 
-//Assets
-import ImageSection3 from "~/assets/static/images/section3/1.jpg"
-import { useI18n } from "~/i18n"
-
-export default function Section3() {
-  const {home: {sectionCovidMap}} = useI18n()
+export default function Section2({
+    title,
+    subtitle,
+    text
+}) {
+  const { } = useI18n();
   return (
-    <div
-      style={{
-        width: "w-[100vw]",
-        maxWidth: "1440px",
-        textAlign: "center",
-        alignItems: "center",
-        marginTop: "90px"
-      }}>
-      <TitleText
-        TitleSize="h1"
-        TitleLabel={sectionCovidMap.title}
-        TextSize="normal"
-        TextLabel={sectionCovidMap.text}
-        ContainerTitleProps="mb-[16px]"
-        ContainerTextProps="mr-[5vw] mb-[16px]"
-        TitleClassProps="ml-[5vw]"
-        TextClassProps="ml-[5vw]"
-      />
-      <div
-        className="ml-[5vw] mr-[5vw] mb-[16px]"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}>
+    <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
+      <div className="contrast-1 brightness-100">
         <ImageAtomLocal
-          imagesize="pr100"
-          border="radious"
+          ImageStyleProps=""
+          imagesize=""
+          border=""
           src={ImageSection3}
-          alt="imagen de algo"
-          ImageStyleProps={""}
+          alt=""
         />
       </div>
-      <Button size="medium" type="primary" label={sectionCovidMap.button} path="/Dashboard" />
-    </div>
-  )
+      <div className="absolute flex flex-col p-4 md:p-8 lg:p-[9.6rem] text-center">
+        <div className="flex flex-col text-center">
+        <div className="flex flex-col mt-[0.5rem] lg:mt-12 sm:text-center">
+            <Title
+              Text={title}
+              H=""
+              TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-[20px] leading-[1rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"
+            />
+            <p className="mt-[1rem] px-[10px] xl:px-[160px] text-[12px] text-white leading-[1rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[24px] xl:leading-[2.5rem]">
+              {subtitle}
+            </p>
+            <p className="mt-[1rem] xl:mt-[6rem] px-[9px] xl:px-[30px] text-[14px] text-white leading-[1rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[36px] xl:leading-[2.5rem] font-semibold">
+              {text}
+            </p>
+          </div>
+            </div>
+            </div>
+            </div>
+  );
 }

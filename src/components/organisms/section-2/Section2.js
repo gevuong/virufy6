@@ -36,37 +36,10 @@ export default function Section2({
           </div>
 
           <div className="flex flex-col sm:flex-col xl:flex-row w-full mt-[2rem] xl:mt-[4rem] px-[2rem] text-center xl:text-start xl:px-[100px] justify-between">
-            <div className="flex flex-col items-start sm:w-full xl:w-1/2 px-[0rem] xl:px-[6rem]">
-              <div className="mt-[1rem] xl:mt-[2rem] mb-[1rem]">
-                <Title H="h5spaced" Text={title1} TitleClassProps="text-white font-bold mb-[1rem]" />
-                <p className="text-white text-[0.9rem] leading-[0.9rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[1rem] xl:leading-[1.3rem]">
-                  {sub1}
-                </p>
-              </div>
-              <div className="mt-[0rem] xl:mt-[1rem] mb-[1rem]">
-                <Title H="h5spaced" Text={title2} TitleClassProps="text-white font-bold mb-[1rem]" />
-                <p className="text-white text-[0.9rem] leading-[0.9rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[1rem] xl:leading-[1.3rem]">
-                  {sub2}
-                </p>
-              </div>
-              <div className="mt-[1rem] xl:mt-[1rem] mb-[0rem]">
-                <Title H="h5spaced" Text={title3} TitleClassProps="text-white font-bold mb-[1rem] whitespace-nowrap" />
-                <p className="text-white text-[0.9rem] leading-[0.9rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[1rem] xl:leading-[1.3rem]">
-                  {sub3}
-                </p>
-              </div>
-              <div className="flex flex-col mt-[2rem] xl:mt-[4rem] xl:whitespace-nowrap">
-                <div className="w-full">
-                  <p className="text-[0.4rem] md:text-[0.875rem] lg:text-[1rem] xl:text-[0.6rem] text-white">
-                    {disclaimer}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center xl:justify-end xl:w-1/2 mt-[2rem] xl:mt-0">
+          <div className="flex justify-center xl:justify-end xl:w-1/2 mt-[2rem] xl:mt-0">
               <div className="sm:h-[212px] xl:h-[682px] w-full xl:w-auto relative">
                 <Image
-                  className="h-[212px] xl:h-[682px]"
+                  className="h-[212px] xl:h-[630px]"
                   src={ImageSection2}
                   width="0"
                   height="0"
@@ -74,12 +47,39 @@ export default function Section2({
                 />
               </div>
             </div>
+            <div className="flex flex-col items-start sm:w-full xl:w-1/2 px-[0rem] xl:px-[6rem]">
+              <div className="mt-[1rem] xl:mt-[2rem] mb-[1rem]">
+                <Title H="h5spaced" Text={title1} TitleClassProps="text-white font-bold mb-[1rem]" />
+                <p className="text-white text-[0.9rem] leading-[0.9rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[18px] xl:leading-[25px]">
+                  {sub1}
+                </p>
+              </div>
+              <div className="mt-[0rem] xl:mt-[1rem] mb-[1rem]">
+                <Title H="h5spaced" Text={title2} TitleClassProps="text-white font-bold mb-[1rem]" />
+                <p className="text-white text-[0.9rem] leading-[0.9rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[18px] xl:leading-[25px]">
+                  {sub2}
+                </p>
+              </div>
+              <div className="mt-[1rem] xl:mt-[1rem] mb-[0rem]">
+                <Title H="h5spaced" Text={title3} TitleClassProps="text-white font-bold mb-[1rem] whitespace-nowrap" />
+                <p className="text-white text-[0.9rem] leading-[0.9rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[18px] xl:leading-[25px]">
+                  {sub3}
+                </p>
+              </div>
+              <div className="flex flex-col mt-[2rem] xl:mt-[4rem] xl:whitespace-nowrap">
+                <div className="w-full">
+                  <p className="text-[0.4rem] px-[3rem] xl:px-[0rem] md:text-[0.875rem] lg:text-[1rem] xl:text-[8px] text-white">
+                    {disclaimer}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="w-full max-w-md md:max-w-lg items-center sm:px-0 mt-[2rem]">
             <button
                 className={`medium primary text-white
-                            w-[315px] h-[45px] top-1602 left-37 p-[9px_27px] gap-[10px] rounded-[50px] 
+                            w-[315px] h-[45px] ml-[10px] xl:ml-[130px]
                             xl:w-[250px] xl:h-[65px] xl:top-3280 xl:left-631`}
                 style={{
                   borderRadius:"50px",

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal';
 import Title from '~/components/atoms/Title/Title';
-import Button2 from "~/components/atoms/button/Button1.js";
+import Button2 from '~/components/atoms/button/Button1.js';
 
 export default function section1({
   sizeImg,
@@ -18,6 +18,14 @@ export default function section1({
   mainText2,
   subText2
 }) {
+  const applyGradient = (text) => {
+    const gradientText = text.replace(
+      /CoughCheck/g,
+      '<span class="gradient-text">CoughCheck</span>'
+    );
+    return { __html: gradientText };
+  };
+
   return (
     <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
       <div className="contrast-1 brightness-100">
@@ -42,15 +50,16 @@ export default function section1({
         </div>
         <div className="flex flex-col items-start mt-24 lg:mt-100 xl:mt-[27rem] space-y-2 md:space-y-8 sm:space-y-2 sm:ml-0 lg:ml-20">
           <div className="w-full max-w-xs md:max-w-md">
-            <p className="text-[0.75rem] leading-[1rem] sm:text-[0.3rem] sm:leading-[1.25rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
+            <p className="text-[0.75rem] leading-[1rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
               {mainText}
             </p>
           </div>
 
           <div className="w-full max-w-md md:max-w-lg">
-            <p className="text-[0.7rem] leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem] font-bold">
-              {subText}
-            </p>
+            <p
+              className="text-[0.7rem] leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem] font-bold"
+              dangerouslySetInnerHTML={applyGradient(subText)}
+            />
           </div>
           
           <div className="w-full max-w-md md:max-w-lg px-4 sm:px-0 mt-2">
@@ -83,11 +92,22 @@ export default function section1({
           <p className="text-[0.8rem] leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
            {mainText2}
           </p>
-          <p className="text-[0.5rem] text-center leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem] font-bold">
-            {subText2}
-          </p>
+          <p
+            className="text-[0.5rem] text-center leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem] font-bold"
+            dangerouslySetInnerHTML={applyGradient(subText2)}
+          />
         </div>
       </div>
     </div>
   );
 }
+
+const style = document.createElement('style');
+style.innerHTML = `
+  .gradient-text {
+    background: linear-gradient(180deg, #30DA74 100%, #3578DE 100%%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`;
+document.head.appendChild(style);
