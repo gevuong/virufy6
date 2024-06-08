@@ -43,6 +43,7 @@ export default function Prueba() {
         title3="User-Friendly Interface"
         sub3="Intuitive design for easy navigation and seamless user experience."
         disclaimer="*The results of the analysis done by the system do not replace the diagnosis by a specialized doctor."
+        buttonText="Our Technology"
         />
       </div>
     </div>
