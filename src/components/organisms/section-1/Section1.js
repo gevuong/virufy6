@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal';
 import Title from '~/components/atoms/Title/Title';
-import Button1 from "~/components/atoms/button1/Button1";
+import Button2 from "~/components/atoms/button/Button1.js";
 
 export default function section1({
   sizeImg,
@@ -54,7 +54,7 @@ export default function section1({
           </div>
           
           <div className="w-full max-w-md md:max-w-lg px-4 sm:px-0 mt-2">
-            <Button1 
+            <Button2 
               size="medium" 
               type="primary" 
               path="/ai"

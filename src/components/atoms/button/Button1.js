@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 const Button1 = ({ size, type, path, label, radius, gradientBackground, width, height, className }) => {
   return (

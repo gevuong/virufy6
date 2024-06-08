@@ -1,7 +1,7 @@
 import TitleText from "~/components/molecules/TitleText/TitleText";
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
 import ImageSection4 from "~/assets/static/images/section4/1.jpg";
-import Button1 from "~/components/atoms/Button1.js/Button1";
+import Button1 from "~/components/atoms/button/Button2";
 
 export default function Section4({
   ContainerTitleProps,
