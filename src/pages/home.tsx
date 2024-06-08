@@ -42,6 +42,7 @@ export default function Prueba() {
         sub2="Access the latest information and guidelines from health authorities regarding respiratory disease symptoms."
         title3="User-Friendly Interface"
         sub3="Intuitive design for easy navigation and seamless user experience."
+        disclaimer="*The results of the analysis done by the system do not replace the diagnosis by a specialized doctor."
         />
       </div>
     </div>
