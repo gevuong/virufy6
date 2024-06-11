@@ -2,9 +2,9 @@
 import ImageSection2 from '~/assets/static/images/section1/Homepage.jpg';
 
 // Components
-import Section1 from '~/components/organisms/section-1/Section1'
 import Section2 from '~/components/organisms/section-2/Section2'
 import Section3 from '~/components/organisms/section-3/Section3'
+import Section10 from '~/components/organisms/section-10/Section10'
 
 // Localization
 import { useI18n } from '~/i18n';
@@ -18,7 +18,7 @@ export default function Prueba() {
   <>
     <div className="flex flex-col items-center justify-center">
       <div className="w-full overflow-hidden">
-        <Section1
+        <Section2
           sizeImg="width-100vw"
           borderImg="none"
           src={ImageSection2}
@@ -33,7 +33,7 @@ export default function Prueba() {
           mainText2="How It Works"
           subText2="With just a simple cough into your device's microphone, CoughCheck harnesses the power of Artificial Intelligence to detect unique sound patterns associated with respiratory diseases, such as those indicative of COVID-19, TB, Flu, RSV, COPD, and Asthma."
         />
-        <Section2 
+        <Section3 
         text="Your Health, Our Priority"
         subtext="At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential. Join the thousands already benefiting from our App and take control of your health today!"
         title1="Instant Analysis"
@@ -45,7 +45,7 @@ export default function Prueba() {
         disclaimer="*The results of the analysis done by the system do not replace the diagnosis by a specialized doctor."
         buttonText="Our Technology"
         />
-        <Section3
+        <Section10
         title="Algorithms"
         subtitle="AI-based applications are increasingly playing a crucial role in healthcare, especially in the early detection and diagnosis of diseases."
         text="AI capabilities can monitor and analyze user-reported symptoms related to respiratory health. They can offer real-time monitoring of respiratory parameters, such as breathing rate and oxygen saturation levels."

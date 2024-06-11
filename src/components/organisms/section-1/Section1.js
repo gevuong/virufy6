@@ -1,122 +1,101 @@
-import PropTypes from 'prop-types';
-import { useEffect } from 'react';
-import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal';
-import Title from '~/components/atoms/Title/Title';
-import Button2 from '~/components/atoms/button/Button1.js';
+import TitleText from "~/components/molecules/TitleText/TitleText"
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
+import Button from "~/components/atoms/button/Button"
 
 export default function Section1({
+  TitleSize,
+  TitleLabel,
+  TextSize,
+  TextLabel,
+  ContainerTitleProps,
+  ContainerTextProps,
   sizeImg,
-  borderImg,
-  src,
-  altImg,
-  text,
-  text2,
-  mainText,
-  subText,
-  buttonText,
-  disclaimer1,
-  disclaimer2,
-  mainText2,
-  subText2
+  border,
+  route,
+  alt,
+  buttons,
+  buttonTechnology,
+  ImageStyleProps,
+  shareButtonLabel = '',
+  learnMoreButtonLabel = '',
+  researchButtonLabel = ''
 }) {
-  useEffect(() => {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      .gradient-text {
-        background: linear-gradient(180deg, #30DA74 100%, #3578DE 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    `;
-    document.head.appendChild(style);
-    
-    return () => {
-      document.head.removeChild(style);
-    };
-  }, []);
-
-  const applyGradient = (text) => {
-    const gradientText = text.replace(
-      /CoughCheck/g,
-      '<span class="gradient-text">CoughCheck</span>'
-    );
-    return { __html: gradientText };
-  };
-
   return (
-    <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
-      <div className="contrast-1 brightness-100">
+    <div className="
+      w-full
+      flex-col-reverse
+      max-w-[1440px]
+      space-y-4 
+      flex 
+      items-center
+      px-20
+      lg:space-x-4 
+      lg:space-y-0 
+      lg:justify-center 
+      lg:items-center
+      lg:text-center
+      lg:mt-16
+      xl:mt-16
+    ">
+      <div className="
+        text-center 
+        flex-1 
+        grid
+        mr-[5vw]
+        items-center 
+        justify-center
+        lg:items-center 
+        lg:text-left
+        lg:w-[100%]
+        lg:mt-6
+        md:mt-6
+        sm:mt-6
+      ">
+        <TitleText
+          TitleSize={TitleSize}
+          TitleLabel={TitleLabel}
+          TextSize={TextSize}
+          TextLabel={TextLabel}
+          ContainerTitleProps={ContainerTitleProps}
+          ContainerTextProps={ContainerTextProps}
+          TitleClassProps="ml-[5vw]"
+          TextClassProps="ml-[5vw] mt-4 mb-4 pt-20"
+        />
+
+        {buttons ?
+          <div
+            className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
+          >
+            <Button size="medium" type="primary" path="https://virufy.org/paper" label={shareButtonLabel} /> 
+          </div> : null
+        }
+
+        {buttonTechnology ?
+          <div
+            className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
+          >
+            <Button size="medium" type="primary" path="/OurResearch" label={researchButtonLabel} />
+
+          </div> : null
+        }        
+      </div>
+      <div
+        className="flex justify-center text-center
+        w-[100%]
+        flex-1 
+        lg:mr-[5vw] md:text-left
+        lg:mx-[2.5vw]
+        xl:mx-[2.5vw]
+       ">
         <ImageAtomLocal
-          ImageStyleProps=""
           imagesize={sizeImg}
-          border={borderImg}
-          src={src}
-          alt={altImg}
+          border={border}
+          src={route}
+          alt={alt}
+          ImageStyleProps={ImageStyleProps}
         />
       </div>
-      <div className="absolute inset-0 flex flex-col justify-start p-4 md:p-8 lg:p-12 text-center sm:text-left text-white">
-        <div className="flex flex-col mt-12 text-center xl:mt-[18rem] sm:mx-0 lg:mx-20 ml-[0rem] lg:ml-[6rem]">
-          <Title Text={text} H="" TitleClassProps="text-white text-[0.99rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"/>
-          <div className="flex flex-col mt-0 lg:mt-12 sm:text-center">
-            <Title
-              Text={text2}
-              H=""
-              TitleClassProps="font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-[0.99rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"
-            />
-          </div>
-        </div>
-        <div className="flex flex-col items-start mt-24 lg:mt-100 xl:mt-[27rem] space-y-2 md:space-y-8 sm:ml-0 lg:ml-20">
-          <div className="w-full max-w-xs md:max-w-md">
-            <p className="text-[0.75rem] leading-[1rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
-              {mainText}
-            </p>
-          </div>
 
-          <div className="w-full max-w-md md:max-w-lg">
-            <p
-              className="text-[0.7rem] leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem] font-bold"
-              dangerouslySetInnerHTML={applyGradient(subText)}
-            />
-          </div>
-          
-          <div className="w-full max-w-md md:max-w-lg px-0 mt-2">
-            <button
-                className={`medium primary text-white
-                            w-[315px] h-[45px]
-                            xl:w-[250px] xl:h-[65px]`}
-                style={{
-                  borderRadius:"50px",
-                  background: "linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)",
-                }}
-                onClick={() => window.location.href = "/ai"}
-              >
-                {buttonText}
-              </button>
-              
-          </div>
-        </div>
-        <div className="flex flex-col items-start mt-1 xl:mt-4 sm:ml-0 lg:ml-20">
-          <div className="w-full max-w-screen-lg">
-            <p className="text-[0.4rem] leading-[0.6rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1rem] lg:leading-[1.5rem] xl:text-[1.125rem] xl:leading-[1.75rem] text-gray-400">
-              {disclaimer1}
-            </p>
-          </div>
-          <div className="w-full max-w-screen-lg">
-            <p className="text-[0.4rem] leading-[0.6rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1rem] lg:leading-[1.5rem] xl:text-[1.125rem] xl:leading-[1.75rem] text-gray-400">
-              {disclaimer2}
-            </p>
-          </div>
-        </div>
-        <div className="bottom-[2rem] md:bottom-[8rem] xl:bottom-[12rem] px-[2rem] absolute flex flex-col items-center mt-[1rem] sm:mt-[2rem] lg:mt-[4rem] xl:mt-[15rem] md:space-y-8 sm:space-y-2 ml-[7rem] lg:ml-[35rem]">
-          <p className="text-[0.8rem] leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
-           {mainText2}
-          </p>
-          <p
-            className="text-[0.5rem] text-center leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem] font-bold"
-            dangerouslySetInnerHTML={applyGradient(subText2)}
-          />
-        </div>
-      </div>
     </div>
-  );
+  )
 }
