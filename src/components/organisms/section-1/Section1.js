@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal';
 import Title from '~/components/atoms/Title/Title';
 import Button2 from '~/components/atoms/button/Button1.js';
 
-export default function section1({
+export default function Section1({
   sizeImg,
   borderImg,
   src,
@@ -18,6 +19,24 @@ export default function section1({
   mainText2,
   subText2
 }) {
+  useEffect(() => {
+    // Add the CSS for the gradient text when the component is mounted
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .gradient-text {
+        background: linear-gradient(180deg, #30DA74 100%, #3578DE 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    `;
+    document.head.appendChild(style);
+    
+    // Cleanup the style element when the component is unmounted
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   const applyGradient = (text) => {
     const gradientText = text.replace(
       /CoughCheck/g,
@@ -101,13 +120,3 @@ export default function section1({
     </div>
   );
 }
-
-const style = document.createElement('style');
-style.innerHTML = `
-  .gradient-text {
-    background: linear-gradient(180deg, #30DA74 100%, #3578DE 100%%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-`;
-document.head.appendChild(style);

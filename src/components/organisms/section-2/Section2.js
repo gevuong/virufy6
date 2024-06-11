@@ -1,6 +1,6 @@
 import { useI18n } from "~/i18n";
 import Title from '~/components/atoms/Title/Title';
-import ImageSection2 from '~/assets/static/images/section2/mobile.png';
+import ImageSection2 from '~/assets/static/images/section2/mobilecircle.png';
 import Image from "next/image";
 
 export default function Section2({
@@ -35,11 +35,11 @@ export default function Section2({
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-col xl:flex-row w-full mt-[2rem] xl:mt-[4rem] px-[2rem] text-center xl:text-start xl:px-[100px] justify-between">
-          <div className="flex justify-center xl:justify-end xl:w-1/2 mt-[2rem] xl:mt-0">
-              <div className="sm:h-[212px] xl:h-[682px] w-full xl:w-auto relative">
+          <div className="flex flex-col sm:flex-col xl:flex-row w-full mt-[0rem] xl:mt-[2rem] px-[2rem] text-center xl:text-start xl:px-[100px] justify-between">
+          <div className="flex justify-center xl:w-1/2 mt-[2rem] xl:mt-[0rem]">
+              <div className="w-auto xl:w-auto relative">
                 <Image
-                  className="h-[212px] xl:h-[630px]"
+                  className="h-[300px] xl:h-[800px]"
                   src={ImageSection2}
                   width="0"
                   height="0"
@@ -47,7 +47,7 @@ export default function Section2({
                 />
               </div>
             </div>
-            <div className="flex flex-col items-start sm:w-full xl:w-1/2 px-[0rem] xl:px-[6rem]">
+            <div className="flex flex-col items-start sm:w-full xl:w-1/2 px-[0rem] xl:px-[6rem] xl:mt-[4rem]">
               <div className="mt-[1rem] xl:mt-[2rem] mb-[1rem]">
                 <Title H="h5spaced" Text={title1} TitleClassProps="text-white font-bold mb-[1rem]" />
                 <p className="text-white text-[0.9rem] leading-[0.9rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[18px] xl:leading-[25px]">
@@ -76,7 +76,7 @@ export default function Section2({
             </div>
           </div>
 
-          <div className="w-full max-w-md md:max-w-lg items-center sm:px-0 mt-[2rem]">
+          <div className="w-full max-w-md md:max-w-lg items-center sm:px-0 mt-[0rem]">
             <button
                 className={`medium primary text-white
                             w-[315px] h-[45px] ml-[10px] xl:ml-[130px]
