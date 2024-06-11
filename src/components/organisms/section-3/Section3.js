@@ -29,10 +29,10 @@ export default function Section2({
               H=""
               TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-[20px] leading-[1rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"
             />
-            <p className="mt-[1rem] px-[10px] xl:px-[160px] text-[12px] text-white leading-[1rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[24px] xl:leading-[2.5rem]">
+            <p className="mt-[1rem] px-[10px] xl:px-[160px] text-[12px] text-white leading-[1rem] xl:text-[24px] xl:leading-[2.5rem]">
               {subtitle}
             </p>
-            <p className="mt-[1rem] xl:mt-[6rem] px-[9px] xl:px-[30px] text-[14px] text-white leading-[1rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[36px] xl:leading-[2.5rem] font-semibold">
+            <p className="mt-[1rem] xl:mt-[6rem] px-[9px] xl:px-[30px] text-[14px] text-white leading-[1rem] xl:text-[36px] xl:leading-[2.5rem] font-semibold">
               {text}
             </p>
           </div>

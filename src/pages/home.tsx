@@ -1,5 +1,4 @@
 // Assets
-import ImageSection1 from '~/assets/static/images/section1/splash.jpg';
 import ImageSection2 from '~/assets/static/images/section1/Homepage.jpg';
 
 // Components
