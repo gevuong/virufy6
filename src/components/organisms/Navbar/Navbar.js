@@ -18,6 +18,7 @@ import SPA from '~/assets/static/icons/navbar/flags/Spa.png'
 import JPN from '~/assets/static/icons/navbar/flags/Jpn.png'
 import POR from '~/assets/static/icons/navbar/flags/Por.png'
 import LocaleSelector from '~/components/atoms/Select/LocaleSelector'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
   const options = [
@@ -43,6 +44,8 @@ export default function Navbar() {
 
   const [activeLink, setActiveLink] = useState('');
 
+  const router = useRouter();
+
   useEffect(() => {
     window.location.pathname === '/es/home' ? setActiveLink('home') :
     window.location.pathname === '/es/ai' ? setActiveLink('ourTechnology') :
@@ -65,11 +68,35 @@ export default function Navbar() {
     window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
   })
 
+useEffect(() => {
+    if (typeof window !== 'undefined') {
+        setNavbar(false);
+    }
+}, [router.pathname]);
+
+const SCREEN_SIZE = 976;
+
+useEffect(() => {
+    if (typeof window !== 'undefined') {
+        const handleResize = () => {
+            if (window.innerWidth >= SCREEN_SIZE) {
+                setNavbar(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }
+}, []);
+
   return (
     <div className="bg-[#000]">
-        <nav className="sticky z-[100] w-full bg-transparent shadow">
+        <nav className={`sticky z-[100] w-full shadow ${navbar ? 'bg-black' : 'bg-transparent'}`}>
             <div>
-                {showModal ? (
+                {showModal ? ( // donate modal 
                 <>
                     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none" onClick={() => setShowModal(false)}>
                     <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px]">
@@ -154,6 +181,7 @@ export default function Navbar() {
                 </>
                 ) : null}
             </div>
+
             <div className="lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 xl:mx-9">
                 <div>
                 <div className="flex items-center justify-between py-3 lg:block lg:py-5">
@@ -176,7 +204,8 @@ export default function Navbar() {
                     />
                     </Link>
                     <div className="lg:hidden">
-                    <button
+                    {/* // hamburger and x button */}
+                    <button 
                         className="rounded-lg p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                         onClick={() => setNavbar(!navbar)}
                     >
@@ -202,16 +231,18 @@ export default function Navbar() {
                 </div>
                 </div>
                 <div>
+                    {/* dropdown for mobile */}
                     <div
                         className={`mt-8 flex-1 justify-self-center pb-3 lg:mt-0 lg:block lg:pb-0 ${
-                        navbar ? 'absolute block' : 'hidden'
+                        navbar ? 'absolute block bg-black text-center w-full left-0 top-6' 
+                        : 'hidden'
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 lg:space-y-0 xl:space-x-9">
                             <li className="text-white">
                                 <div>
                                     <Link
-                                        className={`${activeLink === 'home'
+                                        className={`${navbar ? 'font-bold' : ''} ${activeLink === 'home'
                                             ? 'py-2 solid border-b-2'
                                             : 'py-2 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                         href="/home"
@@ -220,56 +251,70 @@ export default function Navbar() {
                                     </Link>
                                 </div>
                             </li>
+                            {/* technology link */}
                             <li className="text-white">
                                 <div>
+
                                     <Link
-                                        className={`${activeLink === 'ourTechnology'
+                                        className={`${navbar ? 'font-bold' : ''} ${activeLink === 'ourTechnology'
                                             ? 'peer py-2 text-white solid border-b-2'
                                             : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
-                                        href="/ai"
-                                    >
+                                        href="/ai">
                                         {ourTechnology?.section}
                                     </Link>
-                                    <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex ml-[-60px] text-center">
-                                        <Link
-                                            className="px-5 py-5 text-[white] hover:font-bold"
-                                            href="/ai"
-                                        >
-                                        {ourTechnology?.howItWorks}
+
+                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
+                                    <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/ai" >
+                                            {ourTechnology?.howItWorks}
                                         </Link>
-                                        <Link
-                                            className="px-5 py-3 text-[white] hover:font-bold"
-                                            href="/publications"
-                                        >
-                                        {ourTechnology?.OurResearch}
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/publications">
+                                            {ourTechnology?.OurResearch}
+                                        </Link>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+
+                            {/* coughcheck app link */}
+                            <li className="text-white">
+                                <div>
+                                    <Link className={`${navbar ? 'font-bold' : ''} peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left
+                                    relative before:w-full before:h-0.5 before:origin-right before:transition-transform
+                                    before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0`} href="">
+                                        {coughCheckApp?.section}
+                                    </Link>
+
+                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-35px]'} hover:flex peer-hover:flex`}>
+                                        <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/" >
+                                            {coughCheckApp?.covid19}
+                                        </Link>
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/">
+                                            {coughCheckApp?.flu}
+                                        </Link>  
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/">
+                                            {coughCheckApp?.copd}
+                                        </Link>  
+                                        <Link className="px-5 py-2 text-[white] hover:font-bold" href="/">
+                                            {coughCheckApp?.rsv}
                                         </Link>
                                     </div>
                                 </div>
                             </li>
-                            <li className="text-white
-                                hover:before:scale-x-100 hover:before:origin-left
-                                relative before:w-full before:h-0.5 before:origin-right before:transition-transform
-                                before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0"
-                            >
-                                <div>
-                                    <Link className="peer py-2 text-white" href="">
-                                        {coughCheckApp}
-                                    </Link>
-                                </div>
-                            </li>
 
+                            {/* about us link */}
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`${activeLink === 'aboutUs'
+                                    className={`${navbar ? 'font-bold' : ''} ${activeLink === 'aboutUs'
                                         ? 'peer py-2 text-white solid border-b-2'
-                                        : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
+                                        : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}
+                                        `}
                                     href="/our-story"
                                 >
                                     {aboutUs?.section}
                                 </Link>
 
-                                <div className="fixed hidden w-[200px] flex-col bg-transparent drop-shadow-lg hover:flex peer-hover:flex ml-[-60px] text-center">
+                                <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
                                     <Link
                                         className="pt-6 pb-3 text-white hover:font-bold"
                                         href="/our-story"
@@ -300,7 +345,7 @@ export default function Navbar() {
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`${activeLink === 'faq'
+                                    className={`${navbar ? 'font-bold' : ''} ${activeLink === 'faq'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
                                     href="/FAQ"
@@ -314,7 +359,7 @@ export default function Navbar() {
                                 <Select Text="" Options={options} optionsIcons={optionsIcons} />
                                 <LocaleSelector optionsIcons={optionsIcons}></LocaleSelector>
                             </li> */}
-                            <li className="text-[#393939]">
+                            <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                                 <Button
                                     onClick={() => setShowModal(true)}
                                     size="medium"
