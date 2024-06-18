@@ -6,14 +6,7 @@ import Section2 from '~/components/organisms/section-2/Section2'
 import Section3 from '~/components/organisms/section-3/Section3'
 import Section10 from '~/components/organisms/section-10/Section10'
 
-// Localization
-import { useI18n } from '~/i18n';
-
 export default function Prueba() {
-  const {
-    home: { sectionTestOnline, sectionOurFounder, sectionVirufyCommunity, sectionMissionStatement },
-  } = useI18n();
-
   return (
   <>
     <div className="flex flex-col items-center justify-center">
@@ -22,7 +15,7 @@ export default function Prueba() {
           sizeImg="width-100vw"
           borderImg="none"
           src={ImageSection2}
-          altImg="Imagen cabezera"
+          altImg="A person holding phone in hand"
           text="Welcome to Virufy"
           text2="Your Personal Health Companion"
           mainText="Empower yourself with the latest in health technology."

@@ -1,18 +1,15 @@
-import { useI18n } from "~/i18n";
 import Title from '~/components/atoms/Title/Title';
 import ImageSection3 from '~/assets/static/images/section3/Algorithm.jpg';
 import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal';
-
 
 export default function Section2({
     title,
     subtitle,
     text
 }) {
-  const { } = useI18n();
   return (
     <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
-      <div className="contrast-1 brightness-100">
+      <div className="contrast-1 brightness-100 w-full">
         <ImageAtomLocal
           ImageStyleProps=""
           imagesize=""
@@ -21,9 +18,9 @@ export default function Section2({
           alt=""
         />
       </div>
-      <div className="absolute flex flex-col p-4 md:p-8 lg:p-[9.6rem] text-center">
-        <div className="flex flex-col text-center">
-        <div className="flex flex-col mt-[0.5rem] lg:mt-12 sm:text-center">
+      <div className="absolute inset-0 flex justify-center items-center">
+        <div className="max-w-screen-xl mx-auto flex flex-col p-4 md:p-8 lg:p-[9.6rem] text-center">
+          <div className="flex flex-col text-center mt-[0.5rem] lg:mt-12 sm:text-center">
             <Title
               Text={title}
               H=""
@@ -36,8 +33,8 @@ export default function Section2({
               {text}
             </p>
           </div>
-            </div>
-            </div>
-            </div>
+        </div>
+      </div>
+    </div>
   );
 }
