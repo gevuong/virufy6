@@ -29,18 +29,18 @@ export default function Section2({
       @media (min-width: 1536px) {
         .mt-2xl {
           margin-top: 30rem; 
-        }
-          .mb-2xl {
-          bottom: 30rem;
+        } 
+      }
+
+      @media (min-width: 1660px) {
+        .mb-3xl {
+          bottom: 30rem; 
         }
       }
 
       @media (min-width: 1920px) { 
         .mt-3xl {
           margin-top: 60rem; 
-        }
-           .mb-3xl {
-          bottom: 40rem; 
         }
       }
     `;
