@@ -40,8 +40,13 @@ export default function Section2({
 
       @media (min-width: 1920px) { 
         .mt-3xl {
-          margin-top: 60rem; 
+          margin-top: 40rem;
         }
+        
+        .mr-3xl {
+          margin-right: 20rem; 
+        }
+
       }
     `;
     document.head.appendChild(style);
@@ -123,7 +128,7 @@ export default function Section2({
               </p>
             </div>
           </div>
-          <div className="mb-2xl mb-3xl bottom-[2rem] md:bottom-[8rem] xl:bottom-[12rem] px-[2rem] absolute flex flex-col items-center mt-[1rem] sm:mt-[2rem] lg:mt-[4rem] xl:mt-[15rem] md:space-y-8 sm:space-y-2 ml-[8rem] lg:ml-[35rem]">
+          <div className="mb-2xl mb-3xl mr-3xl bottom-[7rem] md:bottom-[8rem] lg:mr-[5rem] xl:bottom-[20rem] px-[2rem] absolute flex flex-col items-center mt-[1rem] sm:mt-[2rem] lg:mt-[4rem] xl:mt-[15rem] md:space-y-8 sm:space-y-2 ml-[8rem] lg:ml-[20rem] sm:mr-[2rem] max-w-[50rem]">
             <p className="text-[0.8rem] leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
               {mainText2}
             </p>
