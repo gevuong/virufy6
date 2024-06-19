@@ -78,7 +78,7 @@ export default function Section2({
       <div className="absolute inset-0 flex justify-center items-start p-4 md:p-8 lg:p-12 text-center sm:text-left text-white">
         <div className="max-w-screen-xl mx-auto flex flex-col">
           <div className="flex flex-col mt-12 text-center xl:mt-[18rem] sm:mx-0 lg:mx-20 ml-[0rem] lg:ml-[6rem]">
-            <Title Text={text} H="" TitleClassProps="text-white text-[0.99rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"/>
+            <Title Text={text} H="" TitleClassProps="text-white text-[0.99rem] leading-[2.25rem] sm:text-[0.99rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"/>
             <div className="flex flex-col mt-0 lg:mt-12 sm:text-center">
               <Title
                 Text={text2}
@@ -87,16 +87,16 @@ export default function Section2({
               />
             </div>
           </div>
-          <div className="flex flex-col items-start mt-24 lg:mt-100 xl:mt-[27rem] mt-2xl mt-3xl space-y-2 md:space-y-8 sm:ml-0 lg:ml-20">
+          <div className="flex flex-col items-start  mt-[3.5rem] sm:mt-24 lg:mt-100 xl:mt-[27rem] mt-2xl mt-3xl space-y-2 md:space-y-8 sm:ml-0 lg:ml-20">
             <div className="w-full max-w-xs md:max-w-md">
-              <p className="text-[0.75rem] leading-[1rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
+              <p className="text-[0.7rem] leading-[0.7rem] sm:text-[0.75rem] sm:leading-[1rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
                 {mainText}
               </p>
             </div>
 
             <div className="w-full max-w-md md:max-w-lg">
               <p
-                className="text-[0.7rem] leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem] font-bold"
+                className="text-[0.6rem] leading-[0.9rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[2.5rem] font-bold"
                 dangerouslySetInnerHTML={applyGradient(subText)}
               />
             </div>
@@ -104,7 +104,8 @@ export default function Section2({
             <div className="w-full max-w-md md:max-w-lg px-0 mt-2">
               <button
                   className={`medium primary text-white
-                              w-[315px] h-[45px]
+                              w-[270px] h-[35px]
+                              sm:w-[315px] sm:h-[45px]
                               xl:w-[250px] xl:h-[65px]`}
                   style={{
                     borderRadius: "50px",
@@ -116,7 +117,7 @@ export default function Section2({
                 </button>
             </div>
           </div>
-          <div className="flex flex-col items-start sm:ml-0 lg:ml-20">
+          <div className="flex flex-col items-start mt-[0.2rem] sm:mt-[0rem] sm:ml-0 lg:ml-20">
             <div className="w-full max-w-screen-lg">
               <p className="text-[0.4rem] leading-[0.6rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1rem] lg:leading-[1.5rem] xl:text-[1.125rem] xl:leading-[1.75rem] text-gray-400">
                 {disclaimer1}
@@ -128,12 +129,12 @@ export default function Section2({
               </p>
             </div>
           </div>
-          <div className="mb-2xl mb-3xl mr-3xl bottom-[7rem] md:bottom-[8rem] lg:mr-[5rem] xl:bottom-[20rem] px-[2rem] absolute flex flex-col items-center mt-[1rem] sm:mt-[2rem] lg:mt-[4rem] xl:mt-[15rem] md:space-y-8 sm:space-y-2 ml-[8rem] lg:ml-[20rem] sm:mr-[2rem] max-w-[50rem]">
-            <p className="text-[0.8rem] leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
+          <div className="mb-2xl mb-3xl mr-3xl bottom-[2rem] sm:bottom-[7rem] md:bottom-[8rem] lg:mr-[5rem] xl:bottom-[20rem] px-[2rem] absolute flex flex-col items-center mt-[1rem] sm:mt-[2rem] lg:mt-[4rem] xl:mt-[15rem] md:space-y-8 sm:space-y-2 ml-[4rem] sm:ml-[8rem] lg:ml-[20rem] sm:mr-[2rem] max-w-[50rem]">
+            <p className="text-[0.8rem] leading-[0.9rem] sm:text-[0.8rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
               {mainText2}
             </p>
             <p
-              className="text-[0.5rem] text-center leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem] font-bold"
+              className="text-[0.4rem] leading-[0.7rem] sm:text-[0.5rem] text-center sm:leading-[0.8rem] md:text-[1.125rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-[2rem] xl:text-[1.5rem] xl:leading-[3rem] font-bold"
               dangerouslySetInnerHTML={applyGradient(subText2)}
             />
           </div>

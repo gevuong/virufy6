@@ -18,9 +18,9 @@ export default function Section3({
     // Black background
     <div className="flex flex-col items-center justify-center w-full min-h-[1050px] xl:min-h-[1273px] bg-[#0A0A0A] pb-[2rem]">
       {/* Padding and margin */}
-      <div className="w-full flex items-center justify-center mt-[1rem] px-[20px] xl:px-[50px]">
+      <div className="w-full flex items-center justify-center mt-[1rem] sm:px-[20px] xl:px-[50px]">
         {/* Blue foreground */}
-        <div className="w-full bg-[#132D62] rounded-[50px] flex flex-col items-center pb-[2rem]">
+        <div className="max-w-screen-xl bg-[#132D62] rounded-[50px] flex flex-col items-center pb-[2rem]">
           <div className="w-full max-w-screen-xl mx-auto">
             <div className="flex flex-col items-center mt-[2rem] lg:mt-[4rem] w-full px-4 text-center">
               <Title
