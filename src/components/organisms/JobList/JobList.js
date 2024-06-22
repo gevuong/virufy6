@@ -4,6 +4,8 @@ import Title from '~/components/atoms/Title/Title'
 import Button from '~/components/atoms/button/Button'
 import Link from 'next/link'
 import { useI18n } from "~/i18n";
+import logo from '~/assets/static/images/logo/virufy.svg'
+import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal'
 
 export default function JobList() {
 
@@ -19,22 +21,39 @@ export default function JobList() {
         {showModalConfirmation ? (
           <>
             <div className="fixed inset-0 top-60 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px] lg:w-[1200px]">
+              <div className="relative mx-auto h-[420px] w-[300px] md:h-[425px] md:w-[360px]">
                 {/*content*/}
-                <div className="relative flex w-full flex-col rounded-xl border-0 bg-white shadow-lg outline-none focus:outline-none">
+
+                <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[black] to-[#4167AD] shadow-lg outline-none focus:outline-none text-white font-medium">  
                   {/*header*/}
-                  <div className="flex w-full rounded-t border-b border-solid border-slate-200">
-                    <Title
-                      H="h5Modals2"
-                      Text={modal?.text}
-                      TitleClassProps={'mt-[30px] mx-auto mb-[30px]'}
+
+                  <div className='flex justify-center md:justify-between px-4 pt-2'> 
+                    <ImageAtomLocal
+                      imagesize="px110x27"
+                      border="none"
+                      src={logo}
+                      alt="Logo Virufy"
+                      ImageStyleProps="w-16 md:w-12 md:pl-1"
                     />
+                    <Link
+                      className='hidden md:block'
+                      type='button'
+                      href="./"
+                      onClick={() => setShowModalConfirmation(false)}
+                    >X
+                    </Link>
+                  </div>
+
+                  <div className="flex text-center md:text-left w-full rounded-t">
+                    <p className='mt-[10px] mx-auto h-[100px] px-6 text-xl'>
+                      {modal?.text}
+                    </p>
                   </div>
                   {/*body*/}
 
-                  <div className="flex h-[70px] w-full items-center justify-center gap-10">
+                  <div className="flex-col items-center justify-center h-[100px] mb-4">
                     <Link
-                      className="flex w-[50px] justify-center rounded border border-blue-500 bg-blue-500 px-6 py-2 text-white outline-none transition-all duration-150 ease-linear hover:bg-blue-600"
+                      className="flex w-[260px] md:w-[320px] justify-center rounded-3xl bg-gradient-to-b from-green-500 to-blue-500 px-6 py-2 text-white font-bold md:font-medium outline-none transition-all duration-150 ease-linear hover:bg-blue-600 mx-auto"
                       type="button"
                       href="#"
                       onClick={() => setShowModalConfirmation(false)}
@@ -42,14 +61,15 @@ export default function JobList() {
                       {modal?.yes}
                     </Link>
                     <Link
-                      className="flex  w-[50px] justify-center rounded border border-blue-500 bg-gray-200 px-6 py-2 outline-none transition-all duration-150 ease-linear hover:bg-gray-300"
+                      className="flex w-[260px] md:w-[320px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 mt-3 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 text-red-500 font-bold md:font-medium mx-auto"
                       type="button"
-                      href="/home"
+                      href="/"
                     >
                       {modal?.no}
                     </Link>
                   </div>
-                  {/*footer*/}
+                  {/*buttons*/}
+
                 </div>
               </div>
             </div>
