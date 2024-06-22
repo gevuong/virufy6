@@ -53,7 +53,7 @@ export default function JobList() {
 
                   <div className="flex-col items-center justify-center h-[100px] mb-4">
                     <Link
-                      className="flex w-[260px] md:w-[320px] justify-center rounded-3xl bg-gradient-to-b from-green-500 to-blue-500 px-6 py-2 text-white font-bold md:font-medium outline-none transition-all duration-150 ease-linear hover:bg-blue-600 mx-auto"
+                      className="flex w-[260px] md:w-[320px] justify-center rounded-3xl bg-gradient-to-b from-green-500 to-blue-500 px-6 py-2 text-white font-bold md:font-medium outline-none transition-all duration-150 ease-linear mx-auto"
                       type="button"
                       href="#"
                       onClick={() => setShowModalConfirmation(false)}
