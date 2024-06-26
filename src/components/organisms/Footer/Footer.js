@@ -17,7 +17,7 @@ export default function Footer() {
     { label: 'Technology', route: '/ai' },
     { label: 'CoughCheck App', route: '/GetInvolved' },
     { label: 'About', route: '/our-story' },
-    { label: 'FAQ', route: '/faqs' },
+    { label: 'FAQ', route: '/faq' },
   ]
 
   const links2 = [{ label: 'Cookie Policy', route: '#' }]
