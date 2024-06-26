@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ArrowDownIcon } from '~/assets/static/images/faq/index'
+import { ArrowDownIcon } from '~/assets/static/images/faq'
 
 const ArrowIcon = ({ isActive }: { isActive: boolean }) => {
   const altText = isActive ? 'arrow up icon' : 'arrow down icon'
