@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Text from '~/components/atoms/Text/Text'
 import Title from '~/components/atoms/Title/Title'
 import ButtonWhite from '~/components/atoms/button/ButtonWhite'
