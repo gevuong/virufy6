@@ -13,7 +13,7 @@ export const JobListing = {
       category: 'Engineering',
       positions: [
         {
-          title: 'Software engineer',
+          title: 'Software Engineer',
           id: 2,
         },
         {
