@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Text from '~/components/atoms/Text/Text'
 import Title from '~/components/atoms/Title/Title'
-import Button from '~/components/atoms/button/Button'
+import ButtonWhite from '~/components/atoms/button/ButtonWhite'
 import Link from 'next/link'
 import { useI18n } from "~/i18n";
 import logo from '~/assets/static/images/logo/virufy.svg'
@@ -78,36 +78,36 @@ export default function JobList() {
         ) : null}
       </div>
 
-      {/* _____________________ */}
+      {/* _________job listings____________ */}
 
-      <div className="my-12 mx-8 w-11/12">
+      <div className="mb-12 mx-auto w-11/12">
         {!JobList ? <p>No data</p> : null}
 
         {JobList.map(({ category, positions, id }) => (
-          <div key={id} className="w-[100%] ">
+          <div key={id} className="w-[100%] text-left">
             <Title
-              TitleClassProps={'text-[#3074DC] my-[40px]'}
+              TitleClassProps={'text-white mt-10 mb-6 ml-8 md:ml-16'}
               Text={category}
-              H={'h4'}
+              H={'h6JobListing'}
             />
 
             {positions.map(({ title, id }) => (
               <>
-                <div key={id} className="mb-[37px] flex w-[100%]">
-                  <div className="flex flex-1 items-center justify-start">
-                    <Text TextClassProps={''} Text={title} Style={'normal'} />
+                <div key={id} className="mb-[12px] flex w-[90%] bg-[#16223A] rounded-md mx-auto">
+                  <div className="flex flex-1 items-center justify-start h-14">
+                    <Text TextClassProps={'text-white px-5'} Text={title} Style={'small'} />
                   </div>
 
                   <div className="flex flex-1 justify-end">
-                    <Button
+                    <ButtonWhite
                       size="medium"
                       type="primary"
                       path={`/JobListing/${id}`}
-                      label="APPLY"
+                      label="Apply"
                     />
                   </div>
                 </div>
-                <hr className="mx-auto my-4 flex h-px w-[100%] rounded border-0 bg-[#BBBBBB]" />
+
               </>
             ))}
           </div>
