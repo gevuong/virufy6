@@ -6,7 +6,7 @@ import TopicCard from '~/components/FAQ/TopicCard'
 import { useI18n } from '~/i18n'
 import type { QA } from '~/i18n/types/FAQ'
 
-export const DEFAULT_TOPIC = 'Common Questions'
+const DEFAULT_TOPIC = 'Common Questions'
 const DEBOUNCE_TIME_MS = 500
 
 const FAQPage = () => {
@@ -133,6 +133,7 @@ const FAQPage = () => {
               {topicsSection.cards.map((card) => (
                 <TopicCard
                   key={card.title}
+                  defaultTopic={DEFAULT_TOPIC}
                   selectedTopic={selectedTopic}
                   setSelectedTopic={setSelectedTopic}
                   {...card}

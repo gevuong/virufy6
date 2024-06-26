@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { type FAQTopicCard } from '~/i18n/types/FAQ'
-import { DEFAULT_TOPIC } from '~/pages/faq'
 
 interface Props extends FAQTopicCard {
+  defaultTopic: string
   selectedTopic: string
   setSelectedTopic: React.Dispatch<React.SetStateAction<string>>
 }
@@ -11,6 +11,7 @@ const TopicCard = ({
   img,
   altText,
   title,
+  defaultTopic,
   selectedTopic,
   setSelectedTopic,
 }: Props) => {
@@ -22,7 +23,7 @@ const TopicCard = ({
   const handleTopicClick = (): void => {
     // deselect selected topic and reset to default topic
     if (selectedTopic === title) {
-      setSelectedTopic(DEFAULT_TOPIC)
+      setSelectedTopic(defaultTopic)
       return
     }
     setSelectedTopic(title)
