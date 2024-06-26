@@ -262,7 +262,7 @@ useEffect(() => {
                                         {ourTechnology?.section}
                                     </Link>
 
-                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
+                                    <div className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
                                     <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/ai" >
                                             {ourTechnology?.howItWorks}
                                         </Link>
@@ -283,7 +283,7 @@ useEffect(() => {
                                         {coughCheckApp?.section}
                                     </Link>
 
-                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-35px]'} hover:flex peer-hover:flex`}>
+                                    <div className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-35px]'} hover:flex peer-hover:flex`}>
                                         <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/" >
                                             {coughCheckApp?.covid19}
                                         </Link>
@@ -304,7 +304,7 @@ useEffect(() => {
                             <li className="text-white">
                                 <div>
                                 <Link
-                                    className={`${navbar ? 'font-bold' : ''} ${activeLink === 'aboutUs'
+                                    className={`fixed ${navbar ? 'font-bold' : ''} ${activeLink === 'aboutUs'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}
                                         `}
@@ -313,7 +313,7 @@ useEffect(() => {
                                     {aboutUs?.section}
                                 </Link>
 
-                                <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
+                                <div className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
                                     <Link
                                         className="pt-6 pb-3 text-white hover:font-bold"
                                         href="/our-story"

@@ -40,7 +40,7 @@ export default function TextinsImg({
             leading-[14px]
             sm:leading-[25px]
             md:leading-10
-            text-opacity-70
+            text-opacity-80
         "
       />
 
