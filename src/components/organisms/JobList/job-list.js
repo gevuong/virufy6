@@ -21,13 +21,13 @@ export default function JobList() {
         {showModalConfirmation ? (
           <>
             <div className="fixed inset-0 top-60 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto h-[420px] w-[300px] md:h-[425px] md:w-[360px]">
+              <div className="relative mx-auto h-[420px] w-[300px] md:h-[525px] md:w-[360px]">
                 {/*content*/}
 
                 <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[black] to-[#4167AD] shadow-lg outline-none focus:outline-none text-white font-medium">  
                   {/*header*/}
 
-                  <div className='flex justify-center md:justify-between px-4 pt-2'> 
+                  <div className='flex justify-center md:justify-between px-4 pt-4'> 
                     <ImageAtomLocal
                       imagesize="px110x27"
                       border="none"
@@ -45,13 +45,13 @@ export default function JobList() {
                   </div>
 
                   <div className="flex text-center md:text-left w-full rounded-t">
-                    <p className='mt-[10px] mx-auto h-[100px] px-6 text-xl'>
+                    <p className='my-10 mx-auto h-[100px] px-6 text-xl'>
                       {modal?.text}
                     </p>
                   </div>
                   {/*body*/}
 
-                  <div className="flex-col items-center justify-center h-[100px] mb-4">
+                  <div className="flex-col items-center justify-center h-[100px] mb-14">
                     <Link
                       className="flex w-[260px] md:w-[320px] justify-center rounded-3xl bg-gradient-to-b from-green-500 to-blue-500 px-6 py-2 text-white font-bold md:font-medium outline-none transition-all duration-150 ease-linear mx-auto"
                       type="button"
@@ -61,7 +61,7 @@ export default function JobList() {
                       {modal?.yes}
                     </Link>
                     <Link
-                      className="flex w-[260px] md:w-[320px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 mt-3 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 text-red-500 font-bold md:font-medium mx-auto"
+                      className="flex w-[260px] md:w-[320px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 mt-6 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 text-red-500 font-bold md:font-medium mx-auto"
                       type="button"
                       href="/"
                     >
