@@ -14,6 +14,7 @@ const FAQPage = () => {
     FAQ: { headerSection, topicsSection, questionsByTopic },
   } = useI18n()
 
+  // prevent recomputation after every re-render
   const allQuestions: QA[] = useMemo(
     () => Object.values(questionsByTopic).flat(),
     [questionsByTopic],
@@ -44,7 +45,7 @@ const FAQPage = () => {
     setFilteredQuestions(remainingQuestions)
   }, [searchInput, selectedTopic, questionsByTopic, allQuestions])
 
-  // delay setting state
+  // delay setting state and triggering a re-render
   const handleSearchInputChange = useMemo(
     () =>
       debounce((e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -85,8 +86,8 @@ const FAQPage = () => {
               {/* Input Container */}
               <div className="relative mb-2 flex items-center md:mb-8">
                 <input
-                  className="w-full rounded-full py-4 pl-5 pr-12 text-xs text-neutral-500 sm:px-8 sm:text-sm md:w-[680px] md:text-base"
-                  type="text"
+                  className="w-full rounded-full py-4 pl-5 pr-12 text-xs text-neutral-500 sm:pr-14 sm:pl-8 sm:text-sm md:w-[680px] md:text-base"
+                  type="search"
                   placeholder={headerSection.input.placeholder}
                   onChange={handleSearchInputChange}
                   maxLength={64}

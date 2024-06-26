@@ -55,7 +55,7 @@ export default function Navbar() {
     window.location.pathname === '/es/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/supporters' ? setActiveLink('aboutUs') :
     window.location.pathname === '/es/one-young-world' ? setActiveLink('aboutUs') :
-    window.location.pathname === '/es/FAQ' ? setActiveLink('faq') :
+    window.location.pathname === '/es/faq' ? setActiveLink('faq') :
     window.location.pathname === '/' ? setActiveLink('home') :
     window.location.pathname === '/home' ? setActiveLink('home') :
     window.location.pathname === '/ai' ? setActiveLink('ourTechnology') :
@@ -65,7 +65,7 @@ export default function Navbar() {
     window.location.pathname === '/OurPeople2' ? setActiveLink('aboutUs') :
     window.location.pathname === '/supporters' ? setActiveLink('aboutUs') :
     window.location.pathname === '/one-young-world' ? setActiveLink('aboutUs') :
-    window.location.pathname === '/FAQ' ? setActiveLink('faq') : setActiveLink('');
+    window.location.pathname === '/faq' ? setActiveLink('faq') : setActiveLink('');
   })
 
 useEffect(() => {
@@ -348,7 +348,7 @@ useEffect(() => {
                                     className={`${navbar ? 'font-bold' : ''} ${activeLink === 'faq'
                                         ? 'peer py-2 text-white solid border-b-2'
                                         : 'peer py-2 text-white hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0'}`}
-                                    href="/FAQ"
+                                    href="/faq"
                                 >
                                     {faq}
                                 </Link>
