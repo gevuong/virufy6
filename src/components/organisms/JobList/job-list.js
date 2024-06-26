@@ -102,7 +102,7 @@ export default function JobList() {
                     <ButtonWhite
                       size="medium"
                       type="primary"
-                      path={`/JobListing/${id}`}
+                      path={`/job-listing/${id}`}
                       label="Apply"
                     />
                   </div>

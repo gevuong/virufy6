@@ -1,7 +1,7 @@
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
 import Title from "~/components/atoms/Title/Title";
 
-// this is used in JobListing page only
+// this is used in job-listing page only
 
 export default function TextinsImg({
   sizeImg,

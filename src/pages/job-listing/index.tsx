@@ -1,11 +1,8 @@
-import TextBelowImg from '~/components/molecules/TextinsImg/TextBelowImg'
 import ImageinsText from '~/assets/static/images/JobListing/Hero.png'
 import TitleText from '~/components/molecules/TitleText/TitleText'
-import JobList from '~/components/organisms/JobList/JobList'
+import JobList from '~/components/organisms/JobList/job-list'
 import { useI18n } from '~/i18n'
-import TextinsImg from '~/components/molecules/TextinsImg/TextinsImg'
 import TextinsImg3 from '~/components/molecules/TextinsImg/TextinsImg3'
-import { ImageSize } from '~/components/themes'
 
 export default function JobListing() {
   const {
