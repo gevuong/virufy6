@@ -100,8 +100,6 @@ export default function JobList() {
 
                   <div className="flex flex-1 justify-end">
                     <ButtonWhite
-                      size="medium"
-                      type="primary"
                       path={`/job-listing/${id}`}
                       label="Apply"
                     />
