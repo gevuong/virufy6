@@ -23,7 +23,7 @@ export default function TextinsImg({
       </div>
       <Title
         Text={Text}
-        H="h1"
+        H="h1JobListing"
         TitleClassProps="
             absolute 
             top-[65%]
@@ -37,9 +37,6 @@ export default function TextinsImg({
             text-xs
             sm:text-base
             font-normal
-            leading-4
-            sm:leading-6
-            md:leading-10
             text-opacity-80
         "
       />
