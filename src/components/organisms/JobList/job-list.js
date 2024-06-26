@@ -38,7 +38,7 @@ export default function JobList() {
                     <Link
                       className='hidden md:block'
                       type='button'
-                      href="./"
+                      href="/one-young-world"
                       onClick={() => setShowModalConfirmation(false)}
                     >X
                     </Link>
@@ -63,7 +63,7 @@ export default function JobList() {
                     <Link
                       className="flex w-[260px] md:w-[320px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 mt-6 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 text-red-500 font-bold md:font-medium mx-auto"
                       type="button"
-                      href="/"
+                      href="/one-young-world"
                     >
                       {modal?.no}
                     </Link>

@@ -37,8 +37,8 @@ export default function TextinsImg({
             text-xs
             sm:text-base
             font-normal
-            leading-[13px]
-            sm:leading-[25px]
+            leading-4
+            sm:leading-6
             md:leading-10
             text-opacity-80
         "
