@@ -3,7 +3,7 @@ import {
   GlobeIcon,
   MonitorIcon,
   PhoneInHandIcon,
-  PrivacyIcon,
+  // PrivacyIcon,
   QuestionMarkIcon,
   RecycleIcon,
   SearchIcon,
@@ -70,11 +70,11 @@ export const FAQ = {
         img: MonitorIcon,
         altText: 'monitor icon',
       },
-      {
-        title: 'Privacy',
-        img: PrivacyIcon,
-        altText: 'privacy icon',
-      },
+      // {
+      //   title: 'Privacy',
+      //   img: PrivacyIcon,
+      //   altText: 'privacy icon',
+      // },
       {
         title: 'Other',
         img: QuestionMarkIcon,
