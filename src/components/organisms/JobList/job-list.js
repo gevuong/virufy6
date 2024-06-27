@@ -96,9 +96,11 @@ export default function JobList() {
                   key={id}
                   className="mx-auto mb-[12px] flex w-[90%] rounded-md bg-[#16223A]"
                 >
-                  <div className="flex h-14 flex-1 items-center justify-start">
+                  <div className="flex h-20 flex-1 items-center justify-start md:h-14">
                     <Text
-                      TextClassProps={'text-white px-5'}
+                      TextClassProps={
+                        'text-white text-xs sm:text-sm md:text-base px-5'
+                      }
                       Text={title}
                       Style={'small'}
                     />
