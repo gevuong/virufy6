@@ -84,7 +84,7 @@ export default function JobList() {
 
         {JobList.map(({ category, positions, id }) => (
           <div key={id} className="w-[100%] text-left">
-            <h2 className="ml-6 mt-10 mb-6 text-lg font-semibold leading-[0rem] text-white md:ml-16 lg:ml-20">
+            <h2 className="ml-6 mt-10 mb-6 text-sm md:text-lg font-semibold leading-[0rem] text-white md:ml-12 lg:ml-16">
               {category}
             </h2>
 
