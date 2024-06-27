@@ -72,7 +72,6 @@ export const TitleProps = {
     h5Modals: "text-[1.25rem] leading-[1.8rem]  md:text-[1.9rem] md:leading-[2.4rem]",
     h5Modals2: "text-[1rem] leading-[1.8rem]  md:text-[1.4rem] md:leading-[2rem] text-center",
     h6: "text-[1rem] leading-[1.5rem] font-semibold text-center",
-    h6JobListing: "text-base leading-[0rem] font-semibold ml-20",
     h10: "text-[3.6rem] leading-[2.5rem]   md:text-[3.5rem] md:leading-[3.3rem] lg:text-[5rem] lg:leading-[3.50rem] xl:text-[5rem] xl:leading-[4rem]",
 };
 

@@ -10,6 +10,7 @@ export default function JobListing() {
   } = useI18n()
 
   return (
+    // background img with title text in center 
     <div className="bg-[#142037]">
       <TextinsImg3
         sizeImg="width-100vw"
@@ -18,6 +19,7 @@ export default function JobListing() {
         altImg=""
         Text={titleImage}
       />
+      {/* intro text and listings */}
       <div className="bg-gradient-to-b from-[#142037] to-[#3F64A8]">
         <div className="mx-auto flex max-w-[1440px] flex-col">
           <TitleText

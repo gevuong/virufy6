@@ -84,11 +84,9 @@ export default function JobList() {
 
         {JobList.map(({ category, positions, id }) => (
           <div key={id} className="w-[100%] text-left">
-            <Title
-              TitleClassProps={'text-white mt-10 mb-6 ml-8 md:ml-16'}
-              Text={category}
-              H={'h6JobListing'}
-            />
+            <h2 className="ml-6 mt-10 mb-6 text-lg font-semibold leading-[0rem] text-white md:ml-16 lg:ml-20">
+              {category}
+            </h2>
 
             {positions.map(({ title, id }) => (
               <>
