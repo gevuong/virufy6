@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-// eslint-disable-next-line @typescript-eslint/no-empty-function
 export default function Button({ label, path }) {
 
     return (
