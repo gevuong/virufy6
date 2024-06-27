@@ -9,8 +9,10 @@ import Section10 from '~/components/organisms/section-10/Section10'
 export default function Prueba() {
   return (
   <>
-    <div className="flex flex-col items-center justify-center">
-      <div className="w-full overflow-hidden">
+    {/* <div className="flex flex-col items-center justify-center">
+      <div className="w-full overflow-hidden"> */}
+      <div className="flex flex-col items-center justify-center **-mb-24**">
+        <div className="**relative -top-24** w-full overflow-hidden">
         <Section2
           sizeImg="width-100vw"
           borderImg="none"
