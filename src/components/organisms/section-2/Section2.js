@@ -28,7 +28,7 @@ export default function Section2({
 
       @media (min-width: 1536px) {
         .mt-2xl {
-          margin-top: 30rem; 
+          margin-top: 20rem; 
         } 
       }
 
@@ -60,6 +60,71 @@ export default function Section2({
         }
       }
 
+      @media (min-width: 360px) and (max-width: 399px) {
+        .bottom-custom {
+          bottom: 5.5rem;
+        }
+      }
+
+      @media (min-width: 450px) {
+        .custom-top-margin {
+          margin-top: 2rem;
+        }
+      }
+
+      @media (min-width: 500px) {
+        .custom-top-margin {
+          margin-top: 3rem;
+        }
+      }
+
+      @media (min-width: 550px) {
+        .custom-top-margin {
+          margin-top: 4rem;
+        }
+      }
+
+      @media (min-width: 600px) {
+        .custom-top-margin {
+          margin-top: 5rem;
+        }
+      }
+
+      @media (min-width: 650px) {
+        .custom-top-margin {
+          margin-top: 6rem;
+        }
+      }
+
+      @media (min-width: 700px) {
+        .custom-top-margin {
+          margin-top: 7rem;
+        }
+      }
+
+      @media (min-width: 750px) {
+        .custom-top-margin {
+          margin-top: 8rem;
+        }
+      }
+
+       @media (min-width: 800px) {
+        .custom-top-margin {
+          margin-top: 9rem;
+        }
+      }
+
+      @media (min-width: 850px) {
+        .custom-top-margin {
+          margin-top: 10rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .custom-top-margin {
+          margin-top: 15rem;
+        }
+      }
     `;
     document.head.appendChild(style);
     
@@ -89,6 +154,7 @@ export default function Section2({
       </div>
       <div className="absolute inset-0 flex justify-center items-start p-4 md:p-8 lg:p-12 text-center sm:text-left text-white">
         <div className="max-w-screen-xl mx-auto flex flex-col">
+        <div className="mt-[0rem] custom-top-margin sm:mt-[0rem] md:mt-[12.5rem] lg:mt-[14rem]">
           <div className="flex flex-col mt-12 text-center xl:mt-[18rem] sm:mx-0 lg:mx-20 ml-[0rem] lg:ml-[6rem]">
             <Title Text={text} H="" TitleClassProps="text-white text-[0.99rem] leading-[2.25rem] sm:text-[0.99rem] sm:leading-[2.25rem] md:text-[2.25rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[2.75rem] xl:text-[3rem] xl:leading-[3.5rem]"/>
             <div className="flex flex-col mt-0 lg:mt-12 sm:text-center">
@@ -99,7 +165,7 @@ export default function Section2({
               />
             </div>
           </div>
-          <div className="flex flex-col items-start  mt-[3.5rem] sm:mt-24 lg:mt-100 xl:mt-[27rem] mt-2xl mt-3xl space-y-2 md:space-y-8 sm:ml-0">
+          <div className="flex flex-col items-start  mt-[3.5rem] sm:mt-24 lg:mt-100 xl:mt-[10rem] mt-2xl mt-3xl space-y-2 md:space-y-8 sm:ml-0">
             <div className="w-full max-w-xs md:max-w-md">
               <p className="text-[0.7rem] leading-[0.7rem] sm:text-[0.75rem] sm:leading-[1rem] md:text-[1rem] md:leading-[1.5rem] lg:text-[1.125rem] lg:leading-[1.75rem] xl:text-[1.25rem] xl:leading-[2rem]">
                 {mainText}
@@ -129,7 +195,7 @@ export default function Section2({
                 </button>
             </div>
           </div>
-          <div className="flex flex-col items-start mt-[0.2rem] sm:mt-[0rem] sm:ml-0">
+          <div className="flex flex-col items-start mt-[0.2rem] sm:mt-[0.3rem] sm:ml-0">
             <div className="w-full max-w-screen-lg">
               <p className="text-[0.4rem] leading-[0.6rem] md:text-[0.875rem] md:leading-[1.25rem] lg:text-[1rem] lg:leading-[1.5rem] xl:text-[1.125rem] xl:leading-[1.75rem] text-gray-400">
                 {disclaimer1}
@@ -141,7 +207,8 @@ export default function Section2({
               </p>
             </div>
           </div>
-          <div className="mb-2xl mb-3xl mr-3xl bottom-[2rem] bottom-custom sm:bottom-[7rem] md:bottom-[8rem] lg:mr-[5rem] xl:bottom-[20rem] px-[2rem] absolute flex flex-col items-center mt-[1rem] sm:mt-[2rem] lg:mt-[4rem] xl:mt-[15rem] md:space-y-8 sm:space-y-2 ml-[4rem] sm:ml-[8rem] lg:ml-[20rem] sm:mr-[2rem] max-w-[50rem]">
+          </div>
+          <div className="mb-2xl mb-3xl mr-3xl bottom-[3rem] bottom-custom sm:bottom-[7rem] md:bottom-[8rem] lg:mr-[5rem] xl:bottom-[20rem] px-[2rem] absolute flex flex-col items-center mt-[1rem] sm:mt-[2rem] lg:mt-[4rem] xl:mt-[15rem] md:space-y-8 sm:space-y-2 ml-[5.5rem] sm:ml-[8rem] lg:ml-[20rem] sm:mr-[2rem] max-w-[50rem]">
             <p className="text-[0.8rem] leading-[0.9rem] sm:text-[0.8rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.75rem] lg:leading-[2.25rem] xl:text-[2rem] xl:leading-[2.5rem]">
               {mainText2}
             </p>
