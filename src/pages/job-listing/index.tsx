@@ -10,7 +10,7 @@ export default function JobListing() {
   } = useI18n()
 
   return (
-    <div className='bg-[#142037]'>
+    <div className="bg-[#142037]">
       <TextinsImg3
         sizeImg="width-100vw"
         borderImg="none"
@@ -19,15 +19,12 @@ export default function JobListing() {
         Text={titleImage}
       />
       <div className="bg-gradient-to-b from-[#142037] to-[#3F64A8]">
-        <div className="flex max-w-[1440px] flex-col mx-auto">
-          
+        <div className="mx-auto flex max-w-[1440px] flex-col">
           <TitleText
             TitleSize={'h5'}
             TitleClassProps={'text-white text-center md:text-left'}
             TitleLabel={title}
-            ContainerTitleProps={
-              'md:mt-[40px] mb-5 md:ml-[10%]'
-            }
+            ContainerTitleProps={'md:mt-[40px] mb-5 md:ml-[10%]'}
             TextSize={'normal'}
             TextClassProps={'text-white text-left'}
             TextLabel={text}
