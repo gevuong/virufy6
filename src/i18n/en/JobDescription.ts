@@ -44,7 +44,7 @@ export const JobDescription = {
     },
     {
       id: 2,
-      jobTitle: 'Software engineer',
+      jobTitle: 'Software Engineer',
       jobDescription: 'We are looking for someone to contribute on a part-time volunteer basis and collaborate closely with the Virufy development team, define the product roadmap, manage development progress, and align with stakeholders.',
       responsibilities: [
         'Define the product roadmap and manage the backlog',

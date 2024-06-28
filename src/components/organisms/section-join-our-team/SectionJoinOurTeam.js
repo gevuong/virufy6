@@ -136,7 +136,7 @@ export default function SectionJoinOurTeam({
                                         TitleSize=""
                                     />
                                     <div className="flex-col justify-center mb-14">
-                                        <Button size="medium" type="primary" path="/JobListing" label={TextProps?.buttonCareers} />
+                                        <Button size="medium" type="primary" path="/job-listing" label={TextProps?.buttonCareers} />
                                     </div>
                                 </div>
                             </div>

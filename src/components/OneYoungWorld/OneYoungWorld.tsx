@@ -99,7 +99,7 @@ const OneYoungWorld = ({
             {/* TODO: add link to Join our Team page */}
             <Link
               className="w-auto rounded-full bg-gradient-to-b from-[#38b76b] to-[#3578de] px-6 py-4 text-sm font-medium md:py-4 md:px-12 md:text-base"
-              href="#"
+              href="/job-listing"
             >
               Join our Team
             </Link>
