@@ -1,106 +1,50 @@
-//Assets
-import ImageSection1 from '~/assets/static/images/section1/1.jpg'
+// Assets
+import ImageSection2 from '~/assets/static/images/section1/Homepage.jpg';
 
-//Organismo
-import Section1 from '~/components/organisms/section-1/Section1'
+// Components
 import Section2 from '~/components/organisms/section-2/Section2'
 import Section3 from '~/components/organisms/section-3/Section3'
-import Section4 from '~/components/organisms/section-4/Section4'
-import Section5 from '~/components/organisms/section-5/Section5'
-import CardSlider from '~/components/organisms/CardSlider/CardSlider'
-
-import Section6 from '~/components/organisms/section-6/Section6'
-import Section7 from '~/components/organisms/section-7/Section7'
-import { useI18n } from '~/i18n'
+import Section10 from '~/components/organisms/section-10/Section10'
 
 export default function Prueba() {
-  const {
-    home: { sectionTestOnline, sectionOurFounder,sectionVirufyCommunity, sectionMissionStatement },
-  } = useI18n()
-  const buttons = sectionTestOnline?.buttons
-
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="flex max-w-[1440px] flex-col items-center justify-center ">
-        <Section1
-          //TitleText
-          shareButtonLabel={buttons?.[0]}
-          learnMoreButtonLabel={buttons?.[1]}
-          TitleSize="h1"
-          TitleLabel={sectionTestOnline?.title}
-          TextSize="normal"
-          TextLabel={sectionTestOnline?.text}
-          ContainerTitleProps=""
-          ContainerTextProps="items-start h-[100%] mr-2 mt-2"
-          //Image
-          sizeImg="pr90"
-          border="radious"
-          route={ImageSection1}
-          alt="imagen de algo"
-          ImageStyleProps=""
-          //Buttons
-          buttons={buttons}
-          buttonTechnology={false}
+  <>
+      <div className="flex flex-col items-center justify-center -mb-24">
+        <div className="relative -top-24 w-full overflow-hidden">
+        <Section2
+          sizeImg="width-100vw"
+          borderImg="none"
+          src={ImageSection2}
+          altImg="A person holding phone in hand"
+          text="Welcome to Virufy"
+          text2="Your Personal Health Companion"
+          mainText="Empower yourself with the latest in health technology."
+          subText="Introducing CoughCheck, the cutting-edge app that utilizes advanced algorithms to analyze your cough and provide insights into potential infection symptoms."
+          buttonText="View App Here"
+          disclaimer1="*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad)."
+          disclaimer2="*The app is still being trained, help us with its development by donating your cough."
+          mainText2="How It Works"
+          subText2="With just a simple cough into your device's microphone, CoughCheck harnesses the power of Artificial Intelligence to detect unique sound patterns associated with respiratory diseases, such as those indicative of COVID-19, TB, Flu, RSV, COPD, and Asthma."
         />
-
-        {/* <p className="text-gray-300">Section - 2</p> */}
-        <Section2 />
-
-        {/* <p className="text-gray-300">Section - 3</p> */}
-        <Section3 />
-
-        {/* <p className="text-gray-300">Section - 4</p> */}
-        <Section4
-          TitleSize1="h1"
-          TitleSize2="h3"
-          TitleLabel1={sectionOurFounder.title}
-          TitleLabel2={sectionOurFounder.nameFounder}
-          TextLabel={sectionOurFounder.description}
-          //TODO: Revisar
-          labelButton={sectionOurFounder?.button}
-          buttonRoute="/OurPeople2"
-          ContainerTitleProps
-          ContainerTextProps
-          border
-          alt
+        <Section3 
+        text="Your Health, Our Priority"
+        subtext="At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential. Join the thousands already benefiting from our App and take control of your health today!"
+        title1="Instant Analysis"
+        sub1="Receive immediate prompt feedback on your cough's characteristics and the likelihood of an infection based on the normality of cough*"
+        title2="Stay Informed"
+        sub2="Access the latest information and guidelines from health authorities regarding respiratory disease symptoms."
+        title3="User-Friendly Interface"
+        sub3="Intuitive design for easy navigation and seamless user experience."
+        disclaimer="*The results of the analysis done by the system do not replace the diagnosis by a specialized doctor."
+        buttonText="Our Technology"
         />
-
-        {/* <p className="text-gray-300">Section - 5</p> */}
-        <Section5
-          StylePropsSection="text-center w-[100%]"
-          TitleSize1="h1"
-          TitleLabel1={sectionVirufyCommunity.title}
-          TextSize1="subtitle"
-          TextLabel1={sectionVirufyCommunity.descriptionVirufy}
-          ContainerTitleProps1="mb-5 mr-[5vw]"
-          ContainerTextProps1="mb-4 mr-[5vw]"
-          TitleClassProps1="ml-[5vw]"
-          TextClassProps1="ml-[5vw]"
-          TitleSize2="h2"
-          TitleLabel2={sectionVirufyCommunity.titleBeliefStatement}
-          TextSize2="normal"
-          TextLabel2={sectionVirufyCommunity.descriptionBeliefStatement}
-          ContainerTitleProps2="mb-5 mr-[5vw]"
-          ContainerTextProps2="mb-4 mr-[5vw]"
-          TitleClassProps2="ml-[5vw]"
-          TextClassProps2="ml-[5vw]"
-        />
-
-        {/* <p className="text-gray-300">Section - Card Slider</p> */}
-        <CardSlider />
-
-        {/* <p className="text-gray-300">Section - 6</p> */}
-        <Section6 />
-
-        {/* <p className="text-gray-300">Section - 7</p> */}
-        <Section7
-          TitleLabel={sectionMissionStatement.title }
-          Label1={sectionMissionStatement.buttonShare}
-          Label2={sectionMissionStatement.buttonLearn}
-          Url1="https://virufy.org/study/welcome"
-          Url2="/OurTechnology"
+        <Section10
+        title="Algorithms"
+        subtitle="AI-based applications are increasingly playing a crucial role in healthcare, especially in the early detection and diagnosis of diseases."
+        text="AI capabilities can monitor and analyze user-reported symptoms related to respiratory health. They can offer real-time monitoring of respiratory parameters, such as breathing rate and oxygen saturation levels."
         />
       </div>
     </div>
-  )
+    </>
+  );
 }
