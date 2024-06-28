@@ -62,16 +62,17 @@ export const ImageSize = {
 // TITLE THEMES
 export const TitleProps = {
     h1: "text-[2.25rem] leading-[2.5rem]   md:text-[2.5rem] md:leading-[2.3rem] lg:text-[2.7rem] lg:leading-[2.50rem] xl:text-[3.3rem] xl:leading-[3rem]",
+    h1JobListing: "text-[2.25rem] leading-4 sm:leading-6 md:text-[2.5rem] md:leading-10 lg:text-[2.7rem] lg:leading-[4rem] xl:text-[3.3rem] xl:leading-[5rem]",
     h2: "text-[1.875rem] leading-[2.25rem] md:text-[2.3rem] md:leading-[2.1rem] lg:text-[2.5rem] lg:leading-[2.30rem] xl:text-[3rem] xl:leading-[3.3rem]",
     h3: "text-[1.5rem] leading-[2rem]      md:text-[2.1rem] md:leading-[1.9rem] lg:text-[2.3rem] lg:leading-[2.10rem] xl:text-[2.9rem] xl:leading-[2.75rem]",
     h4: "text-[1.4rem] leading-[1.7rem]    md:text-[1.8rem] md:leading-[1.9rem] lg:text-[2.1rem] lg:leading-[2.30rem] xl:text-[2.4rem] xl:leading-[2.6rem]",
     h4compact: "text-[1.4rem] leading-[1.4rem] md:text-[1.8rem] md:leading-[1.9rem] lg:text-[2.1rem] lg:leading-[2.30rem] xl:text-[2.4rem] xl:leading-[2.6rem]",
     h5: "text-[1.25rem] leading-[1.75rem]  md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[2.7rem] xl:leading-[0.7rem]",
     h5spaced: "text-[1.3rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[36px] xl:leading-[49px]",
-    h6: "text-[1rem] leading-[1.5rem] font-semibold text-center",
     h5tepsHome: "text-[1.25rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[2.5rem]",
     h5Modals: "text-[1.25rem] leading-[1.8rem]  md:text-[1.9rem] md:leading-[2.4rem]",
     h5Modals2: "text-[1rem] leading-[1.8rem]  md:text-[1.4rem] md:leading-[2rem] text-center",
+    h6: "text-[1rem] leading-[1.5rem] font-semibold text-center",
     h10: "text-[3.6rem] leading-[2.5rem]   md:text-[3.5rem] md:leading-[3.3rem] lg:text-[5rem] lg:leading-[3.50rem] xl:text-[5rem] xl:leading-[4rem]",
     h7: "text-[11rem] leading-[1rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.75rem] xl:text-[1.75rem] xl:leading-[2rem]",
     h8: "text-[0.75rem] leading-[1rem]    md:text-[1rem] md:leading-[1.25rem] lg:text-[1.25rem] lg:leading-[1.5rem] xl:text-[1.5rem] xl:leading-[1.75rem]"

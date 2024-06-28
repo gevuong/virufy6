@@ -262,7 +262,7 @@ useEffect(() => {
                                         {ourTechnology?.section}
                                     </Link>
 
-                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
+                                    <div className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
                                     <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/ai" >
                                             {ourTechnology?.howItWorks}
                                         </Link>
@@ -283,7 +283,7 @@ useEffect(() => {
                                         {coughCheckApp?.section}
                                     </Link>
 
-                                    <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-35px]'} hover:flex peer-hover:flex`}>
+                                    <div className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-35px]'} hover:flex peer-hover:flex`}>
                                         <Link className="px-5 py-2 pt-5 text-[white] hover:font-bold" href="/" >
                                             {coughCheckApp?.covid19}
                                         </Link>
@@ -313,7 +313,7 @@ useEffect(() => {
                                     {aboutUs?.section}
                                 </Link>
 
-                                <div className={`fixed w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
+                                <div className={`absolute w-[200px] flex-col drop-shadow-lg text-center ${navbar ? 'flex relative bg-black mt-2 z-10 left-1/2 transform -translate-x-1/2' : 'hidden ml-[-60px]'} hover:flex peer-hover:flex`}>
                                     <Link
                                         className="pt-6 pb-3 text-white hover:font-bold"
                                         href="/our-story"
