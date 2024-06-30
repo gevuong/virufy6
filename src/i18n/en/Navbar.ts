@@ -1,27 +1,27 @@
-import { NavbarType } from '../types/NavbarType'
+import { type NavbarType } from '../types/NavbarType'
 
 export const navbar: NavbarType = {
-  ourTecnology: {
-    section: 'Our Technology',
-    howItWorks: 'How It Works',
-    shareYourCough: 'Share Your Cough',
-    OurData: 'Our Data',
-    OurResearch: 'Our Research',
+  home: 'Home',
+  ourTechnology: {
+    section: 'Technology',
+    howItWorks: 'AI',
+    OurResearch: 'Publications',
   },
-  getInvolved: {
-    section: 'Get Involved',
-    donate: 'Donate',
-    joinOurTeam: 'Join Our Team',
-    tellYourStory: 'Tell Your Story',
+  coughCheckApp: {
+    section: 'CoughCheck App',
+    covid19: 'Covid-19',
+    flu: 'Flu',
+    copd: 'COPD',
+    rsv: 'RSV'
   },
   aboutUs: {
     section: 'About Us',
+    ourStory: 'Our Story',
     ourPeople: 'Our People',
-    ourSopporters: 'Our Supporters',
+    ourSupporters: 'Our Supporters',
     blog: 'Blog',
-    publications: 'Publications',
+    oneYoungWorld: 'One Young World',
   },
   faq: 'FAQ',
-  joinUs: 'JOIN US',
   donate: 'DONATE',
 }

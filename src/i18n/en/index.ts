@@ -1,35 +1,36 @@
 import { type I18nData } from '../type'
-
-import { home } from './Home'
-import { AboutUs } from './AboutUs'
-import { GetInvolved_ } from './GetInvolved'
-import { howItWorks } from './HowItWorks'
+import { Ai } from './Ai'
+import { blogDetails } from './BlogDetail'
+import { blogListing } from './BlogListing'
 import { dashboard } from './Dashboard'
+import { FAQ } from './FAQ'
+import { footer } from './Footer'
+import { GetInvolved_ } from './GetInvolved'
+import { home } from './Home'
 import { JobDescription } from './JobDescription'
-import { ourPublications } from './OurPublications'
-import { ourTechnology } from './OurTecnology'
+import { JobListing } from './JobListing'
+import { navbar } from './Navbar'
+import { OneYoungWorld } from './OneYoungWorld'
 import { OurPeople1 } from './OurPeople1'
 import { OurPeople2 } from './OurPeople2'
 import { ourResearch } from './OurResearch'
-import { tellYourStory } from './TellYourStory'
+import { OurStory } from './OurStory'
 import { OurSupporters } from './OurSupporters'
-import { JobListing } from './JobListing';
-import { blogListing } from './BlogListing'
-import { blogDetails } from './BlogDetail';
-import { faq } from './FAQ'
-import { navbar } from './Navbar'
-import { footer } from './Footer'
+import { Publications } from './publications'
+import { ShareYourCough } from './ShareYourCough'
+import { TeamLeads } from './TeamLeads'
+import { tellYourStory } from './TellYourStory'
+
 export const data: I18nData = {
   locale: 'en',
   home,
-  AboutUs,
+  OurStory,
   GetInvolved_,
-  howItWorks,
+  Ai,
   dashboard,
   JobListing,
   JobDescription,
-  ourPublications,
-  ourTechnology,
+  Publications,
   OurPeople1,
   OurPeople2,
   ourResearch,
@@ -37,7 +38,10 @@ export const data: I18nData = {
   OurSupporters,
   blogListing,
   blogDetails,
-  faq,
+  FAQ,
   navbar,
-  footer
+  footer,
+  ShareYourCough,
+  OneYoungWorld,
+  TeamLeads,
 }
