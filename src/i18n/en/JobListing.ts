@@ -109,12 +109,16 @@ export const JobListing = {
           id: 20,
         },
         {
-          title: 'AWS Cloud Engineer',
+          title: 'AWS Engineer',
           id: 21,
         },
         {
-          title: 'Unix Administrator',
+          title: 'Cloud Engineer',
           id: 22,
+        },
+        {
+          title: 'Unix Administrator',
+          id: 23,
         },
       ],
     },
