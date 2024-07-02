@@ -66,6 +66,10 @@ export const JobListing = {
           title: 'HR Business Partner',
           id: 12,
         },
+        {
+          title: 'HR Administrative Assistant',
+          id: 13,
+        },
       ],
     },
     {
@@ -73,11 +77,11 @@ export const JobListing = {
       positions: [
         {
           title: 'Corporate Attorney (IT Oriented)',
-          id: 13,
+          id: 14,
         },
         {
           title: 'Paralegal',
-          id: 14,
+          id: 15,
         },
       ],
     },
@@ -86,43 +90,44 @@ export const JobListing = {
       positions: [
         {
           title: 'Business Analyst',
-          id: 15,
-        },
-        {
-          title: 'Python Programmer',
           id: 16,
         },
         {
-          title: 'Technical Writer',
+          title: 'Python Programmer',
           id: 17,
         },
         {
-          title: 'Quality Assurance Engineer',
+          title: 'Technical Writer',
           id: 18,
         },
         {
-          title: 'AWS Developer',
+          title: 'Quality Assurance Engineer',
           id: 19,
         },
         {
-          title: 'AWS Architect',
+          title: 'AWS Developer',
           id: 20,
         },
         {
-          title: 'AWS Engineer',
+          title: 'AWS Architect',
           id: 21,
         },
         {
-          title: 'Cloud Engineer',
+          title: 'AWS Engineer',
           id: 22,
         },
         {
-          title: 'Unix Administrator',
+          title: 'Cloud Engineer',
           id: 23,
+        },
+        {
+          title: 'Unix Administrator',
+          id: 24,
         },
       ],
     },
   ],
+
   titleImage:
     'Virufy is entirely run by volunteers and pro bono partner companies.',
   title: 'Our Mission',
