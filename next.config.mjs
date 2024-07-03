@@ -10,6 +10,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
+  distDir: 'out',
   // i18n: {
   //   locales: ['en', 'es', 'pt', 'jp'],
   //   defaultLocale: 'en',
